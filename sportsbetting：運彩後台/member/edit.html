@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員編輯</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <div class="p-4">
+        <!-- 標題和返回按鈕 -->
+        <div class="flex items-center mb-6">
+            <button id="back-btn" class="mr-4 px-4 py-2 bg-white border border-gray-300 text-gray-700 rounded-md hover:bg-gray-50 focus:outline-none flex items-center">
+                <i class="fas fa-arrow-left mr-2"></i>
+                返回
+            </button>
+            <h1 class="text-xl font-semibold text-gray-800">會員編輯</h1>
+        </div>
+
+        <!-- 會員資料編輯表單 -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="p-6">
+                <form id="member-info-form">
+                    <input type="hidden" id="edit-member-id" name="member_id" value="">
+                    
+                    <!-- 區塊二：基本資料 -->
+                    <div class="mb-6">
+                        <h3 class="text-lg font-medium text-gray-900 mb-4">基本資料</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-6">
+                            <!-- 代理帳號 -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">上層代理帳號</label>
+                                <div id="agent-account" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-gray-100 rounded-md shadow-sm text-sm"></div>
+                            </div>
+                            
+                            <!-- 會員帳號 -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">會員帳號</label>
+                                <div id="user-account" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-gray-100 rounded-md shadow-sm text-sm"></div>
+                            </div>
+                            
+                            <!-- 帳號啟用狀態 -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">帳號啟用狀態</label>
+                                <div id="user-status" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-gray-100 rounded-md shadow-sm text-sm"></div>
+                            </div>
+                            
+                            <!-- 帳戶餘額 -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">帳戶餘額</label>
+                                <div id="user-balance" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-gray-100 rounded-md shadow-sm text-sm"></div>
+                            </div>
+                            
+                            <!-- 會員名稱 -->
+                            <div>
+                                <label for="user-name" class="block text-sm font-medium text-gray-700">會員名稱</label>
+                                <input type="text" name="user-name" id="user-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                            </div>
+                            
+                            <!-- 電子郵件 -->
+                            <div>
+                                <label for="user-email" class="block text-sm font-medium text-gray-700">電子郵件</label>
+                                <input type="email" name="user-email" id="user-email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                            </div>
+                            
+                            <!-- 手機號碼 -->
+                            <div>
+                                <label for="user-phone" class="block text-sm font-medium text-gray-700">手機號碼</label>
+                                <input type="tel" name="user-phone" id="user-phone" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 區塊一：返佣比例設定 -->
+                    <div>
+                        <h3 class="text-lg font-medium text-gray-900 mb-4">返佣比例設定</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-6">
+                            <!-- 左側欄位 -->
+                            <div class="space-y-4">
+                                <!-- 賽前上層返佣比例 (左上) -->
+                                <div>
+                                    <label for="user-upper-commission" class="block text-sm font-medium text-gray-700">賽前上層返佣比例</label>
+                                    <div class="mt-1 relative rounded-md shadow-sm">
+                                        <input type="number" name="user-upper-commission" id="user-upper-commission" class="focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-3 pr-8 sm:text-sm border-gray-300 rounded-md bg-gray-100" placeholder="0" min="0" max="2" step="0.05" readonly>
+                                        <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                                            <span class="text-gray-500 sm:text-sm">%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- 走地上層返佣比例 (左下) -->
+                                <div>
+                                    <label for="user-upper-live-commission" class="block text-sm font-medium text-gray-700">走地上層返佣比例</label>
+                                    <div class="mt-1 relative rounded-md shadow-sm">
+                                        <input type="number" name="user-upper-live-commission" id="user-upper-live-commission" class="focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-3 pr-8 sm:text-sm border-gray-300 rounded-md bg-gray-100" placeholder="0" min="0" max="2" step="0.05" readonly>
+                                        <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                                            <span class="text-gray-500 sm:text-sm">%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- 右側欄位 -->
+                            <div class="space-y-4">
+                                                <!-- 賽前返佣比例 (右上) -->
+                <div>
+                    <label for="user-commission" class="block text-sm font-medium text-gray-700">賽前返佣比例</label>
+                                    <div class="mt-1 relative rounded-md shadow-sm">
+                                        <input type="number" name="user-commission" id="user-commission" class="focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-3 pr-8 sm:text-sm border-gray-300 rounded-md" placeholder="0" min="0" max="2" step="0.05">
+                                        <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                                            <span class="text-gray-500 sm:text-sm">%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                                <!-- 走地返佣比例 (右下) -->
+                <div>
+                    <label for="user-live-commission" class="block text-sm font-medium text-gray-700">走地返佣比例</label>
+                                    <div class="mt-1 relative rounded-md shadow-sm">
+                                        <input type="number" name="user-live-commission" id="user-live-commission" class="focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-3 pr-8 sm:text-sm border-gray-300 rounded-md" placeholder="0" min="0" max="2" step="0.05">
+                                        <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                                            <span class="text-gray-500 sm:text-sm">%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                
+                <!-- 按鈕區 -->
+                <div class="mt-6 flex justify-between space-x-3">
+                    <!-- 重置密碼按鈕（最左側） -->
+                    <div>
+                        <button type="button" id="reset-member-password-btn" class="inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-yellow-600 text-base font-medium text-white hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 sm:text-sm">
+                            重置會員密碼
+                        </button>
+                        <p class="mt-1 text-xs text-gray-500">點擊後會員密碼會變為預設密碼（0000）</p>
+                    </div>
+                    
+                    <!-- 右側按鈕 -->
+                    <div class="flex space-x-3">
+                        <button type="button" id="reset-btn" class="px-4 py-2 bg-white border border-gray-300 text-gray-700 rounded-md hover:bg-gray-50 focus:outline-none">
+                            重置
+                        </button>
+                        <button type="button" id="save-member-btn" class="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 focus:outline-none">
+                            儲存變更
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 變更提醒彈窗 -->
+    <div id="unsaved-changes-modal" class="fixed inset-0 z-50 overflow-y-auto hidden">
+        <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+            <div class="fixed inset-0 transition-opacity" aria-hidden="true">
+                <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
+            </div>
+            
+            <!-- 模態視窗內容 -->
+            <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+                <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                    <div class="sm:flex sm:items-start">
+                        <div class="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-yellow-100 sm:mx-0 sm:h-10 sm:w-10">
+                            <i class="fas fa-exclamation-triangle text-yellow-600"></i>
+                        </div>
+                        <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">
+                                尚未儲存變更
+                            </h3>
+                            <div class="mt-2">
+                                <p class="text-sm text-gray-500">
+                                    您的資料尚未儲存，確定要離開此頁面嗎？
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                    <button type="button" id="leave-anyway" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-red-600 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm">
+                        確定離開
+                    </button>
+                    <button type="button" id="stay-on-page" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
+                        留在此頁
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 元素選擇器
+            const backBtn = document.getElementById('back-btn');
+            const resetBtn = document.getElementById('reset-btn');
+            const saveMemberBtn = document.getElementById('save-member-btn');
+            const resetMemberPasswordBtn = document.getElementById('reset-member-password-btn');
+            const unsavedChangesModal = document.getElementById('unsaved-changes-modal');
+            const leaveAnywayBtn = document.getElementById('leave-anyway');
+            const stayOnPageBtn = document.getElementById('stay-on-page');
+            
+            // 表單欄位
+            const userNameInput = document.getElementById('user-name');
+            const userEmailInput = document.getElementById('user-email');
+            const userPhoneInput = document.getElementById('user-phone');
+            const userCommissionInput = document.getElementById('user-commission');
+            const userLiveCommissionInput = document.getElementById('user-live-commission');
+            const userUpperCommissionInput = document.getElementById('user-upper-commission');
+            const userUpperLiveCommissionInput = document.getElementById('user-upper-live-commission');
+            
+            // 原始資料，用於檢測變更和重置
+            let originalFormData = {};
+            
+            // 從URL獲取會員ID
+            const urlParams = new URLSearchParams(window.location.search);
+            const memberId = urlParams.get('id');
+            
+            // 模擬從API獲取會員資料
+            function fetchMemberData(id) {
+                // 這裡應該是一個實際的API調用
+                // 模擬從後端獲取資料
+                return new Promise((resolve) => {
+                    setTimeout(() => {
+                        // 模擬資料
+                        const memberData = {
+                            id: id,
+                            username: 'user123456',
+                            name: '劉小明',
+                            email: 'user123456@example.com',
+                            phone: '0912345678',
+                            agent: '張大勝',
+                            commission: 1.5,
+                            liveCommission: 1,
+                            upperCommission: 0.5,
+                            upperLiveCommission: 0.3,
+                            status: '正常',
+                            balance: '12,500'
+                        };
+                        resolve(memberData);
+                    }, 300);
+                });
+            }
+            
+            // 填充表單資料
+            function populateForm(data) {
+                document.getElementById('edit-member-id').value = data.id;
+                document.getElementById('agent-account').textContent = data.agent;
+                document.getElementById('user-account').textContent = data.username;
+                document.getElementById('user-name').value = data.name;
+                document.getElementById('user-email').value = data.email;
+                document.getElementById('user-phone').value = data.phone;
+                document.getElementById('user-commission').value = data.commission;
+                document.getElementById('user-live-commission').value = data.liveCommission;
+                document.getElementById('user-upper-commission').value = data.upperCommission;
+                document.getElementById('user-upper-live-commission').value = data.upperLiveCommission;
+                document.getElementById('user-status').textContent = data.status;
+                document.getElementById('user-balance').textContent = data.balance;
+                
+                // 儲存原始資料用於檢測變更和重置
+                originalFormData = {
+                    name: data.name,
+                    email: data.email,
+                    phone: data.phone,
+                    commission: data.commission,
+                    liveCommission: data.liveCommission,
+                    upperCommission: data.upperCommission,
+                    upperLiveCommission: data.upperLiveCommission
+                };
+            }
+            
+            // 檢查表單是否有變更
+            function hasFormChanged() {
+                return (
+                    userNameInput.value !== originalFormData.name ||
+                    userEmailInput.value !== originalFormData.email ||
+                    userPhoneInput.value !== originalFormData.phone ||
+                    userCommissionInput.value != originalFormData.commission ||
+                    userLiveCommissionInput.value != originalFormData.liveCommission ||
+                    userUpperCommissionInput.value != originalFormData.upperCommission ||
+                    userUpperLiveCommissionInput.value != originalFormData.upperLiveCommission
+                );
+            }
+            
+            // 重置表單到原始狀態
+            function resetForm() {
+                userNameInput.value = originalFormData.name;
+                userEmailInput.value = originalFormData.email;
+                userPhoneInput.value = originalFormData.phone;
+                userCommissionInput.value = originalFormData.commission;
+                userLiveCommissionInput.value = originalFormData.liveCommission;
+                userUpperCommissionInput.value = originalFormData.upperCommission;
+                userUpperLiveCommissionInput.value = originalFormData.upperLiveCommission;
+            }
+            
+            // 立即加載會員資料
+            if (memberId) {
+                fetchMemberData(memberId).then(data => {
+                    populateForm(data);
+                }).catch(error => {
+                    console.error('獲取會員資料失敗:', error);
+                    alert('獲取會員資料失敗，請稍後再試');
+                });
+            } else {
+                // 如果沒有會員ID，返回列表頁
+                history.back();
+            }
+            
+            // 返回按鈕點擊事件
+            backBtn.addEventListener('click', function() {
+                if (hasFormChanged()) {
+                    // 如果有未儲存的變更，顯示確認視窗
+                    unsavedChangesModal.classList.remove('hidden');
+                } else {
+                    // 沒有變更，直接返回
+                    history.back();
+                }
+            });
+            
+            // 確認離開按鈕
+            leaveAnywayBtn.addEventListener('click', function() {
+                history.back();
+            });
+            
+            // 留在頁面按鈕
+            stayOnPageBtn.addEventListener('click', function() {
+                unsavedChangesModal.classList.add('hidden');
+            });
+            
+            // 點擊模態視窗外部
+            unsavedChangesModal.addEventListener('click', function(event) {
+                if (event.target === unsavedChangesModal) {
+                    unsavedChangesModal.classList.add('hidden');
+                }
+            });
+            
+            // 重置按鈕點擊事件
+            resetBtn.addEventListener('click', function() {
+                resetForm();
+            });
+            
+            // 儲存變更按鈕點擊事件
+            saveMemberBtn.addEventListener('click', function() {
+                // 驗證賽前返佣比例
+                const commission = userCommissionInput.value;
+                if (commission === '' || isNaN(parseFloat(commission)) || parseFloat(commission) < 0 || parseFloat(commission) > 2) {
+                    alert('請輸入有效的賽前返佣比例（0-2之間的數字）');
+                    return;
+                }
+                
+                // 驗證走地返佣比例
+                const liveCommission = userLiveCommissionInput.value;
+                if (liveCommission === '' || isNaN(parseFloat(liveCommission)) || parseFloat(liveCommission) < 0 || parseFloat(liveCommission) > 2) {
+                    alert('請輸入有效的走地返佣比例（0-2之間的數字）');
+                    return;
+                }
+                
+                // 驗證賽前上層返佣比例
+                const upperCommission = userUpperCommissionInput.value;
+                if (upperCommission === '' || isNaN(parseFloat(upperCommission)) || parseFloat(upperCommission) < 0 || parseFloat(upperCommission) > 2) {
+                    alert('請輸入有效的賽前上層返佣比例（0-2之間的數字）');
+                    return;
+                }
+                
+                // 驗證走地上層返佣比例
+                const upperLiveCommission = userUpperLiveCommissionInput.value;
+                if (upperLiveCommission === '' || isNaN(parseFloat(upperLiveCommission)) || parseFloat(upperLiveCommission) < 0 || parseFloat(upperLiveCommission) > 2) {
+                    alert('請輸入有效的走地上層返佣比例（0-2之間的數字）');
+                    return;
+                }
+                
+                // 準備要傳送的資料
+                const formData = {
+                    id: document.getElementById('edit-member-id').value,
+                    name: userNameInput.value,
+                    email: userEmailInput.value,
+                    phone: userPhoneInput.value,
+                    commission: userCommissionInput.value,
+                    liveCommission: userLiveCommissionInput.value,
+                    upperCommission: userUpperCommissionInput.value,
+                    upperLiveCommission: userUpperLiveCommissionInput.value
+                };
+                
+                // 模擬API調用
+                setTimeout(() => {
+                    // 更新原始資料為目前的資料
+                    originalFormData = {
+                        name: formData.name,
+                        email: formData.email,
+                        phone: formData.phone,
+                        commission: formData.commission,
+                        liveCommission: formData.liveCommission,
+                        upperCommission: formData.upperCommission,
+                        upperLiveCommission: formData.upperLiveCommission
+                    };
+                    
+                    alert('會員資料已更新');
+                }, 500);
+            });
+            
+            // 重置會員密碼
+            resetMemberPasswordBtn.addEventListener('click', function() {
+                if (confirm('確定要重置該會員密碼嗎？')) {
+                    // 模擬API調用
+                    setTimeout(() => {
+                        alert('會員密碼已重置為預設密碼（0000）');
+                    }, 500);
+                }
+            });
+        });
+    </script>
+</body>
+</html> 

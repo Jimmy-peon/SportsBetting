@@ -1,5 +1,996 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[SportsBetting]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://jimmy-peon.github.io/SportsBetting/</link><image><url>https://jimmy-peon.github.io/SportsBetting/lib/media/favicon.png</url><title>SportsBetting</title><link>https://jimmy-peon.github.io/SportsBetting/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Fri, 20 Jun 2025 07:39:37 GMT</lastBuildDate><atom:link href="https://jimmy-peon.github.io/SportsBetting/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 20 Jun 2025 07:39:37 GMT</pubDate><copyright><![CDATA[Jimmy]]></copyright><ttl>60</ttl><dc:creator>Jimmy</dc:creator><item><title><![CDATA[index]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[SportsBetting]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://jimmy-peon.github.io/SportsBetting/</link><image><url>https://jimmy-peon.github.io/SportsBetting/lib/media/favicon.png</url><title>SportsBetting</title><link>https://jimmy-peon.github.io/SportsBetting/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Fri, 20 Jun 2025 07:43:15 GMT</lastBuildDate><atom:link href="https://jimmy-peon.github.io/SportsBetting/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 20 Jun 2025 07:43:02 GMT</pubDate><copyright><![CDATA[Jimmy]]></copyright><ttl>60</ttl><dc:creator>Jimmy</dc:creator><item><title><![CDATA[運彩：後台球版功能]]></title><description><![CDATA[ 
+ <br><a data-href="SportBetting：總覽" href="https://jimmy-peon.github.io/SportsBetting/sportbetting：總覽.html" class="internal-link" target="_self" rel="noopener nofollow">SportBetting：總覽</a><br>
+<br><a data-tooltip-position="top" aria-label="https://docs.google.com/spreadsheets/d/1GKfYqIUag3bkPGyr1HangZw0ich43FxeNxXPj6GCVaw/edit?usp=sharing" rel="noopener nofollow" class="external-link" href="https://docs.google.com/spreadsheets/d/1GKfYqIUag3bkPGyr1HangZw0ich43FxeNxXPj6GCVaw/edit?usp=sharing" target="_blank">SportsBetting_DB表</a>
+<br><a data-tooltip-position="top" aria-label="運彩：後台球版功能：API" data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">SportsBetting_API文件</a>
+<br><a data-tooltip-position="top" aria-label="https://docs.google.com/spreadsheets/d/1xRy_OA3xSNcgVgZxDjT8C4i2XWV41qrQP33tGx9fr8c/edit?usp=sharing" rel="noopener nofollow" class="external-link" href="https://docs.google.com/spreadsheets/d/1xRy_OA3xSNcgVgZxDjT8C4i2XWV41qrQP33tGx9fr8c/edit?usp=sharing" target="_blank">SportsBetting_靜態表</a>
+<br><a data-href="運彩：後台球版功能：權限階層規則" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：權限階層規則.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：權限階層規則</a>
+<br>功能模組
+
+<br><a data-href="運彩：後台球版功能：登入功能" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：登入功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：登入功能</a>
+<br><a data-href="運彩：後台球版功能：導航區" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：導航區.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：導航區</a>
+<br><a data-href="運彩：後台球版功能：儀表板" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：儀表板.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：儀表板</a>
+<br><a data-href="運彩：後台球版功能：會員系統" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：會員系統.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：會員系統</a>
+
+<br><a data-href="運彩：後台球版功能：會員列表" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：會員列表.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：會員列表</a>
+
+
+<br><a data-href="運彩：後台球版功能：代理系統" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：代理系統.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：代理系統</a>
+
+<br><a data-href="運彩：後台球版功能：代理列表" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：代理列表.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：代理列表</a>
+
+
+<br><a data-href="運彩：後台球版功能：金流系統" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：金流系統.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：金流系統</a>
+
+<br><a data-href="運彩：後台球版功能：會員充提記錄" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：會員充提記錄.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：會員充提記錄</a>
+<br><a data-href="運彩：後台球版功能：代理充提記錄" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：代理充提記錄.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：代理充提記錄</a>
+<br><a data-href="運彩：後台球版功能：金流記錄" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：金流記錄.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：金流記錄</a> 
+
+
+<br><a data-href="運彩：後台球版功能：賽事管理" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：賽事管理.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：賽事管理</a>
+
+<br><a data-href="運彩：後台球版功能：賽事列表" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：賽事列表.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：賽事列表</a>
+<br><a data-href="運彩：後台球版功能：開盤設定" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：開盤設定.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：開盤設定</a>
+<br><a data-href="運彩：後台球版功能：返獎設定" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：返獎設定.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：返獎設定</a>
+<br><a data-href="運彩：後台球版功能：系統維護" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：系統維護.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：系統維護</a>
+
+
+<br><a data-href="運彩：後台球版功能：權限管理" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：權限管理.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：權限管理</a>
+
+<br><a data-href="運彩：後台球版功能：運營帳號列表" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：運營帳號列表.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：運營帳號列表</a> 
+<br><a data-href="運彩：後台球版功能：修改密碼" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：修改密碼.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：修改密碼</a>
+
+
+<br>日誌系統
+
+<br><a data-href="運彩：後台球版功能：操作日誌" href="https://jimmy-peon.github.io/SportsBetting/運彩：後台球版功能：操作日誌" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：操作日誌</a>
+
+
+<br><a data-href="運彩：後台球版功能：報表管理" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：報表管理.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：報表管理</a>
+
+<br><a data-href="運彩：後台球版功能：注單管理" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：注單管理.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：注單管理</a>
+
+
+
+
+]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩：後台球版功能.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：代理充提記錄]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>
+<a data-href="運彩：後台球版功能：金流系統" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：金流系統.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：金流系統</a><br><br>功能說明：提供代理帳戶資金的充值和提現歷史記錄查詢功能。管理員可查看特定代理或所有代理的資金變動情況，包括充值、提現交易類型，並可依據不同條件進行篩選與搜尋。<br><br><br><br><br>
+<br><a data-tooltip-position="top" aria-label="運彩API：金流：查詢代理充提資料" data-href="運彩API：金流：查詢代理充提資料" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：金流：查詢代理充提資料.html" class="internal-link" target="_self" rel="noopener nofollow">金流：查詢代理充提資料</a>
+
+<br>打開「代理充提記錄」頁面
+<br>「代理充提記錄」頁面重新整理
+<br>使用條件查詢資料
+
+
+<br><a data-tooltip-position="top" aria-label="運彩API：金流：代理上下分" data-href="運彩API：金流：代理上下分" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：金流：代理上下分.html" class="internal-link" target="_self" rel="noopener nofollow">金流：代理上下分</a>
+]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：代理充提記錄.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：代理充提記錄.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：代理列表]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>
+<a data-href="運彩：後台球版功能：代理系統" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：代理系統.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：代理系統</a><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><a data-tooltip-position="top" aria-label="運彩API：代理：查詢代理資料" data-href="運彩API：代理：查詢代理資料" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：代理：查詢代理資料.html" class="internal-link" target="_self" rel="noopener nofollow">代理：查詢代理</a>
+<br><br>
+<br><a data-href="運彩API：代理：取代理資料" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：代理：取代理資料.html" class="internal-link" target="_self" rel="noopener nofollow">運彩API：代理：取代理資料</a>
+<br><a data-tooltip-position="top" aria-label="運彩API：代理：新增代理" data-href="運彩API：代理：新增代理" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：代理：新增代理.html" class="internal-link" target="_self" rel="noopener nofollow">代理：新增代理</a>
+<br><br>
+<br>
+<a data-href="運彩API：代理：取代理資料" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：代理：取代理資料.html" class="internal-link" target="_self" rel="noopener nofollow">運彩API：代理：取代理資料</a> 
+
+<br>
+<a data-tooltip-position="top" aria-label="運彩API：代理：編輯代理" data-href="運彩API：代理：編輯代理" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：代理：編輯代理.html" class="internal-link" target="_self" rel="noopener nofollow">代理：編輯代理</a>
+
+<br>
+<a data-tooltip-position="top" aria-label="運彩API：代理：更新代理返獎率" data-href="運彩API：代理：更新代理返獎率" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：代理：更新代理返獎率.html" class="internal-link" target="_self" rel="noopener nofollow">代理：更新代理返獎率</a>
+
+<br>
+<a data-tooltip-position="top" aria-label="運彩API：金流：取單一代理帳戶餘額" data-href="運彩API：金流：取單一代理帳戶餘額" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：金流：取單一代理帳戶餘額.html" class="internal-link" target="_self" rel="noopener nofollow">金流：取單一代理帳戶餘額</a>
+
+<br>打開「代理充提」頁面時
+<br>「代理充提」頁面重新整理
+<br>在「代理充提」頁面，點擊「重置」按鈕時
+
+
+<br>
+<a data-tooltip-position="top" aria-label="運彩API：金流：取單一當前帳戶餘額" data-href="運彩API：金流：取單一當前帳戶餘額" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：金流：取單一當前帳戶餘額.html" class="internal-link" target="_self" rel="noopener nofollow">金流：取單一當前帳戶餘額</a>
+
+<br>打開「代理充提」頁面時
+<br>「代理充提」頁面重新整理
+<br>在「代理充提」頁面，點擊「重置」按鈕時
+
+
+<br>
+<a data-tooltip-position="top" aria-label="運彩API：金流：代理上下分" data-href="運彩API：金流：代理上下分" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：金流：代理上下分.html" class="internal-link" target="_self" rel="noopener nofollow">金流：代理上下分</a>
+
+<br>在「代理充提」頁面，點擊「確認交易」按鈕時
+
+
+]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：代理列表.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：代理列表.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：代理系統]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>使用對象：所有層級以上使用<br>
+模組用途：提供代理帳號的列表檢視與建立操作，並於帳號創建時設定該代理的「佔成比例」與「返佣比例」。投注盈虧依照各層設定之佔成比例進行一次性分帳，該比例設定後不可中途更改，以維持分潤結構穩定性。<br>
+另提供返佣設定機制，每層代理可動態調整自身可得之「返佣比例」，並決定是否啟用會員返點功能。系統自動依總抽水比例限制返佣總額，並保留歷史設定版本供帳務查核。<br>以下爲子功能<br>
+<br>
+<a data-href="運彩：後台球版功能：代理列表" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：代理列表.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：代理列表</a>
+
+<br>
+<a data-href="運彩：後台球版功能：佔成管理" href="https://jimmy-peon.github.io/SportsBetting/運彩：後台球版功能：佔成管理" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：佔成管理</a> （一律在列表中顯示，所以不實作）
+
+<br>註：<br>
+<br>在賽事結束後，才會結單，且系統會先算返佣，再算佔成。
+<br>佔成，可以有以下分配
+
+<br>admin : SSMA1 : SMA1 = 6:3:1
+<br>admin : SSMA1 : SMA2 = 6:2:2 
+<br>admin : SSMA2 : SMA3 = 5:3:2
+<br>admin : SSMA2 : SMA4 = 5:1:4 
+
+
+<br>每條支線加起來要是 100%
+
+
+<br>返佣設定
+
+<br>有兩個欄位設定（走地、即將開始）
+<br>只要投注，並根據投注金額，就會根據返佣%，給予金額
+<br>每次間隔為 0.05%，上限值2%
+<br>顯示上層，編輯下層
+<br>讓重新設定的返佣值生效，不然馬上生效會讓帳亂掉
+
+
+<br>佔成設定
+
+<br>顯示上層，編輯下層
+<br>但編輯下層時，不可以超過上層 
+
+
+]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：代理系統.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：代理系統.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：系統維護]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>
+<a data-tooltip-position="top" aria-label="運彩：後台球版功能：賽事管理" data-href="運彩：後台球版功能：賽事管理" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：賽事管理.html" class="internal-link" target="_self" rel="noopener nofollow">賽事管理</a><br><br>功能說明：<br>
+<br>設定系統維護的時間，玩家在此期間無法進入前台
+<br><br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：系統維護.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：系統維護.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：注單計算]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br><a data-tooltip-position="top" aria-label="https://docs.google.com/spreadsheets/d/17Hcs8Y2Vr6McBnlLqD4qVbBVp98NQSBjRtiN-S50HVU/edit?usp=sharing" rel="noopener nofollow" class="external-link" href="https://docs.google.com/spreadsheets/d/17Hcs8Y2Vr6McBnlLqD4qVbBVp98NQSBjRtiN-S50HVU/edit?usp=sharing" target="_blank">參考連結</a><br>
+<br>在投注單頁面，點擊「下注」
+
+<br>下注失敗
+
+<br>帳戶餘額不足
+<br>帳號啟用狀態「停用」
+
+
+<br>下注成功時，跳「下注處理」
+
+
+<br>進行下注處理
+
+<br>檢查賽事狀態，若為以下狀態時，為投注失敗
+
+<br>取消 / 暫停投注 / 結算
+
+
+<br>檢查返獎率，若為以下狀態時，為投注失敗
+
+<br>賽前 變為 走地
+
+
+<br>檢查賠率變動，若為以下狀態時，為投注失敗
+
+<br>任一盤口賠率，下注時盤口賠率 - 當前盤扣賠率，並取絕對值後大於 20 的話
+
+
+<br>預扣成功投注的注單金額
+
+
+<br>下注處理結果頁面
+
+<br>成功筆數（注單成立，注單狀態「待處理」）
+<br>失敗筆數（賽事兩隊伍，賽事開始時間、投注對象、失敗原因）
+
+<br>賽事狀態為以下時，顯示對應的文字內容
+
+<br>賽事狀態「取消」，文字內容為：「賽事已被取消」
+<br>賽事狀態「暫停投注」，文字內容為：「賽事已暫停投注」
+<br>賽事狀態「結算」，文字內容為：文字內容為：「賽事已結算」
+
+
+<br>返獎率 或 盤扣賠率 變更過大時，顯示對應的文字內容
+
+<br>文字內容為：「賽事賠率變化幅度過大」
+
+
+
+
+<br>按鈕「回到比賽列表」
+
+
+<br>等待「取消注單」時限
+
+<br>取消下注
+
+<br>點擊「取消下注」時，跳出提示訊息「是否確定取消注單」
+<br>點擊「確認」時，跳出提示訊息「已取消注單」（變更注單狀態為「取消」）
+
+
+<br>「取消注單」時限已到（確認注單下注，變更注單狀態為「待結算」）
+
+
+<br>「待結算」注單
+
+<br>若賽事取消
+
+<br>取消注單
+
+<br>注單欄位，為以下狀態
+
+<br>有效下注 = 0 
+<br>已派彩金額 = 下注金額
+<br>輸贏金額 = 0
+<br>注單狀態改為「取消」
+
+
+<br>發送訊息文字為以下內容
+
+<br>推送通知（顯示於手機通知欄/鎖屏的標題）
+
+<br>【投注通知】您有一筆注單取消！
+
+
+<br>通知詳情標題（顯示於 App 內通知詳情的標題）
+
+<br>【投注通知】
+
+
+<br>通知詳情內容（顯示於 App 內通知詳情的內容）
+
+<br>您投注的賽事「主隊 vs 客隊」已取消，注單 xxx 會自動退款，請留意帳戶餘額更新。
+
+
+
+
+
+
+
+
+<br>若賽事結算，跳「注單結算處理」
+
+
+<br>注單結算處理，以下處理順序
+
+<br>判定注單輸贏局
+
+<br>賽事類型＝讓球
+
+<br>比較主隊、客隊最終進球數
+<br>當兩隊進球數相同時，視為輸局
+
+
+<br>賽事類型＝大小球
+
+<br>比較 大小球球數 與 最終總進球數
+
+
+
+
+<br>判定是否符合盤口條件
+
+<br>賽事類型＝讓球
+
+<br>兩隊最終進球數，是否符合 讓球數，以下為例
+
+<br>A隊 讓 B隊 1分，比分結果為 0 : 1、1 : 2、2 : 3 ...等依此類推
+
+
+
+
+<br>賽事類型＝大小球
+
+<br>盤口大小球球數 = 最終總進球數
+
+
+<br>若符合盤口條件，使用「盤口賠率」計算金額
+
+
+<br>玩家贏局時，通知中心發送以下內容（輸局不發通知）
+
+<br>推送通知（顯示於手機通知欄/鎖屏的標題）
+
+<br>【投注通知】您有一筆注單中獎！
+
+
+<br>通知詳情標題（顯示於 App 內通知詳情的標題）
+
+<br>【投注通知】
+
+
+<br>通知詳情內容（顯示於 App 內通知詳情的內容）
+
+<br>恭喜您！🎉<br>
+您投注的賽事「{{主隊名稱}} vs {{客隊名稱}}」已結算，注單編號 {{注單ID}} 已中獎，中獎金額 1,200。<br>
+派彩金額將於稍後派發，請留意系統通知。
+
+
+
+
+<br>計算返獎金額（玩家「輸局」、「贏局」時）
+
+<br>玩家贏局且不符合盤口條件：有效下注金額 X (1-對應返獎率)
+<br>玩家輸局且不符合盤口條件：有效下注金額 
+<br>玩家贏局且符合盤口條件：有效下注金額 X (1-對應返獎率) X (盤口賠率/100)
+<br>玩家輸局且符合盤口條件：有效下注金額  X (盤口賠率/100)
+<br>註：
+
+<br>對應返獎率：根據「賽事時間」判斷是使用「賽前」or「賽中」返獎率
+
+
+
+
+<br>計算佔成支出（玩家「贏局」時）
+
+<br>玩家贏局且不符合盤口條件：有效下注金額 X 對應返獎率
+<br>玩家贏局且符合盤口條件：有效下注金額 X 對應返獎率 X (盤口賠率/100)
+
+
+<br>計算返佣金額
+
+<br>有效下注金額 x 下層對應返佣率＝返佣金額
+
+<br>下層對應返佣率：依據 SH階層 設定給 SSMA 的返佣率
+
+
+
+
+<br>將「返佣金額」從「返獎金額」中扣除（返獎金額 - 返佣金額 ＝ 返佣後金額）
+
+<br>若「返獎金額」&lt;「返佣金額」，需要由從 SH 帳戶餘額中扣除
+
+
+<br>將「返佣金額」分配給各階層順序為 SSMA &gt; SMA &gt; MA &gt; Agent
+<br>將「返佣後金額」或「佔成支出」分配給各階層順序為 SH &gt; SSMA &gt; SMA &gt; MA &gt; Agent
+<br>計算派彩金額
+
+<br>玩家贏局且不符合盤口條件：有效下注金額 X 對應返獎率
+<br>玩家輸局且不符合盤口條件：有效下注金額
+<br>玩家贏局且符合盤口條件：有效下注金額  X (盤口賠率/100) X 對應返獎率
+<br>玩家輸局且符合盤口條件：有效下注金額  X (盤口賠率/100) 
+<br>註：
+
+<br>派彩金額必為大於等於0
+<br>注單狀態為「取消」時，派彩金額 = 下注金額
+<br>對應返獎率：根據「賽事時間」判斷是使用「賽前」or「賽中」返獎率
+
+
+
+
+<br>計算「輸贏金額」
+
+<br>派彩金額 - 有效下注金額
+<br>註：
+
+<br>注單狀態為「取消」時，輸贏金額 = 0
+
+
+
+
+<br>系統進行派彩
+
+<br>發送派彩金額至會員帳戶餘額，跳「注單狀態「已結算」」
+<br>發送信息至「通知中心」，以下為發送訊息之內容
+
+<br>玩家贏局時
+
+<br>推送通知（顯示於手機通知欄/鎖屏的標題）
+
+<br>【投注通知】您有一筆注單已派彩！
+
+
+<br>通知詳情標題（顯示於 App 內通知詳情的標題）
+
+<br>【投注通知】
+
+
+<br>通知詳情內容（顯示於 App 內通知詳情的內容）
+
+<br>注單 xxx 已完成派彩 ，派彩金額 1,200 
+
+
+
+
+<br>因賽事取消：
+
+<br>推送通知（顯示於手機通知欄/鎖屏的標題）
+
+<br>【投注通知】您有一筆注單已派彩！
+
+
+<br>通知詳情標題（顯示於 App 內通知詳情的標題）
+
+<br>【投注通知】
+
+
+<br>通知詳情內容（顯示於 App 內通知詳情的內容）<br>
+注單 xxx 投注金額 500 已退回至您的帳戶。
+
+
+
+
+
+
+
+
+<br>注單狀態「已結算」
+]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：注單計算.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：注單計算.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：注單管理]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>功能說明：<br>
+<br>顯示所有玩家注單記錄。
+<br><a data-href="運彩：後台球版功能：注單計算" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：注單計算.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：注單計算</a>
+<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：注單管理.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：注單管理.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：返獎設定]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>
+<a data-href="運彩：後台球版功能：賽事管理" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：賽事管理.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：賽事管理</a><br><br>功能說明：設定「走地賽事」與「即將開始賽事」的返獎率（即：平台抽水比例），系統將於賠率運算時依此設定自動扣除返獎比例。<br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：返獎設定.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：返獎設定.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：金流系統]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>使用對象：所有層級以上使用<br>
+模組用途：提供代理帳號進行「上分（加額度）」與「下分（減額度）」的操作機制，控制每層代理之信用額度分配與資金流動。所有投注均以信用分方式進行，並由上層代理將自身持有額度下放至下層，形成代理之間的控分關係。<br>有以下子功能<br>
+<br><a data-href="運彩：後台球版功能：金流記錄" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：金流記錄.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：金流記錄</a> 
+<br><a data-href="運彩：後台球版功能：會員充提記錄" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：會員充提記錄.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：會員充提記錄</a> 
+<br><a data-href="運彩：後台球版功能：代理充提記錄" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：代理充提記錄.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：代理充提記錄</a> 
+]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：金流系統.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：金流系統.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：金流記錄]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>
+<a data-href="運彩：後台球版功能：金流系統" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：金流系統.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：金流系統</a><br><br><br>功能說明：<br>
+<br>提供各階層帳戶資金的儲值和提款歷史記錄查詢功能。
+<br>Root、SH 階層：可以查看所有金流紀錄
+<br>SSMA～Agent 階層：只能查閱到直屬上層對當前代理和當前代理對直屬下層的金流紀錄
+<br>若是 Root 下分給 SH ，不會顯示 Root 的交易帳號和帳號姓名
+<br><br><br><br><br><br>
+<br><a data-href="運彩API：金流：查詢金流紀錄" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：金流：查詢金流紀錄.html" class="internal-link" target="_self" rel="noopener nofollow">運彩API：金流：查詢金流紀錄</a>
+
+<br>打開「金流記錄」頁面
+<br>「金流記錄」頁面重新整理
+<br>使用條件查詢資料
+
+
+]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：金流記錄.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：金流記錄.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[欄位說明]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>
+<a data-href="運彩：後台球版功能：權限管理" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：權限管理.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：權限管理</a><br>功能說明：提供管理員修改個人密碼之功能。管理員可在此頁面變更自己的登入密碼，確保帳號安全性。修改密碼時需輸入原密碼進行驗證，新密碼需經過二次確認，以避免輸入錯誤。<br><br><br><br><br><br><br><a data-href="運彩API：代理：取代理資料" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：代理：取代理資料.html" class="internal-link" target="_self" rel="noopener nofollow">運彩API：代理：取代理資料</a><br><br><a data-href="運彩API：代理：編輯代理" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：代理：編輯代理.html" class="internal-link" target="_self" rel="noopener nofollow">運彩API：代理：編輯代理</a><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：修改密碼.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：修改密碼.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：報表管理]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>使用對象：所有層級以上使用<br>
+模組用途：提供各層代理帳號的投注數據、輸贏結果、佔成分潤、反佣回饋與返點發放等資訊之彙總報表。管理員可依時間區間、層級、帳號等條件查詢並匯出資料，以供帳務核對使用。  <br>有以下子功能<br>
+<br><a data-href="運彩：後台球版功能：注單管理" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：注單管理.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：注單管理</a>
+]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：報表管理.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：報表管理.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[登入頁面]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br><br><br>功能說明：  提供後台使用者登入與登出的基本功能。登入時需輸入帳號、密碼與隨機驗證碼（圖形驗證碼）以驗證身分。登入成功後依使用者層級導向相應後台頁面。登出則會回到登入頁面。<br><br><br><br><br>註：<br>
+<br>若重複登入（後踢前），為同一帳號於另一裝置或瀏覽器重新登入
+
+<br>系統會自動登出原先登入中的使用者，並保留最新登入者帳號，顯示「帳號已於其他裝置登入」提示
+
+
+<br><br><br><a data-tooltip-position="top" aria-label="運彩API：取得登入資訊" data-href="運彩API：取得登入資訊" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：取得登入資訊.html" class="internal-link" target="_self" rel="noopener nofollow">取得登入資訊</a><br>
+<br>進入「登入」頁面時使用
+<br><a data-tooltip-position="top" aria-label="運彩API：登入" data-href="運彩API：登入" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：登入.html" class="internal-link" target="_self" rel="noopener nofollow">登入</a><br>
+<br>StatusCode＝3，彈窗文字內容為「驗證碼已過期，請重新輸入一次」，並更新畫面中的驗證碼圖片
+<br><a data-tooltip-position="top" aria-label="運彩API：刷新驗證碼" data-href="運彩API：刷新驗證碼" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：刷新驗證碼.html" class="internal-link" target="_self" rel="noopener nofollow">刷新驗證碼</a><br><a data-tooltip-position="top" aria-label="運彩API：登出" data-href="運彩API：登出" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：登出.html" class="internal-link" target="_self" rel="noopener nofollow">登出</a><br>
+<br>StatusCode＝1，將使用者返回至「登入」頁面
+<br>說明<br>
+<br>客戶端識別碼不存在(已過期)時，跳出彈窗內容為「超過閒置逾時時間，請重新登入」，並再次「取得登入資訊」
+<br>上述各 API 未提及狀態碼，彈窗文字內容會為「狀態訊息」內容
+]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：登入功能.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：登入功能.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：開盤設定]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>
+<a data-href="運彩：後台球版功能：賽事管理" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：賽事管理.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：賽事管理</a><br><br>功能說明：設定每日開盤時間。開盤時間過後，前台才會顯示當日賽事的賠率。時間採用緬甸時區（UTC+06:30）。收盤時間則依據當日所有賽事結束時間自動決定。設定值於維護時間區間內即時生效。<br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：開盤設定.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：開盤設定.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：會員充提記錄]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>
+<a data-href="運彩：後台球版功能：金流系統" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：金流系統.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：金流系統</a><br><br>功能說明：<br>
+<br>提供會員帳戶資金的充值和提現歷史記錄查詢功能。管理員可查看特定會員或所有會員的資金變動情況，包括充值、提現交易類型，並可依據不同條件進行篩選與搜尋。
+<br><br><br><br><br><br><br>
+<br><a data-tooltip-position="top" aria-label="運彩API：金流：查詢會員充提資料" data-href="運彩API：金流：查詢會員充提資料" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：金流：查詢會員充提資料.html" class="internal-link" target="_self" rel="noopener nofollow">金流：查詢會員充提資料</a>
+
+<br>打開「會員充提記錄」頁面
+<br>「會員充提記錄」頁面重新整理
+<br>使用條件查詢資料
+
+
+<br><a data-tooltip-position="top" aria-label="運彩API：金流：會員上下分" data-href="運彩API：金流：會員上下分" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：金流：會員上下分.html" class="internal-link" target="_self" rel="noopener nofollow">金流：會員上下分</a>
+]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：會員充提記錄.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：會員充提記錄.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：會員列表]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>
+<a data-href="運彩：後台球版功能：會員系統" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：會員系統.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：會員系統</a><br><br>功能說明：<br>
+<br>顯示所有前台登入會員的帳號資料，支援條件查詢、狀態檢視與基本資訊管理。僅限 Agent 層級帳號可新增所屬會員。
+<br>SH：顯示所有會員
+<br>SSMA~MA：無法進入此頁面
+<br>Agent：只會看到自己下層的直屬會員
+<br><br><br><br><br><br>
+<br><a data-tooltip-position="top" aria-label="運彩API：會員：查詢會員資料" data-href="運彩API：會員：查詢會員資料" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：會員：查詢會員資料.html" class="internal-link" target="_self" rel="noopener nofollow">會員：查詢會員</a>
+
+<br>點擊導航區「會員列表」時
+<br>返回「會員列表」頁面時
+<br>「會員列表」頁面重新整理時
+<br>使用條件查詢
+
+
+<br><a data-tooltip-position="top" aria-label="運彩API：會員：新增會員" data-href="運彩API：會員：新增會員" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：會員：新增會員.html" class="internal-link" target="_self" rel="noopener nofollow">會員：新增會員</a>
+
+<br>點擊「新增會員」按鈕時
+
+
+<br><a data-tooltip-position="top" aria-label="運彩API：會員：取單一會員資料" data-href="運彩API：會員：取單一會員資料" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：會員：取單一會員資料.html" class="internal-link" target="_self" rel="noopener nofollow">會員：取單一會員資料</a>
+
+<br>打開「編輯會員」頁面時
+<br>「編輯會員」頁面重新整理時
+
+
+<br><a data-tooltip-position="top" aria-label="運彩API：會員：編輯會員" data-href="運彩API：會員：編輯會員" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：會員：編輯會員.html" class="internal-link" target="_self" rel="noopener nofollow">會員：編輯會員</a>
+
+<br>在「編輯會員」頁面時，點擊「確認編輯」按鈕時
+
+
+<br><a data-tooltip-position="top" aria-label="運彩API：會員：重置會員密碼" data-href="運彩API：會員：重置會員密碼" href="https://jimmy-peon.github.io/SportsBetting/運彩API：會員：重置會員密碼" class="internal-link" target="_self" rel="noopener nofollow">會員：重置會員密碼</a>
+
+<br>在「編輯會員」頁面時，點擊「重置會員」按鈕時
+
+
+<br><a data-tooltip-position="top" aria-label="運彩API：會員：變更帳號啟用狀態" data-href="運彩API：會員：變更帳號啟用狀態" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：會員：變更帳號啟用狀態.html" class="internal-link" target="_self" rel="noopener nofollow">會員：變更帳號啟用狀態</a>
+
+<br>在「會員列表」的「操作」欄位中，點擊「帳號啟用狀態」之 icon
+
+
+<br><a data-tooltip-position="top" aria-label="運彩API：金流：取單一會員帳戶餘額" data-href="運彩API：金流：取單一會員帳戶餘額" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：金流：取單一會員帳戶餘額.html" class="internal-link" target="_self" rel="noopener nofollow">金流：取單一會員帳戶餘額</a>
+
+<br>打開「會員充提」頁面時
+<br>「會員充提」頁面重新整理
+<br>在「會員充提」頁面，點擊「重置」按鈕時
+
+
+<br><a data-tooltip-position="top" aria-label="運彩API：金流：取單一當前帳戶餘額" data-href="運彩API：金流：取單一當前帳戶餘額" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：金流：取單一當前帳戶餘額.html" class="internal-link" target="_self" rel="noopener nofollow">金流：取單一當前帳戶餘額</a>
+
+<br>打開「會員充提」頁面時
+<br>「會員充提」頁面重新整理
+<br>在「會員充提」頁面，點擊「重置」按鈕時
+
+
+<br><a data-tooltip-position="top" aria-label="運彩API：金流：會員上下分" data-href="運彩API：金流：會員上下分" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：金流：會員上下分.html" class="internal-link" target="_self" rel="noopener nofollow">金流：會員上下分</a>
+
+<br>在「會員充提」頁面，點擊「確認交易」按鈕時
+
+
+]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：會員列表.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：會員列表.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：會員系統]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>使用對象：SH、Agent 層級使用（SSMA~MA：前台導航區不會顯示、進入會員管理的相關頁面）<br>
+模組用途：用於管理前台登入會員的帳號資料，提供查詢、狀態調整與基本資訊維護等<br>以下爲子功能<br>
+<br><a data-href="運彩：後台球版功能：會員列表" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：會員列表.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：會員列表</a>
+]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：會員系統.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：會員系統.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：運營帳號列表]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>
+<a data-href="運彩：後台球版功能：權限管理" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：權限管理.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：權限管理</a><br>功能說明：顯示代理帳號底下所有後台登入管理員帳號資料，支援條件查詢、狀態檢視與基本資訊管理。<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：運營帳號列表.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：運營帳號列表.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：儀表板]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br><br>功能說明：顯示當前登入帳號總覽資料。<br><br><br><br><a data-tooltip-position="top" aria-label="運彩API：登入" data-href="運彩API：登入" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：登入.html" class="internal-link" target="_self" rel="noopener nofollow">登入</a><br>
+<br>登入成功後
+]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：儀表板.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：儀表板.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：導航區]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>說明：<br>
+<br>不同層級在前端顯示的模組與功能會不相同
+<br>導航區模組和功能，請參考<a data-tooltip-position="top" aria-label="運彩：後台球版功能" data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">後台規格書</a>
+<br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：導航區.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：導航區.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：聯賽對照表]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>
+<a data-href="運彩：後台球版功能：賽事管理" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：賽事管理.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：賽事管理</a><br><br>以下為客戶主要使用的賽事，並整理出建議代表，使用在所屬聯賽、賽事編號上<br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：聯賽對照表.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：聯賽對照表.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：賽事列表]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>
+<a data-href="運彩：後台球版功能：賽事管理" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：賽事管理.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：賽事管理</a><br><br>功能說明：管理所有前台可提供投注的足球比賽資料。支援賽事的新增、編輯、查詢與狀態控制。管理員可調整賠率、設定讓球與大小球盤口，並在賽事結束後執行賽果結算與投注派彩作業。亦可控制每場賽事是否開放於前台顯示與投注。<br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：賽事列表.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：賽事列表.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：賽事管理]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>使用對象：所有層級以上使用<br>
+模組用途：負責統一管理所有遊戲項目的設定、狀態控制、賠率參數與來源同步。主要透過「爬蟲模組」提供即時賽事資訊，作為遊戲開關與投注邏輯的依據來源。預計使用多爬蟲比對。同時提供手動新增、修改賽事賠率的功能，以避免其他因素導致而爬蟲無法使用。<br>有以下子功能<br>
+<br><a data-href="運彩：後台球版功能：賽事列表" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：賽事列表.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：賽事列表</a> （還未完成實作）
+<br><a data-href="運彩：後台球版功能：開盤設定" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：開盤設定.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：開盤設定</a>
+<br><a data-href="運彩：後台球版功能：返獎設定" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：返獎設定.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：返獎設定</a>
+<br><a data-href="運彩：後台球版功能：系統維護" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：系統維護.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：系統維護</a> 
+<br>自動爬蟲設定（多個爬蟲監控，以及監控信息） 
+<br><br><br><a data-tooltip-position="top" aria-label="運彩：後台球版功能：聯賽對照表" data-href="運彩：後台球版功能：聯賽對照表" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：聯賽對照表.html" class="internal-link" target="_self" rel="noopener nofollow">聯賽對照表</a>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：賽事管理.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：賽事管理.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：權限階層規則]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>層級規則：<br>
+<br>使用者層級分為：Root、SH、SSMA、SMA、MA、Agent
+<br>各層級代理帳號僅可檢視、修改、停權其下層級的帳號，無法查看同層級或上層級帳號
+<br>各層級帳號僅可建立下一層級的帳號，不得越級建立帳號
+<br>各層級可使用的功能權限可能不同，實際功能權限配置仍在規劃中
+<br>Root 為系統最高權限帳號，專供開發／管理團隊內部使用，不對外開放
+<br>SH 層級使用者無法察覺 Root 層級帳號的存在，即無任何途徑查詢或顯示 Root 帳號相關資訊
+<br>op 為營運帳號，作為各層級代理帳號的「分身」，其建立與權限配置皆由所屬代理層級帳號控制
+<br>Member 為前台使用者帳號，屬於一般會員類型，僅由 Agent 層級帳號建立與管理
+<br>以下舉例，可參考附件：權限階層圖<br>
+<br>各層級代理僅能檢視與管理其下層級帳號，無法查看同層級或其他上層帳號
+
+<br>例：
+
+<br>SMA 1 檢視和管理 MA 1、MA 2、agent 1、 agent 2、會員1、會員2、Agent_op
+<br>SMA 2 只看得到 MA3，看不到和無法操作 SMA 1 底下階層的資料
+
+
+
+
+<br>各層級帳號僅可建立下一層級的帳號，不得越級建立帳號
+
+<br>例：
+
+<br>Admin_SH 只能建 SSMA 1 、SSMA 2，如果要建立 SMA ，則需要在後台登入 SSAM 的帳號
+<br>Admin_SH 只能建 SH_op，不能幫 SSMA 1 建立 SSMA_op
+
+
+
+
+]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：權限階層規則.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：權限階層規則.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：權限管理]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>使用對象：所有層級以上使用<br>
+模組用途：用以建立與管理其所屬之 OP 帳號（運營帳號）。OP 帳號為代理帳號的分身，用於執行日常營運操作，但其權限與功能範圍由所屬代理帳號自訂並控管。透過本模組，使用者可設定 OP 帳號的登入資訊、啟用狀態與功能權限，並可隨時進行修改或停用。<br>有以下子功能<br>
+<br><a data-href="運彩：後台球版功能：運營帳號列表" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：運營帳號列表.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：運營帳號列表</a>
+<br><a data-href="運彩：後台球版功能：修改密碼" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：修改密碼.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：修改密碼</a>
+<br><a data-href="運彩：後台球版功能：操作日誌" href="https://jimmy-peon.github.io/SportsBetting/運彩：後台球版功能：操作日誌" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：操作日誌</a>（還未實作）
+]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：權限管理.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：權限管理.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[登入與登出]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>
+<a data-tooltip-position="top" aria-label="https://docs.google.com/spreadsheets/d/1wm7f3l6Epu7GEzEGD2ES4eGL9f-GVOJi2Q38OARDhDI/edit?usp=sharing" rel="noopener nofollow" class="external-link" href="https://docs.google.com/spreadsheets/d/1wm7f3l6Epu7GEzEGD2ES4eGL9f-GVOJi2Q38OARDhDI/edit?usp=sharing" target="_blank">狀態碼</a><br><br><br><a data-tooltip-position="top" aria-label="運彩API：取得登入資訊" data-href="運彩API：取得登入資訊" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：取得登入資訊.html" class="internal-link" target="_self" rel="noopener nofollow">取得登入資訊</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：登入" data-href="運彩API：登入" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：登入.html" class="internal-link" target="_self" rel="noopener nofollow">登入</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：刷新驗證碼" data-href="運彩API：刷新驗證碼" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：刷新驗證碼.html" class="internal-link" target="_self" rel="noopener nofollow">刷新驗證碼</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：登出" data-href="運彩API：登出" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：登出.html" class="internal-link" target="_self" rel="noopener nofollow">登出</a><br><br><br><a data-tooltip-position="top" aria-label="運彩API：會員：查詢會員資料" data-href="運彩API：會員：查詢會員資料" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：會員：查詢會員資料.html" class="internal-link" target="_self" rel="noopener nofollow">會員：查詢會員資料</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：會員：取當前代理返佣" data-href="運彩API：會員：取當前代理返佣" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：會員：取當前代理返佣.html" class="internal-link" target="_self" rel="noopener nofollow">會員：取當前代理返佣</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：會員：新增會員" data-href="運彩API：會員：新增會員" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：會員：新增會員.html" class="internal-link" target="_self" rel="noopener nofollow">會員：新增會員</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：會員：取單一會員資料" data-href="運彩API：會員：取單一會員資料" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：會員：取單一會員資料.html" class="internal-link" target="_self" rel="noopener nofollow">會員：取單一會員資料</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：會員：編輯會員" data-href="運彩API：會員：編輯會員" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：會員：編輯會員.html" class="internal-link" target="_self" rel="noopener nofollow">會員：編輯會員</a> （未確定哪些權限可以用）<br>
+<a data-tooltip-position="top" aria-label="運彩API：會員：重置會員密碼" data-href="運彩API：會員：重置會員密碼" href="https://jimmy-peon.github.io/SportsBetting/運彩API：會員：重置會員密碼" class="internal-link" target="_self" rel="noopener nofollow">會員：重置會員密碼</a>（未確定哪些權限可以用）<br>
+<a data-tooltip-position="top" aria-label="運彩API：會員：變更帳號啟用狀態" data-href="運彩API：會員：變更帳號啟用狀態" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：會員：變更帳號啟用狀態.html" class="internal-link" target="_self" rel="noopener nofollow">會員：變更帳號啟用狀態</a>（未確定哪些權限可以用）<br><br><br><a data-tooltip-position="top" aria-label="運彩API：代理：查詢代理資料" data-href="運彩API：代理：查詢代理資料" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：代理：查詢代理資料.html" class="internal-link" target="_self" rel="noopener nofollow">代理：查詢代理資料</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：代理：取代理資料" data-href="運彩API：代理：取代理資料" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：代理：取代理資料.html" class="internal-link" target="_self" rel="noopener nofollow">代理：取代理資料</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：代理：新增代理" data-href="運彩API：代理：新增代理" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：代理：新增代理.html" class="internal-link" target="_self" rel="noopener nofollow">代理：新增代理</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：代理：編輯代理" data-href="運彩API：代理：編輯代理" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：代理：編輯代理.html" class="internal-link" target="_self" rel="noopener nofollow">代理：編輯代理</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：代理：更新代理返獎率" data-href="運彩API：代理：更新代理返獎率" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：代理：更新代理返獎率.html" class="internal-link" target="_self" rel="noopener nofollow">代理：更新代理返獎率</a><br>註：當代理層級為 Agent 時，只使用 <a data-tooltip-position="top" aria-label="運彩API：代理：取代理資料" data-href="運彩API：代理：取代理資料" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：代理：取代理資料.html" class="internal-link" target="_self" rel="noopener nofollow">代理：取代理資料</a> 取自己的資料做編輯<br><br><br><a data-tooltip-position="top" aria-label="運彩API：金流：查詢金流紀錄" data-href="運彩API：金流：查詢金流紀錄" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：金流：查詢金流紀錄.html" class="internal-link" target="_self" rel="noopener nofollow">金流：查詢金流紀錄</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：金流：取單一會員帳戶餘額" data-href="運彩API：金流：取單一會員帳戶餘額" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：金流：取單一會員帳戶餘額.html" class="internal-link" target="_self" rel="noopener nofollow">金流：取單一會員帳戶餘額</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：金流：取單一當前帳戶餘額" data-href="運彩API：金流：取單一當前帳戶餘額" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：金流：取單一當前帳戶餘額.html" class="internal-link" target="_self" rel="noopener nofollow">金流：取單一當前帳戶餘額</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：金流：取單一代理帳戶餘額" data-href="運彩API：金流：取單一代理帳戶餘額" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：金流：取單一代理帳戶餘額.html" class="internal-link" target="_self" rel="noopener nofollow">金流：取單一代理帳戶餘額</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：金流：會員上下分" data-href="運彩API：金流：會員上下分" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：金流：會員上下分.html" class="internal-link" target="_self" rel="noopener nofollow">金流：會員上下分</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：金流：代理上下分" data-href="運彩API：金流：代理上下分" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：金流：代理上下分.html" class="internal-link" target="_self" rel="noopener nofollow">金流：代理上下分</a><br><br><br><a data-tooltip-position="top" aria-label="運彩API：賽事：查詢賽事資料" data-href="運彩API：賽事：查詢賽事資料" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：賽事：查詢賽事資料.html" class="internal-link" target="_self" rel="noopener nofollow">賽事：查詢賽事資料</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：賽事：新增賽事" data-href="運彩API：賽事：新增賽事" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：賽事：新增賽事.html" class="internal-link" target="_self" rel="noopener nofollow">賽事：新增賽事</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：賽事：取得單一賽事" data-href="運彩API：賽事：取得單一賽事" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：賽事：取得單一賽事.html" class="internal-link" target="_self" rel="noopener nofollow">賽事：取得單一賽事</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：賽事：編輯賽事" data-href="運彩API：賽事：編輯賽事" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：賽事：編輯賽事.html" class="internal-link" target="_self" rel="noopener nofollow">賽事：編輯賽事</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：賽事：變更賽事投注狀態" data-href="運彩API：賽事：變更賽事投注狀態" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：賽事：變更賽事投注狀態.html" class="internal-link" target="_self" rel="noopener nofollow">賽事：變更賽事投注狀態</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：賽事：結算賽事" data-href="運彩API：賽事：結算賽事" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：賽事：結算賽事.html" class="internal-link" target="_self" rel="noopener nofollow">賽事：結算賽事</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：賽事：取消賽事" data-href="運彩API：賽事：取消賽事" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：賽事：取消賽事.html" class="internal-link" target="_self" rel="noopener nofollow">賽事：取消賽事</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：賽事：取得開盤時間" data-href="運彩API：賽事：取得開盤時間" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：賽事：取得開盤時間.html" class="internal-link" target="_self" rel="noopener nofollow">賽事：取得開盤時間</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：賽事：修改開盤時間" data-href="運彩API：賽事：修改開盤時間" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：賽事：修改開盤時間.html" class="internal-link" target="_self" rel="noopener nofollow">賽事：修改開盤時間</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：賽事：取得返獎設定" data-href="運彩API：賽事：取得返獎設定" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：賽事：取得返獎設定.html" class="internal-link" target="_self" rel="noopener nofollow">賽事：取得返獎設定</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：賽事：修改返獎設定" data-href="運彩API：賽事：修改返獎設定" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：賽事：修改返獎設定.html" class="internal-link" target="_self" rel="noopener nofollow">賽事：修改返獎設定</a><br><br><br><a data-tooltip-position="top" aria-label="運彩API：權限：取當前管理員資料" data-href="運彩API：權限：取當前管理員資料" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：權限：取當前管理員資料.html" class="internal-link" target="_self" rel="noopener nofollow">權限：取當前管理員資料</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：權限：修改密碼" data-href="運彩API：權限：修改密碼" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：權限：修改密碼.html" class="internal-link" target="_self" rel="noopener nofollow">權限：修改密碼</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：權限：查詢管理員資料" data-href="運彩API：權限：查詢管理員資料" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：權限：查詢管理員資料.html" class="internal-link" target="_self" rel="noopener nofollow">權限：查詢管理員資料</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：權限：變更帳號啟用狀態" data-href="運彩API：權限：變更帳號啟用狀態" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：權限：變更帳號啟用狀態.html" class="internal-link" target="_self" rel="noopener nofollow">權限：變更帳號啟用狀態</a> <br><br><br><a data-tooltip-position="top" aria-label="運彩API：報表：查詢注單資料" data-href="運彩API：報表：查詢注單資料" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：報表：查詢注單資料.html" class="internal-link" target="_self" rel="noopener nofollow">報表：查詢注單資料</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：報表：查詢詳細注單" data-href="運彩API：報表：查詢詳細注單" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：報表：查詢詳細注單.html" class="internal-link" target="_self" rel="noopener nofollow">報表：查詢詳細注單</a>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：API.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩API：代理：更新代理返獎率]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：[代理]更新代理返佣率<br>HTTP Action：/agent/update-commi-rate<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：代理：更新代理返獎率.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩API：代理：更新代理返獎率.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩API：代理：取代理資料]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：取得當前的代理所獲得之佔成、返佣比例。用來新增、編輯代理使用。<br>HTTP Action：/agent/get-data<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：代理：取代理資料.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩API：代理：取代理資料.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩API：代理：查詢代理資料]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：<br>
+<br>依創建時間排列最新的前 25 筆當前帳號底下的直屬代理資料。支援模糊篩選、多條件過濾、分頁。
+<br>當層代理無法查閱上層代理資料，以下為例
+
+<br>層級 SMA ，看不到所有 SSAM 代理資料
+
+
+<br>無法查閱不同支線下的資料，以下為例
+
+<br>SSMA 1（SMA 1, SMA 2）無法看到 SSMA 2（SMA 3, SMA 4）底下的資料
+
+
+<br>HTTP Action：/agent/query-down-agent-list<br><br><br><br><br><br><br>AgentTree (QueryAgentTree)<br><br>QueryDownAgentData (DownAgentList)<br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：代理：查詢代理資料.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩API：代理：查詢代理資料.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩API：代理：新增代理]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：<br>
+<br>建立下一層級代理帳號，綁定上層代理帳號與層級，並設定佔成與返佣比例，驗證建立者可用配額與比例範圍。
+<br>無法跨級新增代理，以下為例
+
+<br>SSMA 無法跨過 SMA 新增 MA 階層的代理
+
+
+<br>HTTP Action：/agent/create<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：代理：新增代理.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩API：代理：新增代理.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩API：代理：編輯代理]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：<br>
+<br>更新指定代理的個人資料，不可修改帳號。
+<br>無法編輯上層帳號
+<br>HTTP Action：/agent/update-account<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：代理：編輯代理.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩API：代理：編輯代理.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩API：刷新驗證碼]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：重新產生一組新的圖形驗證碼，防止自動化攻擊並提高登入安全性，建議每次點擊即時更新圖片。<br>HTTP Action：<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：刷新驗證碼.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩API：刷新驗證碼.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩API：取得登入資訊]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：進入網頁時，索取登入時所需之內容<br>HTTP Action：<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：取得登入資訊.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩API：取得登入資訊.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩API：金流：代理上下分]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：<br>
+<br>將指定金額從來源帳號轉移至目標帳號，用於代理與代理之間進行資金分配。
+<br>只能與下層進行代理充提
+<br>無法跨層進行代理充提，以下為例
+
+<br>SSMA 無法跨過 SMA 對 MA  進行充提 
+
+
+<br>無法充提不同支線下的代理，以下為例
+
+<br>SMA 1（MA 1, MA 2）無法充提 SMA 2（MA 3, MA 4）底下的代理
+
+
+<br>HTTP Action：<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：金流：代理上下分.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩API：金流：代理上下分.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩API：金流：取單一代理帳戶餘額]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：查詢指定代理帳號的餘額資訊。<br>HTTP Action：<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：金流：取單一代理帳戶餘額.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩API：金流：取單一代理帳戶餘額.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩API：金流：取單一會員帳戶餘額]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：查詢指定會員帳號的餘額資訊。<br>HTTP Action：<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：金流：取單一會員帳戶餘額.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩API：金流：取單一會員帳戶餘額.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩API：金流：取單一當前帳戶餘額]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：查詢指定當前帳號的餘額資訊。<br>HTTP Action：<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：金流：取單一當前帳戶餘額.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩API：金流：取單一當前帳戶餘額.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩API：金流：查詢代理充提資料]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：<br>
+<br>預設顯示創建時間最新的前 25 筆代理上下分資料。支援模糊篩選、多條件過濾、分頁。
+<br>只能查閱自己與下一層的交易紀錄
+
+<br>例如：SSMA 1 只能看到自己與底下 SMA 1-1~1-10 上下分紀錄，但不能看到 SMA 1 與 MA 1-1~1-10   的上下分紀錄
+
+
+<br>無法查閱不同支線下的資料，以下為例
+
+<br>SMA 1（MA 1, MA 2）無法看到 SMA 2（MA 3, MA 4）底下的資料
+
+
+<br>HTTP Action：<br><br><br><br><br><br><br><br>{
+    "status": {
+        "code": "0",
+        "message": "success"
+    },
+    "data": {
+	"": [
+            {
+                "": "會員帳號",
+                "": "會員姓名",
+                "": "管理員帳號",
+                "": "交易類型",
+                "": "交易金額",
+                "": "備註",
+                "": "創建時間"
+            },
+            ...
+        ]
+    }
+}
+]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：金流：查詢代理充提資料.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩API：金流：查詢代理充提資料.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩API：金流：查詢金流紀錄]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：<br>
+<br>預設顯示創建時間最新的前 25 筆金流資料。支援模糊篩選、多條件過濾、分頁。
+<br>SH 階層：可以查看到所有金流紀錄
+<br>SSMA～Agent 階層：只能查閱到上層對當層和當層對下層的金流紀錄
+<br>HTTP Action：<br><br><br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：金流：查詢金流紀錄.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩API：金流：查詢金流紀錄.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩API：金流：查詢會員充提資料]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：<br>
+<br>預設顯示創建時間最新的前 25 筆會員上下分資料。支援模糊篩選、多條件過濾、分頁。
+<br>只能查閱自己與底下會員交易紀錄資料，以下為例
+
+<br>例如：Agent 1 只能看到自己與底下 Member 1-1~1-10 上下分紀錄，但不能看到 Agent 2 與 Member 2-1~2-10 的上下分紀錄
+
+
+<br>HTTP Action：<br><br><br><br><br><br><br><br>{
+    "status": {
+        "code": "0",
+        "message": "success"
+    },
+    "data": {
+        "": [
+            {
+                "": "代理帳號",
+                "": "代理姓名",
+                "": "管理員帳號",
+                "": "交易類型",
+                "": "交易金額",
+                "": "備註",
+                "": "創建時間"
+            },
+            ...
+        ]
+    }
+}
+]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：金流：查詢會員充提資料.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩API：金流：查詢會員充提資料.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩API：金流：會員上下分]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：<br>
+<br>將指定金額從來源帳號轉移至目標帳號，用於代理與會員之間進行資金分配。
+<br>只有 Agent 層可以進行會員充提
+<br>無法充提不同支線下的會員，以下為例
+
+<br>Agent 1（Member 1, Member 2）無法充提 Agent 2（Member 3, Member 4）底下的會員
+
+
+<br>HTTP Action：<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：金流：會員上下分.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩API：金流：會員上下分.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩API：報表：查詢注單資料]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：<br>
+<br>依投注時間排列最新的前 25 筆注單資料。支援模糊篩選、多條件過濾、分頁。
+<br>無法查閱不同支線下的資料，以下為例
+
+<br>Agent 1（Member 1, Member 2）無法看到 Agent 2（Member 3, Member 4）底下的資料
+
+
+<br>HTTP Action：<br><br><br><br><br><br><br><br>{
+    "status": {
+        "code": "0",
+        "message": "success"
+    },
+    "data": {
+        "order_list": [
+            {
+                "": "注單單號",
+                "": "會員帳號",
+                "": "會員姓名",
+                "": "投注金額",
+                "": "派彩金額",
+                "": "輸贏",
+                "": "投注時間",
+                "": "派彩時間",
+                "": "注單狀態"
+            },
+            ...
+        ]
+    }
+}
+<br>{
+    "status": {
+        "code": "0",
+        "message": "success"
+    },
+    "會員帳號A"(使用「查詢欄位」時，才使用此欄位),
+    "data": {
+        "order_list": [
+            {
+                "": "注單單號",
+                "": "會員帳號A",
+                "": "會員姓名",
+                "": "投注金額",
+                "": "派彩金額",
+                "": "輸贏",
+                "": "投注時間",
+                "": "派彩時間",
+                "": "注單狀態"
+            },
+            ...
+        ]
+    }
+}
+]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：報表：查詢注單資料.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩API：報表：查詢注單資料.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩API：報表：查詢詳細注單]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：<br>
+<br>查詢看注單詳細資訊
+<br>HTTP Action：<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：報表：查詢詳細注單.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩API：報表：查詢詳細注單.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩API：登入]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：後台使用者輸入帳號、密碼與圖形驗證碼，通過驗證後登入後台，並依帳號層級導向對應後台首頁。<br>HTTP Action：<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：登入.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩API：登入.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩API：登出]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：登出後台系統，清除登入狀態並導回登入頁面。<br>HTTP Action：<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：登出.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩API：登出.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩API：會員：取單一會員資料]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：取得指定會員的個人資料。用來編輯會員使用。<br>HTTP Action：<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：會員：取單一會員資料.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩API：會員：取單一會員資料.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩API：會員：取當前代理返佣]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：取得當前的代理所獲得返佣比例。用來新增、編輯會員使用。<br>HTTP Action：<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：會員：取當前代理返佣.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩API：會員：取當前代理返佣.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩API：會員：查詢會員資料]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：<br>
+<br>依創建時間排列最新的前 25 筆會員資料。支援模糊篩選、多條件過濾、分頁。
+<br>無法查閱不同支線下的資料，以下為例
+
+<br>Agent 1（Member 1, Member 2）無法看到 Agent 2（Member 3, Member 4）底下的資料
+
+
+<br>HTTP Action：<br><br><br><br><br><br><br><br>{
+    "status": {
+        "code": "0",
+        "message": "success"
+    },
+    "代理帳號"(查詢欄位使用「代理帳號」時),
+    "data": {
+        "member_list": [
+            {
+                "": "會員帳號",
+                "": "會員姓名",
+                "": "上層代理帳號",
+                "": "帳號啟用狀態",
+                "": "會員賽事前返佣比例",
+                "": "會員賽事中返佣比例",
+                "": "會員帳戶餘額"
+            },
+            ...
+        ]
+    }
+}
+]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：會員：查詢會員資料.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩API：會員：查詢會員資料.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩API：會員：新增會員]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：僅限 Agent 層級帳號可新增會員。建立時自動綁定所屬代理，並檢查帳號唯一性。<br>HTTP Action：<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：會員：新增會員.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩API：會員：新增會員.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩API：會員：編輯會員]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：更新指定會員的個人資料，不可修改帳號。<br>HTTP Action：<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：會員：編輯會員.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩API：會員：編輯會員.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩API：會員：變更帳號啟用狀態]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：變更會員帳號啟用狀態，讓帳號是否可以登入前台。若從「正常」轉為「停權」，會回收該帳號之帳戶餘額。<br>HTTP Action：<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：會員：變更帳號啟用狀態.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩API：會員：變更帳號啟用狀態.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩API：賽事：取消賽事]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：將賽事狀態變更為「取消」，使前台無法投注，無法再變更成其他狀態<br>HTTP Action：<br><br><br><br><br><br><br><a data-href="運彩：後台球版功能：賽事列表" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：賽事列表.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：賽事列表</a>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：賽事：取消賽事.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩API：賽事：取消賽事.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩API：賽事：取得返獎設定]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：點擊返獎設定後，顯示當前賽事預設的返獎率。<br>HTTP Action：<br><br><br><br><br><br><br><a data-href="運彩：後台球版功能：返獎設定" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：返獎設定.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：返獎設定</a>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：賽事：取得返獎設定.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩API：賽事：取得返獎設定.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩API：賽事：取得單一賽事]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：取得賽事資料用於修改賽事賠率<br>HTTP Action：<br><br><br><br><br><br><br><a data-href="運彩：後台球版功能：賽事列表" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：賽事列表.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：賽事列表</a>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：賽事：取得單一賽事.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩API：賽事：取得單一賽事.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩API：賽事：取得開盤時間]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：點擊開盤設定後，顯示當前前台開盤時間。<br>HTTP Action：<br><br><br><br><br><br><br><a data-href="運彩：後台球版功能：開盤設定" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：開盤設定.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：開盤設定</a>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：賽事：取得開盤時間.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩API：賽事：取得開盤時間.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩API：賽事：查詢賽事資料]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：依賽事編號排列前 25 筆賽事資料。支援模糊篩選、多條件過濾、分頁。<br>HTTP Action：<br><br><br><br><br><br><br><br>{
+    "status": {
+        "code": "0",
+        "message": "success"
+    },
+    "data": {
+        "game_list": [
+            {
+                "": "賽事編號",
+                "": "所屬聯賽",
+                "": "主隊名稱",
+                "": "客隊名稱",
+                "": "賽事開始時間",
+                "": "讓球隊伍",
+                "": "讓球數",
+                "": "盤口讓球賠率",
+                "": "讓球賽事前主隊賠率",
+                "": "讓球賽事前客隊賠率",
+                "": "讓球賽事中主隊賠率",
+                "": "讓球賽事中客隊賠率",
+                "": "大小球球數（總進球數）",
+                "": "盤口大小球賠率",
+                "": "賽事前大球賠率",
+                "": "賽事前小球賠率",
+                "": "賽事中大球賠率",
+                "": "賽事中小球賠率",
+                "": "賽事狀態",
+                "": "總投注筆數",
+                "": "總投注金額",
+                "": "創建時間"
+            }
+        ]
+    }
+}
+
+<br><br><a data-href="運彩：後台球版功能：賽事列表" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：賽事列表.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：賽事列表</a>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：賽事：查詢賽事資料.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩API：賽事：查詢賽事資料.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩API：賽事：修改返獎設定]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：修改賽事預設的返獎率。<br>HTTP Action：<br><br><br><br><br><br><br><a data-href="運彩：後台球版功能：返獎設定" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：返獎設定.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：返獎設定</a>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：賽事：修改返獎設定.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩API：賽事：修改返獎設定.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩API：賽事：修改開盤時間]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：修改前台開盤時間。設定值於維護時間區間內即時生效。<br>HTTP Action：<br><br><br><br><br><br><br><a data-href="運彩：後台球版功能：開盤設定" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：開盤設定.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：開盤設定</a>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：賽事：修改開盤時間.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩API：賽事：修改開盤時間.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩API：賽事：結算賽事]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：將賽事狀態變更為「已結算」，使前台無法投注，且無法再變更成其他狀態<br>HTTP Action：<br><br><br><br><br><br><br><a data-href="運彩：後台球版功能：賽事列表" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：賽事列表.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：賽事列表</a>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：賽事：結算賽事.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩API：賽事：結算賽事.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩API：賽事：新增賽事]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：新增賽事<br>HTTP Action：<br><br><br><br><br><br><br><a data-href="運彩：後台球版功能：賽事列表" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：賽事列表.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：賽事列表</a>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：賽事：新增賽事.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩API：賽事：新增賽事.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩API：賽事：編輯賽事]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：更新賽事賠率<br>HTTP Action：<br><br><br><br><br><br><br><a data-href="運彩：後台球版功能：賽事列表" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：賽事列表.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：賽事列表</a>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：賽事：編輯賽事.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩API：賽事：編輯賽事.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩API：賽事：變更賽事投注狀態]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：讓賽事在前台是否可以被投注。<br>HTTP Action：<br><br><br><br><br><br><br><a data-href="運彩：後台球版功能：賽事列表" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：賽事列表.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：賽事列表</a>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：賽事：變更賽事投注狀態.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩API：賽事：變更賽事投注狀態.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩API：權限：取當前管理員資料]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：點擊修改密碼後，查詢當前登入管理員資料，自動帶入帳號與原管理員名稱，供後續修改密碼與名稱使用。<br>HTTP Action：<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：權限：取當前管理員資料.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩API：權限：取當前管理員資料.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩API：權限：查詢管理員資料]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：<br>
+<br>依創建時間排列最新的前 25 筆管理員資料。支援模糊篩選、多條件過濾、分頁。
+<br>只能查閱當前帳號下的管理員
+
+<br>例如：SSMA 1 只能看到自己與底下 SMA 1-1~1-10 管理員帳號，但不能看到 SMA 1 與 MA 1-1~1-10 管理員帳號
+
+
+<br>無法查閱不同支線下的資料，以下為例
+
+<br>SSMA 1（SMA 1, SMA 2）無法看到 SSMA 2（SMA 3, SMA 4）底下的資料
+
+
+<br>HTTP Action：<br><br><br><br><br><br><br><br>{
+    "status": {
+        "code": "0",
+        "message": "success"
+    },
+    "data": {
+	"": [
+            {
+                "": "管理員帳號",
+                "": "管理員姓名",
+                "": "帳號啟用狀態",
+                "": "創建時間"
+            },
+            ...
+        ]
+    }
+}
+]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：權限：查詢管理員資料.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩API：權限：查詢管理員資料.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩API：權限：修改密碼]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：進行密碼修改，需驗證原密碼是否正確，並確認新密碼與再次確認欄位一致後，完成變更<br>HTTP Action：<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：權限：修改密碼.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩API：權限：修改密碼.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩API：權限：變更帳號啟用狀態]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：變更管理員帳號啟用狀態，讓帳號是否可以登入後台<br>HTTP Action：<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩api：權限：變更帳號啟用狀態.html</link><guid isPermaLink="false">SportsBetting：運彩後台/後台規格書/運彩API：權限：變更帳號啟用狀態.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item><item><title><![CDATA[運彩API文件]]></title><description><![CDATA[ 
+ <br><br><br>建立一個 .md 檔，名稱為「運彩API文件」<br>
+將 每一 API ，文件格式以下為例<br>文件格式<br>說明：
+
+HTTP Action：
+
+# Request
+
+| 參數名稱 | 屬性  | 是否必填 | 說明  | 驗證條件／限制 |
+| ---- | --- | ---- | --- | ------- |
+|      |     |      |     |         |
+
+# Response
+
+| 參數名稱         | 屬性  | 是否必填 | 說明        | 驗證條件／限制 |
+| ------------ | --- | ---- | --------- | ------- |
+| ErrCode      |     |     |       |         |
+
+
+| 狀態碼 | 狀態名稱 | 狀態訊息          |
+| --- | ---- | ------------- |
+|     |      |             |
+
+# Data
+
+| 參數名稱 | 屬性  | 是否必填 | 說明  | 驗證條件／限制 |
+| ---- | --- | ---- | --- | ------- |
+|      |     |      |     |         |
+<br><br>說明：
+
+HTTP Action：
+
+# Request
+
+| 參數名稱 | 屬性  | 是否必填 | 說明  | 驗證條件／限制 |
+| ---- | --- | ---- | --- | ------- |
+|      |     |      |     |         |
+
+# Response
+
+| 參數名稱         | 屬性  | 是否必填 | 說明        | 驗證條件／限制 |
+| ------------ | --- | ---- | --------- | ------- |
+| ErrCode      |     |     |       |         |
+
+
+| 狀態碼 | 狀態名稱 | 狀態訊息          |
+| --- | ---- | ------------- |
+|     |      |             |
+
+# Data
+
+| 參數名稱 | 屬性  | 是否必填 | 說明  | 驗證條件／限制 |
+| ---- | --- | ---- | --- | ------- |
+|      |     |      |     |         |
+
+<br><br>
+<br>使用 @proto.go、@define.go 文件
+<br>說明：、HTTP Action：，後面的你不要自行增加內容；若欄位本身有值，你也不要自行增加內容
+<br>當Response內容中，有 Data 時，API規格中需要新增 Data 表格中的內容
+<br>「是否必填」欄位，若註解說明中未提及的話，都為「是」
+<br>「驗證條件／限制」欄位，都保持空欄位；若欄位本身有值，你不要自行增加內容
+<br>狀態碼內容請根據「define.go」檔案
+<br><br><br>說明：[驗證]前置登入<br>HTTP Action：/auth/pre-login<br><br><br><br><br><br><br>說明：[驗證]刷新驗證碼<br>HTTP Action：/auth/refresh-captcha<br><br><br><br><br><br><br>說明：[驗證]登入<br>HTTP Action：/auth/login<br><br><br><br><br><br><br>說明：[驗證]登出<br>HTTP Action：/auth/logout<br><br><br><br><br><br><br>說明：[代理]新增代理<br>HTTP Action：/agent/create<br><br><br><br><br><br><br>AgentData (CreateAgent)<br><br>AgentAccount<br><br>AgentFund<br><br>AgentTree<br><br>AgentProfitRate<br><br>AgentCommiRate<br><br><br>說明：[代理]更新代理帳戶<br>HTTP Action：/agent/update-account<br><br><br><br><br><br><br>AgentData (UpdateAgent)<br><br><br>說明：[代理]更新代理返佣率<br>HTTP Action：/agent/update-commi-rate<br><br><br><br><br><br><br>AgentData (UpdateAgent)<br><br><br>說明：[代理]取得資料<br>HTTP Action：/agent/get-data<br><br><br><br><br><br><br>AgentData (GetAgent)<br><br><br>說明：[代理]查詢下層代理列表<br>HTTP Action：<br><br><br><br><br><br><br>AgentTree (QueryAgentTree)<br><br>QueryDownAgentData (DownAgentList)<br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/提示詞規則/運彩api文件.html</link><guid isPermaLink="false">SportsBetting：運彩後台/提示詞規則/運彩API文件.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 02:46:20 GMT</pubDate></item><item><title><![CDATA[SportBetting：總覽]]></title><description><![CDATA[ 
  <br>
-<br><a data-tooltip-position="top" aria-label="緬甸球版/SportsBetting：運彩後台/後台規格書/運彩：後台球版功能" data-href="緬甸球版/SportsBetting：運彩後台/後台規格書/運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/緬甸球版/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">後台球版功能</a>
-<br><a data-tooltip-position="top" aria-label="運彩：前台球版功能" data-href="運彩：前台球版功能" href="https://jimmy-peon.github.io/SportsBetting/緬甸球版/sportsbetting：運彩前台/前台規格書/運彩：前台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">前台球版功能</a>
-]]></description><link>https://jimmy-peon.github.io/SportsBetting/緬甸球版/index.html</link><guid isPermaLink="false">緬甸球版/index.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:28:02 GMT</pubDate></item></channel></rss>
+<br><a data-tooltip-position="top" aria-label="運彩：後台球版功能" data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩後台/後台規格書/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">後台球版功能</a>
+<br><a data-tooltip-position="top" aria-label="運彩：前台球版功能" data-href="運彩：前台球版功能" href="https://jimmy-peon.github.io/SportsBetting/sportsbetting：運彩前台/前台規格書/運彩：前台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">前台球版功能</a>
+]]></description><link>https://jimmy-peon.github.io/SportsBetting/sportbetting：總覽.html</link><guid isPermaLink="false">SportBetting：總覽.md</guid><dc:creator><![CDATA[Jimmy]]></dc:creator><pubDate>Fri, 20 Jun 2025 07:42:38 GMT</pubDate></item></channel></rss>

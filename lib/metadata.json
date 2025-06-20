@@ -1,12 +1,120 @@
 {
   "vaultName": "SportsBetting",
-  "lastExport": 1750405177344,
+  "lastExport": 1750405382822,
   "pluginVersion": "1.8.01",
   "validBodyClasses": "publish css-settings-manager theme-dark show-inline-title show-ribbon",
   "useCustomHeadContent": false,
   "useCustomFavicon": false,
   "files": [
-    "緬甸球版/index.md",
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能.md",
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：代理充提記錄.md",
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：代理列表.md",
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：代理系統.md",
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：系統維護.md",
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：注單計算.md",
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：注單管理.md",
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：返獎設定.md",
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：金流系統.md",
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：金流記錄.md",
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：修改密碼.md",
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：報表管理.md",
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：登入功能.md",
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：開盤設定.md",
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：會員充提記錄.md",
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：會員列表.md",
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：會員系統.md",
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：運營帳號列表.md",
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：儀表板.md",
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：導航區.md",
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：聯賽對照表.md",
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：賽事列表.md",
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：賽事管理.md",
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：權限階層規則.md",
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：權限管理.md",
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：API.md",
+    "SportsBetting：運彩後台/後台規格書/運彩API：代理：更新代理返獎率.md",
+    "SportsBetting：運彩後台/後台規格書/運彩API：代理：取代理資料.md",
+    "SportsBetting：運彩後台/後台規格書/運彩API：代理：查詢代理資料.md",
+    "SportsBetting：運彩後台/後台規格書/運彩API：代理：新增代理.md",
+    "SportsBetting：運彩後台/後台規格書/運彩API：代理：編輯代理.md",
+    "SportsBetting：運彩後台/後台規格書/運彩API：刷新驗證碼.md",
+    "SportsBetting：運彩後台/後台規格書/運彩API：取得登入資訊.md",
+    "SportsBetting：運彩後台/後台規格書/運彩API：金流：代理上下分.md",
+    "SportsBetting：運彩後台/後台規格書/運彩API：金流：取單一代理帳戶餘額.md",
+    "SportsBetting：運彩後台/後台規格書/運彩API：金流：取單一會員帳戶餘額.md",
+    "SportsBetting：運彩後台/後台規格書/運彩API：金流：取單一當前帳戶餘額.md",
+    "SportsBetting：運彩後台/後台規格書/運彩API：金流：查詢代理充提資料.md",
+    "SportsBetting：運彩後台/後台規格書/運彩API：金流：查詢金流紀錄.md",
+    "SportsBetting：運彩後台/後台規格書/運彩API：金流：查詢會員充提資料.md",
+    "SportsBetting：運彩後台/後台規格書/運彩API：金流：會員上下分.md",
+    "SportsBetting：運彩後台/後台規格書/運彩API：報表：查詢注單資料.md",
+    "SportsBetting：運彩後台/後台規格書/運彩API：報表：查詢詳細注單.md",
+    "SportsBetting：運彩後台/後台規格書/運彩API：登入.md",
+    "SportsBetting：運彩後台/後台規格書/運彩API：登出.md",
+    "SportsBetting：運彩後台/後台規格書/運彩API：會員：取單一會員資料.md",
+    "SportsBetting：運彩後台/後台規格書/運彩API：會員：取當前代理返佣.md",
+    "SportsBetting：運彩後台/後台規格書/運彩API：會員：查詢會員資料.md",
+    "SportsBetting：運彩後台/後台規格書/運彩API：會員：新增會員.md",
+    "SportsBetting：運彩後台/後台規格書/運彩API：會員：編輯會員.md",
+    "SportsBetting：運彩後台/後台規格書/運彩API：會員：變更帳號啟用狀態.md",
+    "SportsBetting：運彩後台/後台規格書/運彩API：賽事：取消賽事.md",
+    "SportsBetting：運彩後台/後台規格書/運彩API：賽事：取得返獎設定.md",
+    "SportsBetting：運彩後台/後台規格書/運彩API：賽事：取得單一賽事.md",
+    "SportsBetting：運彩後台/後台規格書/運彩API：賽事：取得開盤時間.md",
+    "SportsBetting：運彩後台/後台規格書/運彩API：賽事：查詢賽事資料.md",
+    "SportsBetting：運彩後台/後台規格書/運彩API：賽事：修改返獎設定.md",
+    "SportsBetting：運彩後台/後台規格書/運彩API：賽事：修改開盤時間.md",
+    "SportsBetting：運彩後台/後台規格書/運彩API：賽事：結算賽事.md",
+    "SportsBetting：運彩後台/後台規格書/運彩API：賽事：新增賽事.md",
+    "SportsBetting：運彩後台/後台規格書/運彩API：賽事：編輯賽事.md",
+    "SportsBetting：運彩後台/後台規格書/運彩API：賽事：變更賽事投注狀態.md",
+    "SportsBetting：運彩後台/後台規格書/運彩API：權限：取當前管理員資料.md",
+    "SportsBetting：運彩後台/後台規格書/運彩API：權限：查詢管理員資料.md",
+    "SportsBetting：運彩後台/後台規格書/運彩API：權限：修改密碼.md",
+    "SportsBetting：運彩後台/後台規格書/運彩API：權限：變更帳號啟用狀態.md",
+    "SportsBetting：運彩後台/提示詞規則/運彩API文件.md",
+    "SportsBetting：運彩後台/agent/add.html",
+    "SportsBetting：運彩後台/agent/edit.html",
+    "SportsBetting：運彩後台/agent/list.html",
+    "SportsBetting：運彩後台/agent/transaction.html",
+    "SportsBetting：運彩後台/app/Http/Controllers/API/MemberController.php",
+    "SportsBetting：運彩後台/finance/transaction_record.html",
+    "SportsBetting：運彩後台/game/add.html",
+    "SportsBetting：運彩後台/game/cancel.html",
+    "SportsBetting：運彩後台/game/detail.html",
+    "SportsBetting：運彩後台/game/edit.html",
+    "SportsBetting：運彩後台/game/list.html",
+    "SportsBetting：運彩後台/game/maintenance.html",
+    "SportsBetting：運彩後台/game/odds.html",
+    "SportsBetting：運彩後台/game/opening-settings.html",
+    "SportsBetting：運彩後台/game/reward-settings.html",
+    "SportsBetting：運彩後台/game/settle.html",
+    "SportsBetting：運彩後台/logs/operation.html",
+    "SportsBetting：運彩後台/member/add.html",
+    "SportsBetting：運彩後台/member/edit.html",
+    "SportsBetting：運彩後台/member/list.html",
+    "SportsBetting：運彩後台/member/transaction.html",
+    "SportsBetting：運彩後台/permission/accounts.html",
+    "SportsBetting：運彩後台/permission/add.html",
+    "SportsBetting：運彩後台/permission/edit.html",
+    "SportsBetting：運彩後台/permission/roles.html",
+    "SportsBetting：運彩後台/Proto/base.proto",
+    "SportsBetting：運彩後台/Proto/define.go",
+    "SportsBetting：運彩後台/Proto/proto.go",
+    "SportsBetting：運彩後台/reports/order.html",
+    "SportsBetting：運彩後台/reports/order-detail.html",
+    "SportsBetting：運彩後台/reports/summary.html",
+    "SportsBetting：運彩後台/resources/js/api/member.js",
+    "SportsBetting：運彩後台/resources/js/components/Pagination/index.vue",
+    "SportsBetting：運彩後台/resources/js/router/index.js",
+    "SportsBetting：運彩後台/resources/js/utils/request.js",
+    "SportsBetting：運彩後台/resources/js/views/members/index.vue",
+    "SportsBetting：運彩後台/routes/api.php",
+    "SportsBetting：運彩後台/dashboard.html",
+    "SportsBetting：運彩後台/index.html",
+    "SportsBetting：運彩後台/login.html",
+    "SportsBetting：運彩後台/logo.svg",
+    "SportBetting：總覽.md",
     "lib/fonts/94f2f163d4b698242fef.otf",
     "lib/fonts/72505e6a122c6acd5471.woff2",
     "lib/fonts/2d5198822ab091ce4305.woff2",
@@ -60,97 +168,97 @@
       "dependencies": []
     },
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1750405177344,
+      "modifiedTime": 1750405382822,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1750405177344,
+      "modifiedTime": 1750405382822,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1750405177344,
+      "modifiedTime": 1750405382822,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1750405177344,
+      "modifiedTime": 1750405382822,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1750405177344,
+      "modifiedTime": 1750405382822,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1750405177344,
+      "modifiedTime": 1750405382822,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1750405177344,
+      "modifiedTime": 1750405382822,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1750405177344,
+      "modifiedTime": 1750405382822,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1750405177344,
+      "modifiedTime": 1750405382822,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1750405177344,
+      "modifiedTime": 1750405382822,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1750405177344,
+      "modifiedTime": 1750405382822,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1750405177344,
+      "modifiedTime": 1750405382822,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1750405177344,
+      "modifiedTime": 1750405382822,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
     },
     "lib/media/6155340132a851f6089e.svg": {
-      "modifiedTime": 1750405177344,
+      "modifiedTime": 1750405382822,
       "sourceSize": 315,
       "exportedPath": "lib/media/6155340132a851f6089e.svg",
       "dependencies": []
     },
     "lib/html/file-tree.html": {
-      "modifiedTime": 1750405177344,
-      "sourceSize": 1604,
+      "modifiedTime": 1750405382822,
+      "sourceSize": 55096,
       "exportedPath": "lib/html/file-tree.html",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1750405177344,
+      "modifiedTime": 1750405382822,
       "sourceSize": 47290,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
@@ -186,13 +294,13 @@
       "dependencies": []
     },
     "lib/scripts/minisearch.js": {
-      "modifiedTime": 1750405177344,
+      "modifiedTime": 1750405382822,
       "sourceSize": 29422,
       "exportedPath": "lib/scripts/minisearch.js",
       "dependencies": []
     },
     "lib/media/favicon.png": {
-      "modifiedTime": 1750405177344,
+      "modifiedTime": 1750405382822,
       "sourceSize": 1105,
       "exportedPath": "lib/media/favicon.png",
       "dependencies": []
@@ -204,27 +312,675 @@
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1750405177344,
+      "modifiedTime": 1750405382822,
       "sourceSize": 138359,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1750405177344,
+      "modifiedTime": 1750405382822,
       "sourceSize": 262,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1750405177344,
+      "modifiedTime": 1750405382822,
       "sourceSize": 23130,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
     },
-    "緬甸球版/index.md": {
-      "modifiedTime": 1750405177344,
-      "sourceSize": 164,
-      "exportedPath": "緬甸球版/index.html",
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 1654,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩：後台球版功能.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：代理充提記錄.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 2327,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：代理充提記錄.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：代理列表.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 24506,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：代理列表.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：代理系統.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 1438,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：代理系統.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：系統維護.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 3926,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：系統維護.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：注單計算.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 6529,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：注單計算.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：注單管理.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 11118,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：注單管理.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：返獎設定.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 1521,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：返獎設定.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：金流系統.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 565,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：金流系統.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：金流記錄.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 5422,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：金流記錄.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：修改密碼.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 2592,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：修改密碼.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：報表管理.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 390,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：報表管理.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：登入功能.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 2595,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：登入功能.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：開盤設定.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 1053,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：開盤設定.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：會員充提記錄.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 3937,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：會員充提記錄.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：會員列表.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 7565,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：會員列表.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：會員系統.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 335,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：會員系統.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：運營帳號列表.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 4098,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：運營帳號列表.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：儀表板.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 736,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：儀表板.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：導航區.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 587,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：導航區.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：聯賽對照表.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 1397,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：聯賽對照表.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：賽事列表.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 13007,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：賽事列表.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：賽事管理.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 819,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：賽事管理.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：權限階層規則.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 1434,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：權限階層規則.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：權限管理.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 612,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：權限管理.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩：後台球版功能：API.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 3218,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩：後台球版功能：api.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩API：代理：更新代理返獎率.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 2436,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩api：代理：更新代理返獎率.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩API：代理：取代理資料.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 1799,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩api：代理：取代理資料.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩API：代理：查詢代理資料.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 5251,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩api：代理：查詢代理資料.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩API：代理：新增代理.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 3587,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩api：代理：新增代理.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩API：代理：編輯代理.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 2877,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩api：代理：編輯代理.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩API：刷新驗證碼.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 1112,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩api：刷新驗證碼.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩API：取得登入資訊.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 1037,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩api：取得登入資訊.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩API：金流：代理上下分.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 1442,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩api：金流：代理上下分.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩API：金流：取單一代理帳戶餘額.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 716,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩api：金流：取單一代理帳戶餘額.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩API：金流：取單一會員帳戶餘額.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 728,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩api：金流：取單一會員帳戶餘額.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩API：金流：取單一當前帳戶餘額.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 720,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩api：金流：取單一當前帳戶餘額.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩API：金流：查詢代理充提資料.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 3051,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩api：金流：查詢代理充提資料.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩API：金流：查詢金流紀錄.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 3451,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩api：金流：查詢金流紀錄.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩API：金流：查詢會員充提資料.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 2991,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩api：金流：查詢會員充提資料.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩API：金流：會員上下分.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 1380,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩api：金流：會員上下分.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩API：報表：查詢注單資料.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 3655,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩api：報表：查詢注單資料.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩API：報表：查詢詳細注單.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 2494,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩api：報表：查詢詳細注單.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩API：登入.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 2100,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩api：登入.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩API：登出.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 772,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩api：登出.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩API：會員：取單一會員資料.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 1638,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩api：會員：取單一會員資料.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩API：會員：取當前代理返佣.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 971,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩api：會員：取當前代理返佣.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩API：會員：查詢會員資料.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 2957,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩api：會員：查詢會員資料.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩API：會員：新增會員.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 2561,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩api：會員：新增會員.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩API：會員：編輯會員.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 1796,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩api：會員：編輯會員.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩API：會員：變更帳號啟用狀態.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 2206,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩api：會員：變更帳號啟用狀態.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩API：賽事：取消賽事.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 885,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩api：賽事：取消賽事.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩API：賽事：取得返獎設定.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 1024,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩api：賽事：取得返獎設定.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩API：賽事：取得單一賽事.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 2601,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩api：賽事：取得單一賽事.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩API：賽事：取得開盤時間.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 786,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩api：賽事：取得開盤時間.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩API：賽事：查詢賽事資料.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 4493,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩api：賽事：查詢賽事資料.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩API：賽事：修改返獎設定.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 994,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩api：賽事：修改返獎設定.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩API：賽事：修改開盤時間.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 811,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩api：賽事：修改開盤時間.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩API：賽事：結算賽事.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 1166,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩api：賽事：結算賽事.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩API：賽事：新增賽事.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 3226,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩api：賽事：新增賽事.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩API：賽事：編輯賽事.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 2524,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩api：賽事：編輯賽事.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩API：賽事：變更賽事投注狀態.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 1189,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩api：賽事：變更賽事投注狀態.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩API：權限：取當前管理員資料.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 946,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩api：權限：取當前管理員資料.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩API：權限：查詢管理員資料.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 2354,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩api：權限：查詢管理員資料.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩API：權限：修改密碼.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 1673,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩api：權限：修改密碼.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/後台規格書/運彩API：權限：變更帳號啟用狀態.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 1112,
+      "exportedPath": "sportsbetting：運彩後台/後台規格書/運彩api：權限：變更帳號啟用狀態.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/提示詞規則/運彩API文件.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 21765,
+      "exportedPath": "sportsbetting：運彩後台/提示詞規則/運彩api文件.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/agent/add.html": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 18436,
+      "exportedPath": "sportsbetting：運彩後台/agent/add.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/agent/edit.html": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 24116,
+      "exportedPath": "sportsbetting：運彩後台/agent/edit.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/agent/list.html": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 77731,
+      "exportedPath": "sportsbetting：運彩後台/agent/list.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/agent/transaction.html": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 22677,
+      "exportedPath": "sportsbetting：運彩後台/agent/transaction.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/app/Http/Controllers/API/MemberController.php": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 2873,
+      "exportedPath": "sportsbetting：運彩後台/app/http/controllers/api/membercontroller.php",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/finance/transaction_record.html": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 29514,
+      "exportedPath": "sportsbetting：運彩後台/finance/transaction_record.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/game/add.html": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 23267,
+      "exportedPath": "sportsbetting：運彩後台/game/add.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/game/cancel.html": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 10900,
+      "exportedPath": "sportsbetting：運彩後台/game/cancel.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/game/detail.html": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 19471,
+      "exportedPath": "sportsbetting：運彩後台/game/detail.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/game/edit.html": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 24109,
+      "exportedPath": "sportsbetting：運彩後台/game/edit.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/game/list.html": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 80416,
+      "exportedPath": "sportsbetting：運彩後台/game/list.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/game/maintenance.html": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 25888,
+      "exportedPath": "sportsbetting：運彩後台/game/maintenance.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/game/odds.html": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 29366,
+      "exportedPath": "sportsbetting：運彩後台/game/odds.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/game/opening-settings.html": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 2287,
+      "exportedPath": "sportsbetting：運彩後台/game/opening-settings.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/game/reward-settings.html": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 7752,
+      "exportedPath": "sportsbetting：運彩後台/game/reward-settings.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/game/settle.html": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 11109,
+      "exportedPath": "sportsbetting：運彩後台/game/settle.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/logs/operation.html": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 28042,
+      "exportedPath": "sportsbetting：運彩後台/logs/operation.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/member/add.html": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 14516,
+      "exportedPath": "sportsbetting：運彩後台/member/add.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/member/edit.html": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 24210,
+      "exportedPath": "sportsbetting：運彩後台/member/edit.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/member/list.html": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 93948,
+      "exportedPath": "sportsbetting：運彩後台/member/list.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/member/transaction.html": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 26023,
+      "exportedPath": "sportsbetting：運彩後台/member/transaction.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/permission/accounts.html": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 32036,
+      "exportedPath": "sportsbetting：運彩後台/permission/accounts.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/permission/add.html": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 21003,
+      "exportedPath": "sportsbetting：運彩後台/permission/add.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/permission/edit.html": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 25175,
+      "exportedPath": "sportsbetting：運彩後台/permission/edit.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/permission/roles.html": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 8165,
+      "exportedPath": "sportsbetting：運彩後台/permission/roles.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/Proto/base.proto": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 4171,
+      "exportedPath": "sportsbetting：運彩後台/proto/base.proto",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/Proto/define.go": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 6307,
+      "exportedPath": "sportsbetting：運彩後台/proto/define.go",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/Proto/proto.go": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 11837,
+      "exportedPath": "sportsbetting：運彩後台/proto/proto.go",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/reports/order.html": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 22079,
+      "exportedPath": "sportsbetting：運彩後台/reports/order.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/reports/order-detail.html": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 17824,
+      "exportedPath": "sportsbetting：運彩後台/reports/order-detail.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/reports/summary.html": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 22652,
+      "exportedPath": "sportsbetting：運彩後台/reports/summary.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/resources/js/api/member.js": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 640,
+      "exportedPath": "sportsbetting：運彩後台/resources/js/api/member.js",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/resources/js/components/Pagination/index.vue": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 1713,
+      "exportedPath": "sportsbetting：運彩後台/resources/js/components/pagination/index.vue",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/resources/js/router/index.js": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 345,
+      "exportedPath": "sportsbetting：運彩後台/resources/js/router/index.js",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/resources/js/utils/request.js": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 1246,
+      "exportedPath": "sportsbetting：運彩後台/resources/js/utils/request.js",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/resources/js/views/members/index.vue": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 7154,
+      "exportedPath": "sportsbetting：運彩後台/resources/js/views/members/index.vue",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/routes/api.php": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 701,
+      "exportedPath": "sportsbetting：運彩後台/routes/api.php",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/dashboard.html": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 2907,
+      "exportedPath": "sportsbetting：運彩後台/dashboard.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/index.html": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 15174,
+      "exportedPath": "sportsbetting：運彩後台/index.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/login.html": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 10354,
+      "exportedPath": "sportsbetting：運彩後台/login.html",
+      "dependencies": []
+    },
+    "SportsBetting：運彩後台/logo.svg": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 1880,
+      "exportedPath": "sportsbetting：運彩後台/logo.svg",
+      "dependencies": []
+    },
+    "SportBetting：總覽.md": {
+      "modifiedTime": 1750405382822,
+      "sourceSize": 106,
+      "exportedPath": "sportbetting：總覽.html",
       "dependencies": []
     }
   }

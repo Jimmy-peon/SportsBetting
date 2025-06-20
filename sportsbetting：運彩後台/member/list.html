@@ -1,0 +1,1442 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員列表</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- 刪除頂部導航欄 -->
+
+    <div class="p-4">
+        <!-- 過濾器與搜尋 -->
+        <div class="bg-white rounded-lg shadow-sm mb-6 p-4">
+            <div class="flex flex-col md:flex-row justify-between items-start gap-4">
+                <div class="flex flex-col w-full md:w-auto">
+                    <!-- 條件篩選 -->
+                    <div class="flex items-center flex-wrap sm:flex-nowrap mb-3">
+                        <span class="mr-2 text-sm font-medium text-gray-700">條件</span>
+                        <select id="search-type" class="mr-2 w-32 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 py-2 px-3 text-sm">
+                            <option value="username" selected>會員帳號</option>
+                            <option value="name">會員姓名</option>
+                        </select>
+                    <div class="relative">
+                            <input id="search-keyword" type="text" placeholder="請輸入..." class="w-full sm:w-64 pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                    </div>
+                </div>
+
+                    <!-- 帳號啟用狀態篩選 -->
+                    <div class="flex items-center mb-3">
+                        <span class="mr-2 text-sm font-medium text-gray-700">帳號啟用狀態</span>
+                        <select id="status-filter" class="w-32 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 py-2 px-3 text-sm">
+                            <option value="" selected>全部</option>
+                            <option value="正常">啟用</option>
+                            <option value="停權">停權</option>
+                        </select>
+                    </div>
+
+                    <!-- 查詢與重置按鈕 -->
+                    <div class="flex gap-2">
+                        <button id="search-member-btn" class="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 focus:outline-none flex items-center">
+                            <i class="fas fa-search mr-2"></i>
+                            查詢
+                        </button>
+                        <button id="reset-btn" class="px-4 py-2 bg-white border border-gray-300 text-gray-700 rounded-md hover:bg-gray-50 focus:outline-none">
+                            重置
+                    </button>
+                </div>
+            </div>
+                <div class="flex justify-end md:self-end">
+                </div>
+            </div>
+        </div>
+        
+        <!-- 新增會員按鈕區 -->
+        <div class="flex justify-between mb-4">
+            <div class="flex space-x-4">
+                <button id="edit-selected-btn" class="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 focus:outline-none flex items-center opacity-50 cursor-not-allowed" disabled>
+                    <i class="fas fa-edit mr-2"></i>
+                    編輯會員
+                </button>
+                <button id="transaction-selected-btn" class="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 focus:outline-none flex items-center opacity-50 cursor-not-allowed" disabled>
+                    <i class="fas fa-money-bill-wave mr-2"></i>
+                    會員充提
+                </button>
+            </div>
+                    <a href="add.html" class="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 focus:outline-none flex items-center">
+                        <i class="fas fa-plus mr-2"></i>
+                        新增會員
+                    </a>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <!-- 會員層級導航 -->
+            <div id="member-hierarchy-path" class="px-6 py-3 bg-gray-100 border-b border-gray-200 flex items-center">
+                <span class="text-sm font-medium text-indigo-600">當前層級：</span>
+                <nav id="member-breadcrumb" class="flex items-center space-x-2 ml-2">
+                    <span class="text-sm text-gray-600">-</span>
+                </nav>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                會員帳號
+                            </th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                會員姓名
+                            </th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                上層代理帳號
+                            </th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                帳號啟用狀態
+                            </th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                賽前返佣比例
+                            </th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                走地返佣比例
+                            </th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                帳戶餘額
+                            </th>
+                            <th scope="col" class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                操作
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        <!-- 會員資料行 -->
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm text-gray-900">user123456</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">劉小明</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm text-gray-900">agent_zhang</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm">
+                                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                                        正常
+                                    </span>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">1.8%</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">1.2%</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">12,500</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                                <div class="relative inline-block text-left">
+                                    <button type="button" class="operation-menu-btn inline-flex justify-center items-center w-full px-2 py-1 border border-gray-300 shadow-sm text-sm font-medium rounded-md bg-white text-gray-700 hover:bg-gray-50 focus:outline-none" id="operation-menu-button-1" aria-expanded="false" aria-haspopup="true">
+                                        操作
+                                        <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
+                                    <div class="operation-menu hidden origin-top-right absolute right-0 mt-2 w-36 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none z-10" role="menu" aria-orientation="vertical" aria-labelledby="operation-menu-button-1" tabindex="-1">
+                                        <div class="py-1" role="none">
+                                            <a href="edit.html?id=1" class="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-indigo-100 hover:text-indigo-900" role="menuitem" tabindex="-1">
+                                                <i class="fas fa-edit mr-3 text-indigo-600"></i>編輯會員
+                                    </a>
+                                            <a href="transaction.html?id=1" class="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-indigo-100 hover:text-indigo-900" role="menuitem" tabindex="-1">
+                                                <i class="fas fa-money-bill-wave mr-3 text-gray-600"></i>會員充提
+                                    </a>
+                                            <button class="ban-btn group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-indigo-100 hover:text-indigo-900 w-full text-left" role="menuitem" tabindex="-1">
+                                                <i class="fas fa-ban mr-3 text-red-600"></i>停權帳號
+                                    </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                        <!-- 會員資料行 -->
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm text-gray-900">beautywang88</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">王美麗</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm text-gray-900">agent_zhang</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm">
+                                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                                        正常
+                                    </span>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">1.85%</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">1.3%</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">156,800</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                                <div class="relative inline-block text-left">
+                                    <button type="button" class="operation-menu-btn inline-flex justify-center items-center w-full px-2 py-1 border border-gray-300 shadow-sm text-sm font-medium rounded-md bg-white text-gray-700 hover:bg-gray-50 focus:outline-none" id="operation-menu-button-2" aria-expanded="false" aria-haspopup="true">
+                                        操作
+                                        <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
+                                    <div class="operation-menu hidden origin-top-right absolute right-0 mt-2 w-36 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none z-10" role="menu" aria-orientation="vertical" aria-labelledby="operation-menu-button-2" tabindex="-1">
+                                        <div class="py-1" role="none">
+                                            <a href="edit.html?id=2" class="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-indigo-100 hover:text-indigo-900" role="menuitem" tabindex="-1">
+                                                <i class="fas fa-edit mr-3 text-indigo-600"></i>編輯會員
+                                    </a>
+                                            <a href="transaction.html?id=2" class="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-indigo-100 hover:text-indigo-900" role="menuitem" tabindex="-1">
+                                                <i class="fas fa-money-bill-wave mr-3 text-gray-600"></i>會員充提
+                                    </a>
+                                            <button class="ban-btn group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-indigo-100 hover:text-indigo-900 w-full text-left" role="menuitem" tabindex="-1">
+                                                <i class="fas fa-ban mr-3 text-red-600"></i>停權帳號
+                                    </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <!-- 會員資料行 -->
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm text-gray-900">winner_zhang</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">張大勝</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm text-gray-900">agent_lin</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm">
+                                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800">
+                                        停權
+                                    </span>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">1.95%</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">1.5%</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">78,300</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                                <div class="relative inline-block text-left">
+                                    <button type="button" class="operation-menu-btn inline-flex justify-center items-center w-full px-2 py-1 border border-gray-300 shadow-sm text-sm font-medium rounded-md bg-white text-gray-700 hover:bg-gray-50 focus:outline-none" id="operation-menu-button-3" aria-expanded="false" aria-haspopup="true">
+                                        操作
+                                        <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
+                                    <div class="operation-menu hidden origin-top-right absolute right-0 mt-2 w-36 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none z-10" role="menu" aria-orientation="vertical" aria-labelledby="operation-menu-button-3" tabindex="-1">
+                                        <div class="py-1" role="none">
+                                            <a href="edit.html?id=3" class="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-indigo-100 hover:text-indigo-900" role="menuitem" tabindex="-1">
+                                                <i class="fas fa-edit mr-3 text-indigo-600"></i>編輯會員
+                                    </a>
+                                            <a href="transaction.html?id=3" class="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-indigo-100 hover:text-indigo-900" role="menuitem" tabindex="-1">
+                                                <i class="fas fa-money-bill-wave mr-3 text-gray-600"></i>會員充提
+                                    </a>
+                                            <button class="activate-btn group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-indigo-100 hover:text-indigo-900 w-full text-left" role="menuitem" tabindex="-1">
+                                                <i class="fas fa-check-circle mr-3 text-green-600"></i>啟用帳號
+                                    </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <!-- 會員資料行 -->
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm text-gray-900">icelee999</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">李小冰</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm text-gray-900">-</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm">
+                                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                                        正常
+                                    </span>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">1.9%</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">1.4%</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">3,200</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                                <div class="relative inline-block text-left">
+                                    <button type="button" class="operation-menu-btn inline-flex justify-center items-center w-full px-2 py-1 border border-gray-300 shadow-sm text-sm font-medium rounded-md bg-white text-gray-700 hover:bg-gray-50 focus:outline-none" id="operation-menu-button-4" aria-expanded="false" aria-haspopup="true">
+                                        操作
+                                        <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
+                                    <div class="operation-menu hidden origin-top-right absolute right-0 mt-2 w-36 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none z-10" role="menu" aria-orientation="vertical" aria-labelledby="operation-menu-button-4" tabindex="-1">
+                                        <div class="py-1" role="none">
+                                            <a href="edit.html?id=4" class="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-indigo-100 hover:text-indigo-900" role="menuitem" tabindex="-1">
+                                                <i class="fas fa-edit mr-3 text-indigo-600"></i>編輯會員
+                                    </a>
+                                            <a href="transaction.html?id=4" class="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-indigo-100 hover:text-indigo-900" role="menuitem" tabindex="-1">
+                                                <i class="fas fa-money-bill-wave mr-3 text-gray-600"></i>會員充提
+                                    </a>
+                                            <button class="ban-btn group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-indigo-100 hover:text-indigo-900 w-full text-left" role="menuitem" tabindex="-1">
+                                                <i class="fas fa-ban mr-3 text-red-600"></i>停權帳號
+                                    </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <!-- 會員資料行 -->
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm text-gray-900">mountain888</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">林大山</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm text-gray-900">agent_wang</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm">
+                                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                                        正常
+                                    </span>
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">1.75%</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">1.25%</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm font-medium text-gray-900">0</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                                <div class="relative inline-block text-left">
+                                    <button type="button" class="operation-menu-btn inline-flex justify-center items-center w-full px-2 py-1 border border-gray-300 shadow-sm text-sm font-medium rounded-md bg-white text-gray-700 hover:bg-gray-50 focus:outline-none" id="operation-menu-button-5" aria-expanded="false" aria-haspopup="true">
+                                        操作
+                                        <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
+                                    <div class="operation-menu hidden origin-top-right absolute right-0 mt-2 w-36 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none z-10" role="menu" aria-orientation="vertical" aria-labelledby="operation-menu-button-5" tabindex="-1">
+                                        <div class="py-1" role="none">
+                                            <a href="edit.html?id=5" class="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-indigo-100 hover:text-indigo-900" role="menuitem" tabindex="-1">
+                                                <i class="fas fa-edit mr-3 text-indigo-600"></i>編輯會員
+                                    </a>
+                                            <a href="transaction.html?id=5" class="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-indigo-100 hover:text-indigo-900" role="menuitem" tabindex="-1">
+                                                <i class="fas fa-money-bill-wave mr-3 text-gray-600"></i>會員充提
+                                    </a>
+                                            <button class="ban-btn group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-indigo-100 hover:text-indigo-900 w-full text-left" role="menuitem" tabindex="-1">
+                                                <i class="fas fa-ban mr-3 text-red-600"></i>停權帳號
+                                    </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- 分頁控制 -->
+            <div class="bg-white px-6 py-4 border-t border-gray-200 flex items-center justify-between">
+                <div class="flex-1 flex justify-between sm:hidden">
+                    <a href="#" class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                        上一頁
+                    </a>
+                    <a href="#" class="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                        下一頁
+                    </a>
+                </div>
+                <div class="hidden sm:flex-1 sm:flex sm:items-center sm:justify-between">
+                    <div>
+                        <p class="text-sm text-gray-700">
+                            顯示第 <span class="font-medium">1</span> 到 <span class="font-medium">5</span> 筆，共 <span class="font-medium">125</span> 筆結果
+                        </p>
+                    </div>
+                    <div>
+                        <nav class="relative z-0 inline-flex rounded-md shadow-sm -space-x-px" aria-label="Pagination">
+                            <a href="#" class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                                <span class="sr-only">上一頁</span>
+                                <i class="fas fa-chevron-left text-xs"></i>
+                            </a>
+                            <a href="#" aria-current="page" class="z-10 bg-indigo-50 border-indigo-500 text-indigo-600 relative inline-flex items-center px-4 py-2 border text-sm font-medium">
+                                1
+                            </a>
+                            <a href="#" class="bg-white border-gray-300 text-gray-500 hover:bg-gray-50 relative inline-flex items-center px-4 py-2 border text-sm font-medium">
+                                2
+                            </a>
+                            <a href="#" class="bg-white border-gray-300 text-gray-500 hover:bg-gray-50 hidden md:inline-flex relative items-center px-4 py-2 border text-sm font-medium">
+                                3
+                            </a>
+                            <span class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700">
+                                ...
+                            </span>
+                            <a href="#" class="bg-white border-gray-300 text-gray-500 hover:bg-gray-50 hidden md:inline-flex relative items-center px-4 py-2 border text-sm font-medium">
+                                25
+                            </a>
+                            <a href="#" class="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                                <span class="sr-only">下一頁</span>
+                                <i class="fas fa-chevron-right text-xs"></i>
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 停權確認視窗 -->
+    <div id="ban-confirm-modal" class="fixed inset-0 z-50 overflow-y-auto hidden">
+        <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+            <div class="fixed inset-0 transition-opacity" aria-hidden="true">
+                <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
+            </div>
+            
+            <!-- 模態視窗內容 -->
+            <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+                <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                    <div class="sm:flex sm:items-start">
+                        <div class="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-yellow-100 sm:mx-0 sm:h-10 sm:w-10">
+                            <i class="fas fa-exclamation-triangle text-yellow-600"></i>
+                        </div>
+                        <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900" id="ban-modal-title">
+                                停權確認
+                            </h3>
+                            <div class="mt-2">
+                                <p class="text-sm text-gray-500" id="ban-modal-message">
+                                    您將停權帳號: <span id="ban-account-name" class="font-medium"></span>
+                                    <br>會將此帳號剩餘帳戶餘額(<span id="ban-account-balance" class="font-medium"></span>)進行下分
+                                    <br>確定將此帳號進行「停權」?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                    <button type="button" id="confirm-ban-btn" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-red-600 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm">
+                        確定停權
+                    </button>
+                    <button type="button" id="cancel-ban-btn" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
+                        取消
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 啟用確認視窗 -->
+    <div id="activate-confirm-modal" class="fixed inset-0 z-50 overflow-y-auto hidden">
+        <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+            <div class="fixed inset-0 transition-opacity" aria-hidden="true">
+                <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
+            </div>
+            
+            <!-- 模態視窗內容 -->
+            <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+                <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                    <div class="sm:flex sm:items-start">
+                        <div class="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-green-100 sm:mx-0 sm:h-10 sm:w-10">
+                            <i class="fas fa-check-circle text-green-600"></i>
+                        </div>
+                        <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">
+                                啟用確認
+                            </h3>
+                            <div class="mt-2">
+                                <p class="text-sm text-gray-500">
+                                    確定要啟用帳號: <span id="activate-account-name" class="font-medium"></span>?
+                                </p>
+                                <!-- 新增代理帳號餘額顯示 -->
+                                <div class="mt-4">
+                                    <p class="text-sm text-gray-500">
+                                        當前代理帳號餘額: <span id="activate-agent-balance" class="font-medium"></span>
+                                    </p>
+                                </div>
+                                <!-- 新增充值金額輸入欄位 -->
+                                <div class="mt-4">
+                                    <label for="activate-recharge-amount" class="block text-sm font-medium text-gray-700">充值金額</label>
+                                    <div class="mt-1">
+                                        <input type="number" name="activate-recharge-amount" id="activate-recharge-amount" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="請輸入充值金額">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                    <button type="button" id="confirm-activate-btn" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-green-600 text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 sm:ml-3 sm:w-auto sm:text-sm">
+                        確定啟用
+                    </button>
+                    <button type="button" id="cancel-activate-btn" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
+                        取消
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 餘額不足提示視窗 -->
+    <div id="insufficient-balance-modal" class="fixed inset-0 z-50 overflow-y-auto hidden">
+        <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+            <div class="fixed inset-0 transition-opacity" aria-hidden="true">
+                <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
+            </div>
+            
+            <!-- 模態視窗內容 -->
+            <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+                <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                    <div class="sm:flex sm:items-start">
+                        <div class="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-yellow-100 sm:mx-0 sm:h-10 sm:w-10">
+                            <i class="fas fa-exclamation-triangle text-yellow-600"></i>
+                        </div>
+                        <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">
+                                餘額不足提示
+                            </h3>
+                            <div class="mt-2">
+                                <p class="text-sm text-gray-500">
+                                    當前代理帳號餘額不足
+                                    <br>確定要繼續充值嗎？
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                    <button type="button" id="confirm-insufficient-btn" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-yellow-600 text-base font-medium text-white hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 sm:ml-3 sm:w-auto sm:text-sm">
+                        確定充值
+                    </button>
+                    <button type="button" id="cancel-insufficient-btn" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
+                        取消
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 會員修改/金額管理模態視窗 -->
+    <div id="member-modal" class="fixed inset-0 z-50 overflow-y-auto hidden">
+        <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+            <div class="fixed inset-0 transition-opacity" aria-hidden="true">
+                <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
+            </div>
+            
+            <!-- 模態視窗內容 -->
+            <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-2xl sm:w-full">
+                <div class="bg-white">
+                    <!-- 頁籤導航 -->
+                    <div class="border-b border-gray-200">
+                        <nav class="flex space-x-8 px-4">
+                            <a href="#" id="info-tab" class="text-indigo-600 py-4 px-3 text-sm font-medium border-b-2 border-indigo-600" aria-current="page">
+                                會員信息
+                            </a>
+                            <a href="#" id="transfer-tab" class="text-gray-500 hover:text-gray-700 hover:border-gray-300 py-4 px-3 text-sm font-medium border-b-2 border-transparent">
+                                轉讓分
+                            </a>
+                        </nav>
+                    </div>
+                    
+                    <div class="px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                        <div class="sm:flex sm:items-start">
+                            <div class="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-indigo-100 sm:mx-0 sm:h-10 sm:w-10">
+                                <i id="modal-icon" class="fas fa-user-edit text-indigo-600"></i>
+                            </div>
+                            <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left w-full">
+                                <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">
+                                    會員信息
+                                </h3>
+                                
+                                <!-- 會員基本信息 (兩個頁籤都顯示) -->
+                                <div class="mt-2">
+                                    <p class="text-sm text-gray-500">
+                                        <span id="member-username" class="font-medium"></span>
+                                        目前餘額：<span id="member-balance" class="font-medium"></span>
+                                    </p>
+                                </div>
+                                
+                                <!-- 會員信息內容 -->
+                                <div id="info-content" class="mt-4">
+                                    <form id="member-info-form">
+                                        <input type="hidden" id="edit-member-id" name="member_id" value="">
+                                        <div class="grid grid-cols-1 gap-y-4">
+                                            <!-- 代理帳號 -->
+                                            <div>
+                                                <label class="block text-sm font-medium text-gray-700">上層代理帳號</label>
+                                                <div id="agent-account" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-gray-100 rounded-md shadow-sm text-sm"></div>
+                                            </div>
+                                            
+                                            <!-- 會員帳號 -->
+                                            <div>
+                                                <label class="block text-sm font-medium text-gray-700">會員帳號</label>
+                                                <div id="user-account" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-gray-100 rounded-md shadow-sm text-sm"></div>
+                                            </div>
+                                            
+                                            <!-- 會員名稱 -->
+                                            <div>
+                                                <label for="user-name" class="block text-sm font-medium text-gray-700">會員名稱</label>
+                                                <div class="mt-1 flex rounded-md shadow-sm">
+                                                    <input type="text" name="user-name" id="user-name" class="focus:ring-indigo-500 focus:border-indigo-500 flex-grow block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                                    <button type="button" class="ml-2 bg-white inline-flex items-center p-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                                        <i class="fas fa-edit"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- 電子郵件 -->
+                                            <div>
+                                                <label for="user-email" class="block text-sm font-medium text-gray-700">電子郵件</label>
+                                                <div class="mt-1 flex rounded-md shadow-sm">
+                                                    <input type="email" name="user-email" id="user-email" class="focus:ring-indigo-500 focus:border-indigo-500 flex-grow block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                                    <button type="button" class="ml-2 bg-white inline-flex items-center p-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                                        <i class="fas fa-edit"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- 手機號碼 -->
+                                            <div>
+                                                <label for="user-phone" class="block text-sm font-medium text-gray-700">手機號碼</label>
+                                                <div class="mt-1 flex rounded-md shadow-sm">
+                                                    <input type="tel" name="user-phone" id="user-phone" class="focus:ring-indigo-500 focus:border-indigo-500 flex-grow block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                                    <button type="button" class="ml-2 bg-white inline-flex items-center p-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                                        <i class="fas fa-edit"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- 返佣比例 -->
+                                            <div>
+                                                <label for="user-commission" class="block text-sm font-medium text-gray-700">賽前返佣比例</label>
+                                                <div class="mt-1 flex rounded-md shadow-sm">
+                                                    <div class="relative flex-grow focus-within:z-10">
+                                                        <input type="number" name="user-commission" id="user-commission" class="focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-3 pr-8 sm:text-sm border-gray-300 rounded-md" placeholder="0" min="0" max="2" step="0.05">
+                                                        <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                                                            <span class="text-gray-500 sm:text-sm">%</span>
+                                                        </div>
+                                                    </div>
+                                                    <button type="button" class="ml-2 bg-white inline-flex items-center p-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                                        <i class="fas fa-edit"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- 走地返佣比例 -->
+                                            <div>
+                                                <label for="user-live-commission" class="block text-sm font-medium text-gray-700">走地返佣比例</label>
+                                                <div class="mt-1 flex rounded-md shadow-sm">
+                                                    <div class="relative flex-grow focus-within:z-10">
+                                                        <input type="number" name="user-live-commission" id="user-live-commission" class="focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-3 pr-8 sm:text-sm border-gray-300 rounded-md" placeholder="0" min="0" max="2" step="0.05">
+                                                        <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                                                            <span class="text-gray-500 sm:text-sm">%</span>
+                                                        </div>
+                                                    </div>
+                                                    <button type="button" class="ml-2 bg-white inline-flex items-center p-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                                        <i class="fas fa-edit"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- 重置密碼按鈕 -->
+                                            <div class="mt-2">
+                                                <button type="button" id="reset-member-password-btn" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-yellow-600 text-base font-medium text-white hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 sm:w-auto sm:text-sm">
+                                                    重置會員密碼
+                                                </button>
+                                                <p class="mt-1 text-xs text-gray-500">點擊後會員密碼會變為預設密碼（預設密碼為0000）</p>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                
+                                <!-- 轉讓分內容 -->
+                                <div id="transfer-content" class="mt-4 hidden">
+                                    <form id="transfer-form">
+                                        <input type="hidden" id="transfer-member-id" name="member_id" value="">
+                                        <div class="grid grid-cols-1 gap-y-4">
+                                            <!-- 轉讓類型 -->
+                                            <div class="mb-3">
+                                                <label class="block text-sm font-medium text-gray-700 mb-2">轉讓類型</label>
+                                                <div class="flex space-x-4">
+                                                    <label class="inline-flex items-center">
+                                                        <input type="radio" name="transfer-type" value="add" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" checked>
+                                                        <span class="ml-2 text-sm text-gray-700">充值</span>
+                                                    </label>
+                                                    <label class="inline-flex items-center">
+                                                        <input type="radio" name="transfer-type" value="subtract" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                                                        <span class="ml-2 text-sm text-gray-700">提現</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- 轉讓金額 -->
+                                            <div class="mb-3">
+                                                <label for="transfer-amount" class="block text-sm font-medium text-gray-700">轉讓金額</label>
+                                                <div class="mt-1 relative rounded-md shadow-sm">
+                                                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                                        <span class="text-gray-500 sm:text-sm"></span>
+                                                    </div>
+                                                    <input type="number" name="transfer-amount" id="transfer-amount" class="focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-7 pr-12 sm:text-sm border-gray-300 rounded-md" placeholder="0.00" min="0" step="0.01" required>
+                                                </div>
+                                            </div>
+                                            
+                                            <div>
+                                                <button type="button" id="confirm-transfer-btn" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                                    確認轉讓
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                    <button type="button" id="save-member-btn" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-600 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:ml-3 sm:w-auto sm:text-sm">
+                        儲存變更
+                    </button>
+                    <button type="button" id="close-member-modal" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
+                        關閉
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 模態視窗控制
+        const memberModal = document.getElementById('member-modal');
+        const infoTab = document.getElementById('info-tab');
+        const transferTab = document.getElementById('transfer-tab');
+        const infoContent = document.getElementById('info-content');
+        const transferContent = document.getElementById('transfer-content');
+        const modalTitle = document.getElementById('modal-title');
+        const modalIcon = document.getElementById('modal-icon');
+        const closeMemberModalBtn = document.getElementById('close-member-modal');
+        const saveMemberBtn = document.getElementById('save-member-btn');
+        const resetMemberPasswordBtn = document.getElementById('reset-member-password-btn');
+        const confirmTransferBtn = document.getElementById('confirm-transfer-btn');
+        
+        // 頁籤切換
+        infoTab.addEventListener('click', function(e) {
+            e.preventDefault();
+            infoTab.classList.add('text-indigo-600', 'border-indigo-600');
+            infoTab.classList.remove('text-gray-500', 'border-transparent');
+            transferTab.classList.add('text-gray-500', 'border-transparent');
+            transferTab.classList.remove('text-indigo-600', 'border-indigo-600');
+            
+            infoContent.classList.remove('hidden');
+            transferContent.classList.add('hidden');
+            
+            modalTitle.textContent = '會員信息';
+            modalIcon.className = 'fas fa-user-edit text-indigo-600';
+            saveMemberBtn.textContent = '儲存變更';
+        });
+        
+        transferTab.addEventListener('click', function(e) {
+            e.preventDefault();
+            transferTab.classList.add('text-indigo-600', 'border-indigo-600');
+            transferTab.classList.remove('text-gray-500', 'border-transparent');
+            infoTab.classList.add('text-gray-500', 'border-transparent');
+            infoTab.classList.remove('text-indigo-600', 'border-indigo-600');
+            
+            transferContent.classList.remove('hidden');
+            infoContent.classList.add('hidden');
+            
+            modalTitle.textContent = '轉讓分';
+            modalIcon.className = 'fas fa-money-bill-wave text-indigo-600';
+            saveMemberBtn.textContent = '關閉';
+        });
+        
+        // 關閉會員模態視窗
+        function closeMemberModal() {
+            memberModal.classList.add('hidden');
+            document.body.classList.remove('overflow-hidden');
+        }
+        
+        closeMemberModalBtn.addEventListener('click', closeMemberModal);
+        
+        // 點擊模態視窗外部也可以關閉
+        memberModal.addEventListener('click', function(event) {
+            if (event.target === memberModal) {
+                closeMemberModal();
+            }
+        });
+        
+        // 儲存會員信息變更
+        saveMemberBtn.addEventListener('click', function() {
+            // 如果是在轉讓分頁籤，直接關閉窗口
+            if (!transferContent.classList.contains('hidden')) {
+                closeMemberModal();
+                return;
+            }
+            
+            // 獲取表單數據
+            const userName = document.getElementById('user-name').value;
+            const userEmail = document.getElementById('user-email').value;
+            const userPhone = document.getElementById('user-phone').value;
+            const userCommission = document.getElementById('user-commission').value;
+            const userLiveCommission = document.getElementById('user-live-commission').value;
+            
+            // 簡單驗證賽前返佣比例
+            if (userCommission === '' || isNaN(parseFloat(userCommission)) || parseFloat(userCommission) < 0 || parseFloat(userCommission) > 2) {
+                alert('請輸入有效的賽前返佣比例（0-2之間的數字）');
+                return;
+            }
+            
+            // 簡單驗證走地返佣比例
+            if (userLiveCommission === '' || isNaN(parseFloat(userLiveCommission)) || parseFloat(userLiveCommission) < 0 || parseFloat(userLiveCommission) > 2) {
+                alert('請輸入有效的走地返佣比例（0-2之間的數字）');
+                return;
+            }
+            
+            // 模擬API調用，儲存會員信息
+            setTimeout(() => {
+                // 更新表格中的返佣比例
+                const username = document.getElementById('user-account').textContent.trim();
+                const rows = document.querySelectorAll('tbody tr');
+                
+                rows.forEach(row => {
+                    const rowUsername = row.querySelector('td:first-child .text-sm').textContent.trim();
+                    if (rowUsername === username) {
+                        const preLiveCommissionCell = row.querySelector('td:nth-child(5) .text-sm');
+                        const liveCommissionCell = row.querySelector('td:nth-child(6) .text-sm');
+                        preLiveCommissionCell.textContent = userCommission + '%';
+                        liveCommissionCell.textContent = userLiveCommission + '%';
+                    }
+                });
+                
+                alert('會員資料已更新');
+                closeMemberModal();
+            }, 500);
+        });
+        
+        // 重置會員密碼
+        resetMemberPasswordBtn.addEventListener('click', function() {
+            if (confirm('確定重置該會員密碼?')) {
+                // 模擬API調用，重置密碼
+                setTimeout(() => {
+                    alert('會員密碼已重置為預設密碼');
+                }, 500);
+            }
+        });
+        
+        // 處理轉讓分按鈕
+        confirmTransferBtn.addEventListener('click', function() {
+            const amount = document.getElementById('transfer-amount').value;
+            const transferType = document.querySelector('input[name="transfer-type"]:checked').value;
+            
+            if (!amount || parseFloat(amount) <= 0) {
+                alert('請輸入有效的轉讓金額');
+                return;
+            }
+            
+            // 模擬API調用
+            setTimeout(() => {
+                const userName = document.getElementById('member-username').textContent;
+                const currentBalance = document.getElementById('member-balance').textContent;
+                
+                // 計算新餘額
+                let newBalance = parseFloat(currentBalance.replace(/[^\d.-]/g, ''));
+                if (transferType === 'add') {
+                    newBalance += parseFloat(amount);
+                } else {
+                    newBalance -= parseFloat(amount);
+                }
+                
+                // 更新餘額顯示
+                document.getElementById('member-balance').textContent = newBalance.toLocaleString();
+                
+                alert('轉讓成功');
+                
+                // 更新表格中的餘額顯示
+                const username = userName.match(/\(([^)]+)\)/)?.[1];
+                if (username) {
+                    const userRow = document.querySelector(`tr:has(td:first-child .text-sm:contains("${username}"))`);
+                    if (userRow) {
+                        const balanceCell = userRow.querySelector('td:nth-child(4) .text-sm');
+                        if (balanceCell) {
+                            balanceCell.textContent = newBalance.toLocaleString();
+                        }
+                    }
+                }
+                
+                // 重置表單
+                document.getElementById('transfer-form').reset();
+            }, 500);
+        });
+        
+        // 篩選功能
+        const searchMemberBtn = document.getElementById('search-member-btn');
+        const resetBtn = document.getElementById('reset-btn');
+        const searchType = document.getElementById('search-type');
+        const searchKeyword = document.getElementById('search-keyword');
+        const statusFilter = document.getElementById('status-filter');
+        
+        // 選中會員相關功能
+        const editSelectedBtn = document.getElementById('edit-selected-btn');
+        const transactionSelectedBtn = document.getElementById('transaction-selected-btn');
+        let selectedRow = null;
+        let selectedMemberId = null;
+        
+        // 為表格行添加點擊事件
+        document.querySelectorAll('tbody tr').forEach((row, index) => {
+            row.addEventListener('click', function() {
+                // 移除之前選中行的高亮樣式
+                if (selectedRow) {
+                    selectedRow.classList.remove('bg-indigo-50');
+                }
+                
+                // 設置當前行為選中狀態
+                selectedRow = this;
+                selectedRow.classList.add('bg-indigo-50');
+                
+                // 啟用操作按鈕
+                editSelectedBtn.disabled = false;
+                editSelectedBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+                transactionSelectedBtn.disabled = false;
+                transactionSelectedBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+                
+                // 獲取選中會員的ID (使用行索引+1作為示例ID)
+                selectedMemberId = index + 1;
+            });
+        });
+        
+        // 編輯選中會員按鈕點擊事件
+        editSelectedBtn.addEventListener('click', function() {
+            if (selectedMemberId) {
+                window.location.href = `edit.html?id=${selectedMemberId}`;
+            }
+        });
+        
+        // 會員充提按鈕點擊事件
+        transactionSelectedBtn.addEventListener('click', function() {
+            if (selectedMemberId) {
+                window.location.href = `transaction.html?id=${selectedMemberId}`;
+            }
+        });
+        
+        // 搜尋按鈕點擊事件
+        searchMemberBtn.addEventListener('click', function() {
+            filterMembers();
+                        
+            // 重置選中狀態
+            resetSelection();
+        });
+        
+        // 重置按鈕點擊事件
+        resetBtn.addEventListener('click', function() {
+            searchType.value = 'username';
+            searchKeyword.value = '';
+            statusFilter.value = '';
+            filterMembers();
+            
+            // 重置選中狀態
+            resetSelection();
+        });
+        
+        // 重置選中狀態
+        function resetSelection() {
+            if (selectedRow) {
+                selectedRow.classList.remove('bg-indigo-50');
+                selectedRow = null;
+                selectedMemberId = null;
+                
+                // 禁用操作按鈕
+                editSelectedBtn.disabled = true;
+                editSelectedBtn.classList.add('opacity-50', 'cursor-not-allowed');
+                transactionSelectedBtn.disabled = true;
+                transactionSelectedBtn.classList.add('opacity-50', 'cursor-not-allowed');
+            }
+        }
+        
+        // 過濾會員列表
+        function filterMembers() {
+            const keyword = searchKeyword.value.toLowerCase();
+            const type = searchType.value;
+            const status = statusFilter.value;
+            
+            const rows = document.querySelectorAll('tbody tr');
+            
+            rows.forEach(row => {
+                let showRow = true;
+            
+                // 依據搜尋類型和關鍵字過濾
+                if (keyword) {
+                    let cellValue = '';
+                    if (type === 'username') {
+                        // 會員帳號，在第一欄
+                        cellValue = row.querySelector('td:nth-child(1) .text-sm').textContent.toLowerCase();
+                    } else if (type === 'name') {
+                        // 會員姓名，在第二欄
+                        cellValue = row.querySelector('td:nth-child(2) .text-sm').textContent.toLowerCase();
+                    }
+                    
+                    if (!cellValue.includes(keyword)) {
+                        showRow = false;
+                    }
+                }
+                
+                // 依據狀態過濾
+                if (status && showRow) {
+                    const statusCell = row.querySelector('td:nth-child(4) .text-sm span').textContent.trim();
+                    if (statusCell !== status) {
+                        showRow = false;
+                    }
+                }
+                
+                // 設置行顯示或隱藏
+                row.style.display = showRow ? '' : 'none';
+            });
+            
+            // 更新顯示結果數量（如果有分頁信息的話）
+            updateResultCount();
+        }
+        
+        // 更新結果數量顯示
+        function updateResultCount() {
+            const visibleRows = document.querySelectorAll('tbody tr:not([style*="display: none"])').length;
+            const totalRows = document.querySelectorAll('tbody tr').length;
+            
+            console.log(`顯示 ${visibleRows} 筆結果，共 ${totalRows} 筆`);
+            
+            // 如果有分頁元素，更新分頁的顯示數字
+            const paginationInfo = document.querySelector('.pagination-info');
+            if (paginationInfo) {
+                paginationInfo.textContent = `顯示 ${visibleRows} 筆結果，共 ${totalRows} 筆`;
+            }
+        }
+
+        // 找到所有停權/啟用按鈕並添加點擊事件
+        const banBtns = document.querySelectorAll('.ban-btn');
+        const activateBtns = document.querySelectorAll('.activate-btn');
+
+        banBtns.forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.stopPropagation(); // 阻止事件冒泡，避免觸發行選中事件
+                const memberRow = this.closest('tr');
+                const statusCell = memberRow.querySelector('td:nth-child(4) .text-sm span');
+                const memberAccount = memberRow.querySelector('td:first-child .text-sm').textContent;
+                const memberBalance = memberRow.querySelector('td:nth-child(7) .text-sm').textContent;
+            
+                    // 填充彈窗內容
+                    document.getElementById('ban-account-name').textContent = memberAccount;
+                document.getElementById('ban-account-balance').textContent = memberBalance;
+                    // 顯示停權確認視窗
+                    document.getElementById('ban-confirm-modal').classList.remove('hidden');
+                    
+                    // 設置當前操作的按鈕
+                    document.getElementById('confirm-ban-btn').setAttribute('data-row', memberRow.rowIndex);
+                
+                // 關閉操作選單
+                closeAllOperationMenus();
+            });
+        });
+
+        activateBtns.forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.stopPropagation(); // 阻止事件冒泡，避免觸發行選中事件
+                const memberRow = this.closest('tr');
+                const statusCell = memberRow.querySelector('td:nth-child(4) .text-sm span');
+                const memberAccount = memberRow.querySelector('td:first-child .text-sm').textContent;
+            
+                    // 填充彈窗內容
+                    document.getElementById('activate-account-name').textContent = memberAccount;
+                    // 顯示啟用確認視窗
+                    document.getElementById('activate-confirm-modal').classList.remove('hidden');
+                    
+                    // 設置當前操作的按鈕
+                    document.getElementById('confirm-activate-btn').setAttribute('data-row', memberRow.rowIndex);
+                
+                // 關閉操作選單
+                closeAllOperationMenus();
+            });
+        });
+        
+        // 確認停權按鈕
+        document.getElementById('confirm-ban-btn').addEventListener('click', function() {
+            const rowIndex = this.getAttribute('data-row');
+            if (rowIndex) {
+                const memberRow = document.querySelector(`tr:nth-child(${rowIndex})`);
+                const statusCell = memberRow.querySelector('td:nth-child(4) .text-sm span');
+                
+                // 變更狀態
+                        statusCell.classList.remove('bg-green-100', 'text-green-800');
+                        statusCell.classList.add('bg-red-100', 'text-red-800');
+                        statusCell.textContent = '停權';
+                        
+                // 更新操作選單內容
+                const operationMenu = memberRow.querySelector('.operation-menu div[role="none"]');
+                operationMenu.innerHTML = `
+                    <a href="edit.html?id=${rowIndex}" class="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-indigo-100 hover:text-indigo-900" role="menuitem" tabindex="-1">
+                        <i class="fas fa-edit mr-3 text-indigo-600"></i>編輯會員
+                    </a>
+                    <a href="transaction.html?id=${rowIndex}" class="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-indigo-100 hover:text-indigo-900" role="menuitem" tabindex="-1">
+                        <i class="fas fa-money-bill-wave mr-3 text-gray-600"></i>會員充提
+                    </a>
+                    <button class="activate-btn group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-indigo-100 hover:text-indigo-900 w-full text-left" role="menuitem" tabindex="-1">
+                        <i class="fas fa-check-circle mr-3 text-green-600"></i>啟用帳號
+                    </button>
+                `;
+                
+                // 為新添加的激活按鈕添加事件監聽器
+                const newActivateBtn = operationMenu.querySelector('.activate-btn');
+                newActivateBtn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    const memberRow = this.closest('tr');
+                    const memberAccount = memberRow.querySelector('td:first-child .text-sm').textContent;
+                    
+                    document.getElementById('activate-account-name').textContent = memberAccount;
+                    document.getElementById('activate-confirm-modal').classList.remove('hidden');
+                    document.getElementById('confirm-activate-btn').setAttribute('data-row', memberRow.rowIndex);
+                    
+                    closeAllOperationMenus();
+                });
+                
+                // 關閉彈窗
+                document.getElementById('ban-confirm-modal').classList.add('hidden');
+            }
+        });
+        
+        // 取消停權按鈕
+        document.getElementById('cancel-ban-btn').addEventListener('click', function() {
+            document.getElementById('ban-confirm-modal').classList.add('hidden');
+        });
+        
+        // 確認啟用按鈕
+        document.getElementById('confirm-activate-btn').addEventListener('click', function() {
+            const rowIndex = this.getAttribute('data-row');
+            const rechargeAmount = parseFloat(document.getElementById('activate-recharge-amount').value);
+            const agentBalance = parseFloat(document.getElementById('activate-agent-balance').textContent.replace(/[^\d.-]/g, ''));
+            
+            if (rechargeAmount > agentBalance) {
+                // 顯示餘額不足提示視窗
+                document.getElementById('insufficient-balance-modal').classList.remove('hidden');
+                // 儲存當前操作資訊
+                document.getElementById('confirm-insufficient-btn').setAttribute('data-row', rowIndex);
+                document.getElementById('confirm-insufficient-btn').setAttribute('data-amount', rechargeAmount);
+                return;
+            }
+            
+            processActivation(rowIndex, rechargeAmount);
+        });
+        
+        // 處理啟用操作
+        function processActivation(rowIndex, rechargeAmount) {
+            if (rowIndex) {
+                const memberRow = document.querySelector(`tr:nth-child(${rowIndex})`);
+                const statusCell = memberRow.querySelector('td:nth-child(4) .text-sm span');
+                
+                // 變更狀態
+                        statusCell.classList.remove('bg-red-100', 'text-red-800');
+                        statusCell.classList.add('bg-green-100', 'text-green-800');
+                        statusCell.textContent = '正常';
+                        
+                // 更新操作選單內容
+                const operationMenu = memberRow.querySelector('.operation-menu div[role="none"]');
+                operationMenu.innerHTML = `
+                    <a href="edit.html?id=${rowIndex}" class="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-indigo-100 hover:text-indigo-900" role="menuitem" tabindex="-1">
+                        <i class="fas fa-edit mr-3 text-indigo-600"></i>編輯會員
+                    </a>
+                    <a href="transaction.html?id=${rowIndex}" class="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-indigo-100 hover:text-indigo-900" role="menuitem" tabindex="-1">
+                        <i class="fas fa-money-bill-wave mr-3 text-gray-600"></i>會員充提
+                    </a>
+                    <button class="ban-btn group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-indigo-100 hover:text-indigo-900 w-full text-left" role="menuitem" tabindex="-1">
+                        <i class="fas fa-ban mr-3 text-red-600"></i>停權帳號
+                    </button>
+                `;
+                
+                // 更新代理餘額（實際應用中應該通過API更新）
+                const agentBalanceSpan = document.getElementById('activate-agent-balance');
+                const currentBalance = parseFloat(agentBalanceSpan.textContent.replace(/[^\d.-]/g, ''));
+                agentBalanceSpan.textContent = (currentBalance - rechargeAmount).toLocaleString();
+                
+                // 關閉所有彈窗
+                document.getElementById('activate-confirm-modal').classList.add('hidden');
+                document.getElementById('insufficient-balance-modal').classList.add('hidden');
+                
+                // 重置充值金額輸入
+                document.getElementById('activate-recharge-amount').value = '';
+            }
+        }
+        
+        // 餘額不足確認按鈕
+        document.getElementById('confirm-insufficient-btn').addEventListener('click', function() {
+            const rowIndex = this.getAttribute('data-row');
+            const rechargeAmount = parseFloat(this.getAttribute('data-amount'));
+            processActivation(rowIndex, rechargeAmount);
+        });
+        
+        // 餘額不足取消按鈕
+        document.getElementById('cancel-insufficient-btn').addEventListener('click', function() {
+            document.getElementById('insufficient-balance-modal').classList.add('hidden');
+        });
+        
+        // 點擊模態視窗外部關閉
+        document.getElementById('insufficient-balance-modal').addEventListener('click', function(event) {
+            if (event.target === this) {
+                this.classList.add('hidden');
+            }
+        });
+        
+        // 取消啟用按鈕
+        document.getElementById('cancel-activate-btn').addEventListener('click', function() {
+            document.getElementById('activate-confirm-modal').classList.add('hidden');
+        });
+        
+        // 點擊模態視窗外部關閉
+        document.getElementById('ban-confirm-modal').addEventListener('click', function(event) {
+            if (event.target === this) {
+                this.classList.add('hidden');
+                }
+        });
+        
+        document.getElementById('activate-confirm-modal').addEventListener('click', function(event) {
+            if (event.target === this) {
+                this.classList.add('hidden');
+            }
+        });
+
+        // 操作下拉選單功能
+        const operationMenuBtns = document.querySelectorAll('.operation-menu-btn');
+        const operationMenus = document.querySelectorAll('.operation-menu');
+
+        // 關閉所有操作選單
+        function closeAllOperationMenus() {
+            operationMenus.forEach(menu => {
+                menu.classList.add('hidden');
+            });
+        }
+
+        // 為每個操作按鈕添加點擊事件
+        operationMenuBtns.forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const menu = this.nextElementSibling;
+                
+                // 關閉其他選單
+                operationMenus.forEach(m => {
+                    if (m !== menu) {
+                        m.classList.add('hidden');
+                    }
+                });
+                
+                // 切換當前選單
+                menu.classList.toggle('hidden');
+            });
+        });
+
+        // 點擊文檔其他地方關閉所有操作選單
+        document.addEventListener('click', function(e) {
+            // 如果點擊的元素不是操作按鈕或其子元素
+            if (!e.target.closest('.operation-menu-btn') && !e.target.closest('.operation-menu')) {
+                closeAllOperationMenus();
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM已完全加載');
+            
+            // 初始化當前層級
+            let currentAgentId = '';
+            let currentAgentText = '';
+            
+            // 處理上層代理帳號點擊事件
+            document.querySelectorAll('td:nth-child(3) .text-sm').forEach(agentCell => {
+                const agentText = agentCell.textContent.trim();
+                if (agentText !== '-') {
+                    agentCell.classList.add('text-indigo-600', 'cursor-pointer', 'hover:underline');
+                    agentCell.addEventListener('click', function() {
+                        currentAgentId = agentText;
+                        currentAgentText = agentText;
+                        
+                        // 更新層級導航
+                        updateBreadcrumb();
+                        
+                        // 模擬獲取該代理底下的會員資料
+                        fetchAgentMembers(agentText);
+                    });
+                }
+            });
+            
+            // 更新麵包屑導航
+            function updateBreadcrumb() {
+                const breadcrumb = document.getElementById('member-breadcrumb');
+                if (currentAgentId) {
+                    breadcrumb.innerHTML = `<span class="text-sm font-medium text-indigo-600">${currentAgentText}</span>`;
+                } else {
+                    breadcrumb.innerHTML = '<span class="text-sm text-gray-600">-</span>';
+                }
+            }
+            
+            // 模擬獲取代理底下的會員資料
+            function fetchAgentMembers(agentId) {
+                console.log(`獲取代理 ${agentId} 底下的會員資料`);
+                
+                // 這裡在實際應用中應該發送AJAX請求獲取資料
+                // 由於這是示例，我們使用固定的測試數據
+                
+                // 清空現有表格資料
+                const tbody = document.querySelector('tbody');
+                tbody.innerHTML = '';
+                
+                // 生成測試數據
+                const members = [
+                    { id: 'M1', username: 'user001', name: '張三', agent: agentId, status: '正常', preCommission: '1.5%', liveCommission: '1.1%', balance: '120,000' },
+                    { id: 'M2', username: 'user002', name: '李四', agent: agentId, status: '正常', preCommission: '1.4%', liveCommission: '1.0%', balance: '98,500' },
+                    { id: 'M3', username: 'user003', name: '王五', agent: agentId, status: '正常', preCommission: '1.6%', liveCommission: '1.2%', balance: '145,300' },
+                    { id: 'M4', username: 'user004', name: '趙六', agent: agentId, status: '停權', preCommission: '0%', liveCommission: '0%', balance: '0' },
+                    { id: 'M5', username: 'user005', name: '周七', agent: agentId, status: '正常', preCommission: '1.3%', liveCommission: '0.9%', balance: '78,200' }
+                ];
+                
+                // 生成表格行
+                members.forEach((member, index) => {
+                    const row = document.createElement('tr');
+                    row.className = 'hover:bg-gray-50';
+                    
+                    // 會員帳號
+                    const usernameCell = document.createElement('td');
+                    usernameCell.className = 'px-6 py-4 whitespace-nowrap';
+                    usernameCell.innerHTML = `<div class="text-sm text-gray-900">${member.username}</div>`;
+                    
+                    // 會員姓名
+                    const nameCell = document.createElement('td');
+                    nameCell.className = 'px-6 py-4 whitespace-nowrap';
+                    nameCell.innerHTML = `<div class="text-sm font-medium text-gray-900">${member.name}</div>`;
+                    
+                    // 上層代理帳號
+                    const agentCell = document.createElement('td');
+                    agentCell.className = 'px-6 py-4 whitespace-nowrap';
+                    agentCell.innerHTML = `<div class="text-sm text-gray-900">${member.agent}</div>`;
+                    
+                    // 狀態
+                    const statusCell = document.createElement('td');
+                    statusCell.className = 'px-6 py-4 whitespace-nowrap';
+                    const statusClass = member.status === '正常' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800';
+                    statusCell.innerHTML = `
+                        <div class="text-sm">
+                            <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${statusClass}">
+                                ${member.status}
+                            </span>
+                        </div>
+                    `;
+                    
+                    // 賽前返佣比例
+                    const preCommissionCell = document.createElement('td');
+                    preCommissionCell.className = 'px-6 py-4 whitespace-nowrap';
+                    preCommissionCell.innerHTML = `<div class="text-sm font-medium text-gray-900">${member.preCommission}</div>`;
+                    
+                    // 走地返佣比例
+                    const liveCommissionCell = document.createElement('td');
+                    liveCommissionCell.className = 'px-6 py-4 whitespace-nowrap';
+                    liveCommissionCell.innerHTML = `<div class="text-sm font-medium text-gray-900">${member.liveCommission}</div>`;
+                    
+                    // 餘額
+                    const balanceCell = document.createElement('td');
+                    balanceCell.className = 'px-6 py-4 whitespace-nowrap';
+                    balanceCell.innerHTML = `<div class="text-sm font-medium text-gray-900">${member.balance}</div>`;
+                    
+                    // 操作
+                    const actionCell = document.createElement('td');
+                    actionCell.className = 'px-6 py-4 whitespace-nowrap text-right text-sm font-medium';
+                    actionCell.innerHTML = `
+                        <div class="relative inline-block text-left">
+                            <button type="button" class="operation-menu-btn inline-flex justify-center items-center w-full px-2 py-1 border border-gray-300 shadow-sm text-sm font-medium rounded-md bg-white text-gray-700 hover:bg-gray-50 focus:outline-none" id="operation-menu-button-${index + 1}" aria-expanded="false" aria-haspopup="true">
+                                操作
+                                <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                            <div class="operation-menu hidden origin-top-right absolute right-0 mt-2 w-36 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none z-10" role="menu" aria-orientation="vertical" aria-labelledby="operation-menu-button-${index + 1}" tabindex="-1">
+                                <div class="py-1" role="none">
+                                    <a href="edit.html?id=${member.id}" class="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-indigo-100 hover:text-indigo-900" role="menuitem" tabindex="-1">
+                                        <i class="fas fa-edit mr-3 text-indigo-600"></i>編輯會員
+                                    </a>
+                                    <a href="transaction.html?id=${member.id}" class="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-indigo-100 hover:text-indigo-900" role="menuitem" tabindex="-1">
+                                        <i class="fas fa-money-bill-wave mr-3 text-gray-600"></i>會員充提
+                                    </a>
+                                    <button class="ban-btn group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-indigo-100 hover:text-indigo-900 w-full text-left" role="menuitem" tabindex="-1">
+                                        <i class="fas fa-ban mr-3 text-red-600"></i>停權帳號
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    
+                    // 追加單元格到行
+                    row.appendChild(usernameCell);
+                    row.appendChild(nameCell);
+                    row.appendChild(agentCell);
+                    row.appendChild(statusCell);
+                    row.appendChild(preCommissionCell);
+                    row.appendChild(liveCommissionCell);
+                    row.appendChild(balanceCell);
+                    row.appendChild(actionCell);
+                    
+                    // 追加行到表格
+                    tbody.appendChild(row);
+                });
+                
+                // 為新生成的操作菜單添加事件
+                addOperationMenuEvents();
+                
+                // 為新生成的行添加點擊事件
+                addRowClickEvents();
+            }
+            
+            // 重置按鈕點擊事件
+            document.getElementById('reset-btn').addEventListener('click', function() {
+                // 重置搜尋條件
+                document.getElementById('search-type').value = 'username';
+                document.getElementById('search-keyword').value = '';
+                document.getElementById('status-filter').value = '';
+                
+                // 重置層級
+                currentAgentId = '';
+                currentAgentText = '';
+                updateBreadcrumb();
+                
+                // 重新載入原始資料
+                location.reload();
+            });
+        });
+    </script>
+</body>
+</html> 

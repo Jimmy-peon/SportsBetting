@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>儀表板</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <div class="p-4">
+        <!-- 儀表板卡片區域 -->
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+            <!-- 帳戶餘額 -->
+            <div class="bg-white rounded-lg shadow-sm p-4">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-sm font-medium text-gray-600">帳戶餘額</p>
+                        <h3 class="text-xl font-semibold text-indigo-600 mt-1">1,234,567</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 今日上分筆數 -->
+            <div class="bg-white rounded-lg shadow-sm p-4">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-sm font-medium text-gray-600">今日上分筆數</p>
+                        <h3 class="text-xl font-semibold text-green-600 mt-1">156</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 今日上分金額 -->
+            <div class="bg-white rounded-lg shadow-sm p-4">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-sm font-medium text-gray-600">今日上分金額</p>
+                        <h3 class="text-xl font-semibold text-green-600 mt-1">458,900</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 今日下分筆數 -->
+            <div class="bg-white rounded-lg shadow-sm p-4">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-sm font-medium text-gray-600">今日下分筆數</p>
+                        <h3 class="text-xl font-semibold text-red-600 mt-1">89</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 今日下分金額 -->
+            <div class="bg-white rounded-lg shadow-sm p-4">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-sm font-medium text-gray-600">今日下分金額</p>
+                        <h3 class="text-xl font-semibold text-red-600 mt-1">256,700</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 這裡可以添加獲取實時數據的邏輯
+            // 例如通過 API 獲取最新的餘額和交易數據
+        });
+    </script>
+</body>
+</html> 

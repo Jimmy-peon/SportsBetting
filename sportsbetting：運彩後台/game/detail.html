@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>賽事詳情</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <div class="p-4">
+        <!-- 標題和返回按鈕 -->
+        <div class="flex items-center mb-6">
+            <button id="back-btn" class="mr-4 px-4 py-2 bg-white border border-gray-300 text-gray-700 rounded-md hover:bg-gray-50 focus:outline-none flex items-center">
+                <i class="fas fa-arrow-left mr-2"></i>
+                返回
+            </button>
+            <h1 class="text-xl font-semibold text-gray-800">賽事詳情</h1>
+        </div>
+
+        <!-- 賽事詳情內容 -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="p-6">
+                <!-- 基本賽事資料 -->
+                <div class="mb-8">
+                    <h3 class="text-lg font-medium text-gray-900 mb-4">基本賽事資料</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-6">
+                        <!-- 賽事編號 -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">賽事編號</label>
+                            <div id="match-id" class="mt-1 text-sm text-gray-900"></div>
+                        </div>
+                        
+                        <!-- 所屬聯賽 -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">所屬聯賽</label>
+                            <div id="league" class="mt-1 text-sm text-gray-900"></div>
+                        </div>
+                        
+                        <!-- 主隊名稱 -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">主隊名稱</label>
+                            <div id="home-team" class="mt-1 text-sm text-gray-900"></div>
+                        </div>
+                        
+                        <!-- 客隊名稱 -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">客隊名稱</label>
+                            <div id="away-team" class="mt-1 text-sm text-gray-900"></div>
+                        </div>
+                        
+                        <!-- 賽事開始時間 -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">賽事開始時間</label>
+                            <div id="match-time" class="mt-1 text-sm text-gray-900"></div>
+                        </div>
+                        
+                        <!-- 賽事狀態 -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">賽事狀態</label>
+                            <div id="match-status" class="mt-1"></div>
+                        </div>
+
+                        <!-- 最終比分 -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">最終比分</label>
+                            <div id="final-score" class="mt-1 text-sm text-gray-900"></div>
+                        </div>
+
+                        <!-- 總進球數 -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">總進球數</label>
+                            <div id="total-goals" class="mt-1 text-sm text-gray-900"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 讓球設定 -->
+                <div class="mb-8">
+                    <h3 class="text-lg font-medium text-gray-900 mb-4">讓球設定</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-6">
+                        <!-- 讓球隊伍 -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">讓球隊伍</label>
+                            <div id="handicap-team" class="mt-1 text-sm text-gray-900"></div>
+                        </div>
+                        
+                        <!-- 讓球數 -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">讓球數</label>
+                            <div id="handicap-value" class="mt-1 text-sm text-gray-900"></div>
+                        </div>
+                        
+                        <!-- 盤口讓球賠率 -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">盤口讓球賠率</label>
+                            <div id="handicap-draw-odds" class="mt-1 text-sm text-gray-900"></div>
+                        </div>
+                        
+                        <!-- 賽前主隊賠率 -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">賽前主隊賠率</label>
+                            <div id="pre-home-odds" class="mt-1 text-sm text-gray-900"></div>
+                        </div>
+                        
+                        <!-- 賽前客隊賠率 -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">賽前客隊賠率</label>
+                            <div id="pre-away-odds" class="mt-1 text-sm text-gray-900"></div>
+                        </div>
+                        
+                        <!-- 賽中主隊賠率 -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">賽中主隊賠率</label>
+                            <div id="live-home-odds" class="mt-1 text-sm text-gray-900"></div>
+                        </div>
+                        
+                        <!-- 賽中客隊賠率 -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">賽中客隊賠率</label>
+                            <div id="live-away-odds" class="mt-1 text-sm text-gray-900"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 大小球設定 -->
+                <div class="mb-8">
+                    <h3 class="text-lg font-medium text-gray-900 mb-4">大小球設定</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-6">
+                        <!-- 大小球球數 -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">大小球球數</label>
+                            <div id="total-goals-line" class="mt-1 text-sm text-gray-900"></div>
+                        </div>
+                        
+                        <!-- 盤口大小球賠率 -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">盤口大小球賠率</label>
+                            <div id="total-draw-odds" class="mt-1 text-sm text-gray-900"></div>
+                        </div>
+                        
+                        <!-- 賽前大球賠率 -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">賽前大球賠率</label>
+                            <div id="pre-over-odds" class="mt-1 text-sm text-gray-900"></div>
+                        </div>
+                        
+                        <!-- 賽前小球賠率 -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">賽前小球賠率</label>
+                            <div id="pre-under-odds" class="mt-1 text-sm text-gray-900"></div>
+                        </div>
+                        
+                        <!-- 賽中大球賠率 -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">賽中大球賠率</label>
+                            <div id="live-over-odds" class="mt-1 text-sm text-gray-900"></div>
+                        </div>
+                        
+                        <!-- 賽中小球賠率 -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">賽中小球賠率</label>
+                            <div id="live-under-odds" class="mt-1 text-sm text-gray-900"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 投注統計 -->
+                <div class="mb-8">
+                    <h3 class="text-lg font-medium text-gray-900 mb-4">投注統計</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-6">
+                        <!-- 總投注筆數 -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">總投注筆數</label>
+                            <div id="total-bets" class="mt-1 text-sm text-gray-900"></div>
+                        </div>
+                        
+                        <!-- 總投注金額 -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">總投注金額</label>
+                            <div id="total-amount" class="mt-1 text-sm text-gray-900"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 結算資訊（僅在賽事狀態為已結算時顯示） -->
+                <div id="settle-info-section" class="mb-8 hidden">
+                    <h3 class="text-lg font-medium text-gray-900 mb-4">結算資訊</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-6">
+                        <!-- 主隊最終比分 -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">主隊最終比分</label>
+                            <div id="home-team-final-score" class="mt-1 text-sm text-gray-900"></div>
+                        </div>
+                        
+                        <!-- 客隊最終比分 -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">客隊最終比分</label>
+                            <div id="away-team-final-score" class="mt-1 text-sm text-gray-900"></div>
+                        </div>
+                        
+                        <!-- 最終總進球數 -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">最終總進球數</label>
+                            <div id="final-total-goals" class="mt-1 text-sm text-gray-900"></div>
+                        </div>
+                        
+                        <!-- 結算時間 -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">結算時間</label>
+                            <div id="settle-time" class="mt-1 text-sm text-gray-900"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 取消資訊（僅在賽事狀態為取消時顯示） -->
+                <div id="cancel-info-section" class="mb-8 hidden">
+                    <h3 class="text-lg font-medium text-gray-900 mb-4">取消資訊</h3>
+                    <div class="grid grid-cols-1 gap-y-4">
+                        <!-- 取消原因 -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">取消原因</label>
+                            <div id="cancel-reason" class="mt-1 text-sm text-gray-900"></div>
+                        </div>
+                        
+                        <!-- 取消時間 -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">取消時間</label>
+                            <div id="cancel-time" class="mt-1 text-sm text-gray-900"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 取消原因（僅在賽事狀態為已取消時顯示） -->
+                <div id="cancel-reason-section" class="mb-8 hidden">
+                    <h3 class="text-lg font-medium text-gray-900 mb-4">取消原因</h3>
+                    <div class="text-sm text-gray-900" id="cancel-reason"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 獲取賽事ID
+            const urlParams = new URLSearchParams(window.location.search);
+            const matchId = urlParams.get('id');
+            
+            if (!matchId) {
+                alert('無效的賽事ID');
+                window.location.href = 'list.html';
+                return;
+            }
+            
+            // 模擬從API獲取賽事資料
+            // 在實際應用中，這裡會發送API請求獲取賽事詳情
+            const matchData = {
+                id: matchId,
+                league: 'EPL',
+                leagueName: '英超聯賽',
+                homeTeam: '曼聯',
+                awayTeam: '曼城',
+                matchTime: '2024-03-20 20:00:00',
+                status: matchId === 'SER20240320' ? 'cancelled' : 'settled', // 根據賽事ID判斷狀態
+                statusDisplay: matchId === 'SER20240320' ? '取消' : '已結算', // 根據賽事ID判斷顯示狀態
+                finalScore: '2:1',
+                totalGoals: 3,
+                handicapTeam: '曼聯',
+                handicapValue: 1.5,
+                handicapDrawOdds: 25,
+                preHomeOdds: 0.85,
+                preAwayOdds: 0.95,
+                liveHomeOdds: 0.80,
+                liveAwayOdds: 0.90,
+                totalGoalsLine: 2.5,
+                totalDrawOdds: 30,
+                preOverOdds: 0.85,
+                preUnderOdds: 0.95,
+                liveOverOdds: 0.80,
+                liveUnderOdds: 0.90,
+                totalBets: matchId === 'SER20240320' ? 56 : 142,
+                totalAmount: matchId === 'SER20240320' ? 89600 : 258600,
+                // 結算資訊
+                homeTeamFinalScore: 2,
+                awayTeamFinalScore: 1,
+                finalTotalGoals: 3,
+                settleTime: '2024-03-20 22:15:30',
+                // 取消資訊
+                cancelReason: '天氣因素，比賽取消',
+                cancelTime: '2024-03-20 19:30:00'
+            };
+            
+            // 填充頁面資料
+            document.getElementById('match-id').textContent = matchData.id;
+            document.getElementById('league').textContent = matchData.leagueName;
+            document.getElementById('home-team').textContent = matchData.homeTeam;
+            document.getElementById('away-team').textContent = matchData.awayTeam;
+            document.getElementById('match-time').textContent = matchData.matchTime;
+            
+            // 設置賽事狀態，使用不同的顏色標示，並顯示對應的資訊區塊
+            const statusElement = document.getElementById('match-status');
+            let statusClass = '';
+
+            // 先隱藏所有資訊區塊
+            document.getElementById('settle-info-section').classList.add('hidden');
+            document.getElementById('cancel-info-section').classList.add('hidden');
+
+            // 根據狀態顯示對應的資訊
+            if (matchData.status === 'settled') {
+                statusClass = 'bg-gray-100 text-gray-800';
+                // 顯示結算資訊區塊
+                document.getElementById('settle-info-section').classList.remove('hidden');
+                // 填充結算資訊
+                document.getElementById('home-team-final-score').textContent = matchData.homeTeamFinalScore;
+                document.getElementById('away-team-final-score').textContent = matchData.awayTeamFinalScore;
+                document.getElementById('final-total-goals').textContent = matchData.finalTotalGoals;
+                document.getElementById('settle-time').textContent = matchData.settleTime;
+            } else if (matchData.status === 'cancelled') {
+                statusClass = 'bg-red-100 text-red-800';
+                // 顯示取消資訊區塊
+                document.getElementById('cancel-info-section').classList.remove('hidden');
+                // 填充取消資訊
+                document.getElementById('cancel-reason').textContent = matchData.cancelReason;
+                document.getElementById('cancel-time').textContent = matchData.cancelTime;
+            } else if (matchData.status === 'paused') {
+                statusClass = 'bg-yellow-100 text-yellow-800';
+            } else {
+                statusClass = 'bg-blue-100 text-blue-800';
+            }
+
+            statusElement.innerHTML = `<span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${statusClass}">${matchData.statusDisplay}</span>`;
+            
+            // 填充比分和進球數
+            document.getElementById('final-score').textContent = matchData.finalScore;
+            document.getElementById('total-goals').textContent = matchData.totalGoals;
+            
+            // 填充讓球設定
+            document.getElementById('handicap-team').textContent = matchData.handicapTeam;
+            document.getElementById('handicap-value').textContent = matchData.handicapValue;
+            document.getElementById('handicap-draw-odds').textContent = matchData.handicapDrawOdds;
+            document.getElementById('pre-home-odds').textContent = matchData.preHomeOdds;
+            document.getElementById('pre-away-odds').textContent = matchData.preAwayOdds;
+            document.getElementById('live-home-odds').textContent = matchData.liveHomeOdds;
+            document.getElementById('live-away-odds').textContent = matchData.liveAwayOdds;
+            
+            // 填充大小球設定
+            document.getElementById('total-goals-line').textContent = matchData.totalGoalsLine;
+            document.getElementById('total-draw-odds').textContent = matchData.totalDrawOdds;
+            document.getElementById('pre-over-odds').textContent = matchData.preOverOdds;
+            document.getElementById('pre-under-odds').textContent = matchData.preUnderOdds;
+            document.getElementById('live-over-odds').textContent = matchData.liveOverOdds;
+            document.getElementById('live-under-odds').textContent = matchData.liveUnderOdds;
+            
+            // 填充投注統計
+            document.getElementById('total-bets').textContent = matchData.totalBets;
+            document.getElementById('total-amount').textContent = matchData.totalAmount.toLocaleString();
+            
+            // 返回按鈕點擊事件
+            document.getElementById('back-btn').addEventListener('click', function() {
+                window.location.href = 'list.html';
+            });
+        });
+    </script>
+</body>
+</html> 

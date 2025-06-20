@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>代理上下分</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="js/custom-alert.js"></script>
+</head>
+<body class="bg-gray-50">
+    <div class="p-4">
+        <!-- 標題和返回按鈕 -->
+        <div class="flex items-center mb-6">
+            <button id="back-btn" class="mr-4 px-4 py-2 bg-white border border-gray-300 text-gray-700 rounded-md hover:bg-gray-50 focus:outline-none flex items-center">
+                <i class="fas fa-arrow-left mr-2"></i>
+                返回
+            </button>
+            <h1 class="text-xl font-semibold text-gray-800">代理上下分</h1>
+        </div>
+
+        <!-- 代理上下分表單 - 新設計的兩欄布局 -->
+        <div class="bg-white shadow-sm rounded-lg p-6">
+            <form id="transaction-form">
+                <input type="hidden" id="agent-id" name="agent_id" value="">
+                
+                <!-- 兩欄布局：左側為交易資訊，右側為交易細項 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    
+                    <!-- 左側：交易資訊 -->
+                    <div class="space-y-6">
+                        <!-- 上區塊：代理資訊 -->
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <div class="space-y-4">
+                                <!-- 代理資訊列表 -->
+                                <div class="mb-4">
+                                    <div class="text-sm">
+                                        <div class="flex py-2">
+                                            <div class="w-28 font-medium text-gray-700">代理帳號：</div>
+                                            <div id="agent-account" class="flex-1 text-gray-900"></div>
+                                        </div>
+                                        <div class="flex py-2">
+                                            <div class="w-28 font-medium text-gray-700">代理姓名：</div>
+                                            <div id="agent-name" class="flex-1 text-gray-900"></div>
+                                        </div>
+                                        <div class="flex py-2">
+                                            <div class="w-28 font-medium text-gray-700">帳戶餘額：</div>
+                                            <div id="agent-balance" class="flex-1 text-green-600 font-medium"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 下區塊：交易操作 -->
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <div class="space-y-4">
+                                <!-- 交易類型 -->
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">交易類型</label>
+                                    <div class="flex space-x-4">
+                                        <label class="inline-flex items-center">
+                                            <input type="checkbox" name="transaction-type" value="deposit" id="deposit-checkbox" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300" checked>
+                                            <span class="ml-2 text-sm text-gray-700">上分</span>
+                                        </label>
+                                        <label class="inline-flex items-center">
+                                            <input type="checkbox" name="transaction-type" value="withdraw" id="withdraw-checkbox" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                                            <span class="ml-2 text-sm text-gray-700">下分</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <!-- 交易金額 -->
+                                <div>
+                                    <label for="transaction-amount" class="block text-sm font-medium text-gray-700">交易金額</label>
+                                    <div class="mt-1 relative rounded-md shadow-sm">
+                                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                            <span class="text-gray-500 sm:text-sm"></span>
+                                        </div>
+                                        <input type="number" name="transaction-amount" id="transaction-amount" class="focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-7 pr-12 sm:text-sm border-gray-300 rounded-md" placeholder="0.00" min="0" step="0.01" required>
+                                    </div>
+                                </div>
+                                
+                                <!-- 備註 -->
+                                <div>
+                                    <label for="transaction-note" class="block text-sm font-medium text-gray-700">備註</label>
+                                    <textarea id="transaction-note" name="transaction-note" rows="3" class="mt-1 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="請輸入交易備註..."></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 右側：交易細項 -->
+                    <div class="space-y-6">
+                        <!-- 上區塊：代理基本資訊 -->
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <div class="space-y-4">
+                                <!-- 代理資訊列表 -->
+                                <div class="mb-4">
+                                    <div class="text-sm">
+                                        <div class="flex py-2">
+                                            <div class="w-28 font-medium text-gray-700">代理帳號：</div>
+                                            <div id="summary-agent-account" class="flex-1 text-gray-900"></div>
+                                        </div>
+                                        <div class="flex py-2">
+                                            <div class="w-28 font-medium text-gray-700">代理姓名：</div>
+                                            <div id="summary-agent-name" class="flex-1 text-gray-900"></div>
+                                        </div>
+                                        <div class="flex py-2">
+                                            <div class="w-28 font-medium text-gray-700">帳戶餘額：</div>
+                                            <div id="current-balance-display" class="flex-1 text-green-600 font-medium"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 下區塊：交易結果 -->
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <div class="space-y-4">
+                                <!-- 交易結果資訊 -->
+                                <div class="text-sm">
+                                    <div class="flex py-3 items-center">
+                                        <div class="w-36 font-medium text-gray-700">交易金額</div>
+                                        <div class="flex-1 text-right pr-2 font-medium" id="transaction-amount-display"></div>
+                                    </div>
+                                    <div class="flex py-3 items-center border-t border-gray-200">
+                                        <div class="w-36 font-medium text-gray-700">交易後帳戶餘額</div>
+                                        <div class="flex-1 text-right pr-2 font-medium text-blue-600" id="after-transaction-balance"></div>
+                                    </div>
+                                    <!-- 餘額不足警告 -->
+                                    <div id="balance-warning" class="hidden pt-2 text-right text-red-600 font-medium">
+                                        帳戶餘額不足
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 底部按鈕 -->
+                <div class="mt-6 flex justify-end space-x-3">
+                    <button type="button" id="reset-form-btn" class="px-4 py-2 bg-gray-200 text-gray-700 rounded-md hover:bg-gray-300 focus:outline-none">
+                        重置
+                    </button>
+                    <button type="submit" id="confirm-transaction-btn" class="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 focus:outline-none">
+                        確認交易
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <!-- 提示模態窗口 -->
+    <div id="confirm-modal" class="fixed inset-0 z-50 overflow-y-auto hidden">
+        <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+            <div class="fixed inset-0 transition-opacity" aria-hidden="true">
+                <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
+            </div>
+            
+            <!-- 模態視窗內容 -->
+            <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+                <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                    <div class="sm:flex sm:items-start">
+                        <div class="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-yellow-100 sm:mx-0 sm:h-10 sm:w-10">
+                            <i class="fas fa-exclamation-triangle text-yellow-600"></i>
+                        </div>
+                        <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">
+                                確認離開
+                            </h3>
+                            <div class="mt-2">
+                                <p class="text-sm text-gray-500">
+                                    您已經輸入了交易資料但尚未提交，確定要離開此頁面嗎？
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                    <button type="button" id="confirm-leave-btn" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-red-600 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm">
+                        確認離開
+                    </button>
+                    <button type="button" id="cancel-leave-btn" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
+                        取消
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 獲取URL參數
+            const urlParams = new URLSearchParams(window.location.search);
+            const agentId = urlParams.get('id');
+            
+            // 交易類型 checkbox 元素
+            const depositCheckbox = document.getElementById('deposit-checkbox');
+            const withdrawCheckbox = document.getElementById('withdraw-checkbox');
+            
+            // 交易細項顯示元素
+            const currentBalanceDisplay = document.getElementById('current-balance-display');
+            const transactionAmountDisplay = document.getElementById('transaction-amount-display');
+            const afterTransactionBalance = document.getElementById('after-transaction-balance');
+            
+            // 金額輸入欄位
+            const transactionAmountInput = document.getElementById('transaction-amount');
+            
+            // 設置表單初始值（實際應用中應該從API獲取）
+            document.getElementById('agent-id').value = agentId;
+            document.getElementById('agent-account').textContent = 'agent' + agentId;
+            document.getElementById('agent-name').textContent = '代理' + agentId;
+            document.getElementById('agent-balance').textContent = '150,000';
+            
+            // 同步顯示在右側摘要
+            document.getElementById('summary-agent-account').textContent = 'agent' + agentId;
+            document.getElementById('summary-agent-name').textContent = '代理' + agentId;
+            document.getElementById('current-balance-display').textContent = '150,000';
+            
+            // 初始化交易細項顯示
+            transactionAmountDisplay.textContent = '0.00';
+            afterTransactionBalance.textContent = '150,000';
+            
+            // 確保只能選擇一種交易類型
+            depositCheckbox.addEventListener('change', function() {
+                if (this.checked) {
+                    withdrawCheckbox.checked = false;
+                } else {
+                    // 至少要選一個
+                    if (!withdrawCheckbox.checked) {
+                        this.checked = true;
+                    }
+                }
+                updateTransactionDisplay();
+            });
+            
+            withdrawCheckbox.addEventListener('change', function() {
+                if (this.checked) {
+                    depositCheckbox.checked = false;
+                } else {
+                    // 至少要選一個
+                    if (!depositCheckbox.checked) {
+                        this.checked = true;
+                    }
+                }
+                updateTransactionDisplay();
+            });
+            
+            // 金額輸入時更新顯示
+            transactionAmountInput.addEventListener('input', updateTransactionDisplay);
+            
+            // 更新交易細項顯示
+            function updateTransactionDisplay() {
+                const amount = transactionAmountInput.value;
+                const isDeposit = depositCheckbox.checked;
+                
+                // 獲取當前餘額
+                const currentBalanceText = document.getElementById('agent-balance').textContent;
+                const currentBalance = parseFloat(currentBalanceText.replace(/[^\d.-]/g, ''));
+                
+                // 顯示當前餘額
+                currentBalanceDisplay.textContent = currentBalanceText;
+                
+                if (amount && !isNaN(amount) && parseFloat(amount) > 0) {
+                    const amountValue = parseFloat(amount);
+                    
+                    // 顯示交易金額（正負號）
+                    if (isDeposit) {
+                        transactionAmountDisplay.textContent = `+${amountValue.toLocaleString()}`;
+                        transactionAmountDisplay.classList.remove('text-red-600');
+                        transactionAmountDisplay.classList.add('text-green-600');
+                        
+                        // 計算交易後餘額
+                        const afterBalance = currentBalance + amountValue;
+                        afterTransactionBalance.textContent = `${afterBalance.toLocaleString()}`;
+                        
+                        // 沒有餘額不足問題，隱藏警告
+                        document.getElementById('balance-warning').classList.add('hidden');
+                    } else {
+                        transactionAmountDisplay.textContent = `-${amountValue.toLocaleString()}`;
+                        transactionAmountDisplay.classList.remove('text-green-600');
+                        transactionAmountDisplay.classList.add('text-red-600');
+                        
+                        // 計算交易後餘額
+                        const afterBalance = currentBalance - amountValue;
+                        afterTransactionBalance.textContent = `${afterBalance.toLocaleString()}`;
+                        
+                        // 檢查是否餘額不足
+                        if (amountValue > currentBalance) {
+                            document.getElementById('balance-warning').classList.remove('hidden');
+                        } else {
+                            document.getElementById('balance-warning').classList.add('hidden');
+                        }
+                    }
+                } else {
+                    // 如果未輸入有效金額
+                    transactionAmountDisplay.textContent = '0.00';
+                    transactionAmountDisplay.classList.remove('text-green-600', 'text-red-600');
+                    afterTransactionBalance.textContent = currentBalanceText;
+                    document.getElementById('balance-warning').classList.add('hidden');
+                }
+            }
+            
+            // 返回按鈕點擊事件
+            document.getElementById('back-btn').addEventListener('click', (e) => {
+                if (formHasChanged()) {
+                    // 顯示確認對話框
+                    e.preventDefault();
+                    document.getElementById('confirm-modal').classList.remove('hidden');
+                } else {
+                    // 直接返回列表頁
+                    history.back();
+                }
+            });
+            
+            // 確認交易按鈕
+            document.getElementById('transaction-form').addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                const amount = transactionAmountInput.value;
+                const isDeposit = depositCheckbox.checked;
+                const transactionType = isDeposit ? 'deposit' : 'withdraw';
+                
+                if (!amount || parseFloat(amount) <= 0) {
+                    showAlert('請輸入有效的金額', \'error\');
+                    return;
+                }
+                
+                // 檢查下分時是否餘額不足
+                if (!isDeposit) {
+                    const currentBalanceText = document.getElementById('agent-balance').textContent;
+                    const currentBalance = parseFloat(currentBalanceText.replace(/[^\d.-]/g, ''));
+                    
+                    if (parseFloat(amount) > currentBalance) {
+                        showAlert('帳戶餘額不足，無法進行下分操作');
+                        return;
+                    }
+                }
+                
+                // 模擬交易操作
+                setTimeout(() => {
+                    const currentAgentBalance = parseFloat(document.getElementById('agent-balance').textContent.replace(/[^\d.-]/g, ''));
+                    const amountValue = parseFloat(amount);
+                    
+                    let newAgentBalance;
+                    if (transactionType === 'deposit') {
+                        newAgentBalance = currentAgentBalance + amountValue;
+                    } else {
+                        newAgentBalance = currentAgentBalance - amountValue;
+                    }
+                    
+                    const formattedNewBalance = `${newAgentBalance.toLocaleString()}`;
+                    document.getElementById('agent-balance').textContent = formattedNewBalance;
+                    
+                    // 更新交易細項顯示
+                    currentBalanceDisplay.textContent = formattedNewBalance;
+                    afterTransactionBalance.textContent = formattedNewBalance;
+                    transactionAmountDisplay.textContent = '0.00';
+                    transactionAmountDisplay.classList.remove('text-green-600', 'text-red-600');
+                    
+                    showAlert('交易成功', \'success\');
+                    transactionAmountInput.value = '';
+                    document.getElementById('transaction-note').value = '';
+                }, 500);
+            });
+            
+            // 確認離開按鈕
+            document.getElementById('confirm-leave-btn').addEventListener('click', () => {
+                history.back();
+            });
+            
+            // 取消離開按鈕
+            document.getElementById('cancel-leave-btn').addEventListener('click', () => {
+                document.getElementById('confirm-modal').classList.add('hidden');
+            });
+            
+            // 判斷表單是否已變更
+            function formHasChanged() {
+                const amount = transactionAmountInput.value;
+                const note = document.getElementById('transaction-note').value;
+                
+                return amount !== '' || note !== '';
+            }
+            
+            // 重置表單按鈕
+            document.getElementById('reset-form-btn').addEventListener('click', () => {
+                // 重置交易類型為預設 (上分)
+                depositCheckbox.checked = true;
+                withdrawCheckbox.checked = false;
+                
+                // 清空金額和備註
+                transactionAmountInput.value = '';
+                document.getElementById('transaction-note').value = '';
+                
+                // 重置交易細項顯示
+                updateTransactionDisplay();
+            });
+        });
+    </script>
+</body>
+</html> 
