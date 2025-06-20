@@ -1,3 +1,1 @@
 # SportsBetting
-
-[[index]]
