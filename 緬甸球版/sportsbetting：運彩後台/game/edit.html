@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>編輯賽事</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- 添加日期選擇器樣式 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body class="bg-gray-50">
+    <div class="p-4">
+        <!-- 標題和返回按鈕 -->
+        <div class="flex items-center mb-6">
+            <button id="back-btn" class="mr-4 px-4 py-2 bg-white border border-gray-300 text-gray-700 rounded-md hover:bg-gray-50 focus:outline-none flex items-center">
+                <i class="fas fa-arrow-left mr-2"></i>
+                返回
+            </button>
+            <h1 class="text-xl font-semibold text-gray-800">編輯賽事</h1>
+        </div>
+
+        <!-- 賽事資料編輯表單 -->
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="p-6">
+                <form id="edit-match-form">
+                    <!-- 基本賽事資料 -->
+                    <div class="mb-6">
+                        <h3 class="text-lg font-medium text-gray-900 mb-4">基本賽事資料</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-6">
+                            <!-- 賽事編號 -->
+                            <div>
+                                <label for="match-id" class="block text-sm font-medium text-gray-700">賽事編號</label>
+                                <input type="text" name="match-id" id="match-id" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md bg-gray-100" readonly>
+                            </div>
+                            
+                            <!-- 所屬聯賽 -->
+                            <div>
+                                <label for="league" class="block text-sm font-medium text-gray-700">所屬聯賽</label>
+                                <input type="text" name="league-display" id="league-display" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md bg-gray-100" readonly>
+                                <input type="hidden" name="league" id="league">
+                            </div>
+                            
+                            <!-- 主隊名稱 -->
+                            <div>
+                                <label for="home-team" class="block text-sm font-medium text-gray-700">主隊名稱</label>
+                                <input type="text" name="home-team" id="home-team" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md bg-gray-100" readonly>
+                            </div>
+                            
+                            <!-- 客隊名稱 -->
+                            <div>
+                                <label for="away-team" class="block text-sm font-medium text-gray-700">客隊名稱</label>
+                                <input type="text" name="away-team" id="away-team" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md bg-gray-100" readonly>
+                            </div>
+                            
+                            <!-- 賽事開始時間 -->
+                            <div>
+                                <label for="match-time" class="block text-sm font-medium text-gray-700">賽事開始時間</label>
+                                <input type="text" name="match-time" id="match-time" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md bg-gray-100" readonly>
+                            </div>
+                            
+                            <!-- 賽事狀態 -->
+                            <div>
+                                <label for="match-status" class="block text-sm font-medium text-gray-700">賽事狀態</label>
+                                <input type="text" name="match-status-display" id="match-status-display" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md bg-gray-100" readonly>
+                                <input type="hidden" name="match-status" id="match-status">
+                            </div>
+
+                            <!-- 創建時間 -->
+                            <div>
+                                <label for="create-time" class="block text-sm font-medium text-gray-700">創建時間</label>
+                                <input type="text" name="create-time" id="create-time" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md bg-gray-100" readonly>
+                            </div>
+
+                            <!-- 創建方式 -->
+                            <div>
+                                <label for="create-method" class="block text-sm font-medium text-gray-700">創建方式</label>
+                                <input type="text" name="create-method" id="create-method" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md bg-gray-100" readonly>
+                            </div>
+
+                            <!-- 創建帳號 -->
+                            <div>
+                                <label for="create-account" class="block text-sm font-medium text-gray-700">創建帳號</label>
+                                <input type="text" name="create-account" id="create-account" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md bg-gray-100" readonly>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 讓球設定 -->
+                    <div class="mb-6">
+                        <h3 class="text-lg font-medium text-gray-900 mb-4">讓球設定</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-6">
+                            <!-- 讓球隊伍 -->
+                            <div>
+                                <label for="handicap-team" class="block text-sm font-medium text-gray-700">讓球隊伍 <span class="text-red-500">*</span></label>
+                                <select name="handicap-team" id="handicap-team" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" required>
+                                    <option value="">請選擇讓球隊伍</option>
+                                    <option value="" id="home-team-option"></option>
+                                    <option value="" id="away-team-option"></option>
+                                </select>
+                            </div>
+                            
+                            <!-- 讓球數 -->
+                            <div>
+                                <label for="handicap-value" class="block text-sm font-medium text-gray-700">讓球數 <span class="text-red-500">*</span></label>
+                                <input type="number" name="handicap-value" id="handicap-value" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" placeholder="0" required>
+                            </div>
+                            
+                            <!-- 盤口讓球賠率 -->
+                            <div>
+                                <label for="handicap-draw-odds" class="block text-sm font-medium text-gray-700">盤口讓球賠率 <span class="text-red-500">*</span></label>
+                                <input type="number" name="handicap-draw-odds" id="handicap-draw-odds" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" placeholder="0" required>
+                                <p class="mt-1 text-xs text-gray-500">當比分等於讓球數時使用此賠率，有效值範圍不超過±100</p>
+                            </div>
+                            
+                            <!-- 賽事前主隊賠率 -->
+                            <div>
+                                <label for="pre-home-odds" class="block text-sm font-medium text-gray-700">賽事前主隊賠率 <span class="text-red-500">*</span></label>
+                                <input type="number" name="pre-home-odds" id="pre-home-odds" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" placeholder="0.85" min="0" max="2" step="0.01" required>
+                            </div>
+                            
+                            <!-- 賽事前客隊賠率 -->
+                            <div>
+                                <label for="pre-away-odds" class="block text-sm font-medium text-gray-700">賽事前客隊賠率 <span class="text-red-500">*</span></label>
+                                <input type="number" name="pre-away-odds" id="pre-away-odds" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" placeholder="0.85" min="0" max="2" step="0.01" required>
+                            </div>
+                            
+                            <!-- 賽事中主隊賠率 -->
+                            <div>
+                                <label for="live-home-odds" class="block text-sm font-medium text-gray-700">賽事中主隊賠率 <span class="text-red-500">*</span></label>
+                                <input type="number" name="live-home-odds" id="live-home-odds" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" placeholder="0.80" min="0" max="2" step="0.01" required>
+                            </div>
+                            
+                            <!-- 賽事中客隊賠率 -->
+                            <div>
+                                <label for="live-away-odds" class="block text-sm font-medium text-gray-700">賽事中客隊賠率 <span class="text-red-500">*</span></label>
+                                <input type="number" name="live-away-odds" id="live-away-odds" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" placeholder="0.80" min="0" max="2" step="0.01" required>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 大小球設定 -->
+                    <div class="mb-6">
+                        <h3 class="text-lg font-medium text-gray-900 mb-4">大小球設定</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-6">
+                            <!-- 大小球球數 -->
+                            <div>
+                                <label for="total-goals" class="block text-sm font-medium text-gray-700">大小球球數 <span class="text-red-500">*</span></label>
+                                <input type="number" name="total-goals" id="total-goals" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" placeholder="0" required>
+                            </div>
+                            
+                            <!-- 盤口大小球賠率 -->
+                            <div>
+                                <label for="total-draw-odds" class="block text-sm font-medium text-gray-700">盤口大小球賠率 <span class="text-red-500">*</span></label>
+                                <input type="number" name="total-draw-odds" id="total-draw-odds" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" placeholder="0" required>
+                                <p class="mt-1 text-xs text-gray-500">當總進球數等於大小球球數時使用此賠率，有效值範圍不超過±100</p>
+                            </div>
+                            
+                            <!-- 賽事前大球賠率 -->
+                            <div>
+                                <label for="pre-over-odds" class="block text-sm font-medium text-gray-700">賽事前大球賠率 <span class="text-red-500">*</span></label>
+                                <input type="number" name="pre-over-odds" id="pre-over-odds" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" placeholder="0.85" min="0" max="2" step="0.01" required>
+                            </div>
+                            
+                            <!-- 賽事前小球賠率 -->
+                            <div>
+                                <label for="pre-under-odds" class="block text-sm font-medium text-gray-700">賽事前小球賠率 <span class="text-red-500">*</span></label>
+                                <input type="number" name="pre-under-odds" id="pre-under-odds" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" placeholder="0.85" min="0" max="2" step="0.01" required>
+                            </div>
+                            
+                            <!-- 賽事中大球賠率 -->
+                            <div>
+                                <label for="live-over-odds" class="block text-sm font-medium text-gray-700">賽事中大球賠率 <span class="text-red-500">*</span></label>
+                                <input type="number" name="live-over-odds" id="live-over-odds" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" placeholder="0.80" min="0" max="2" step="0.01" required>
+                            </div>
+                            
+                            <!-- 賽事中小球賠率 -->
+                            <div>
+                                <label for="live-under-odds" class="block text-sm font-medium text-gray-700">賽事中小球賠率 <span class="text-red-500">*</span></label>
+                                <input type="number" name="live-under-odds" id="live-under-odds" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" placeholder="0.80" min="0" max="2" step="0.01" required>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 按鈕區 -->
+                    <div class="mt-6 flex justify-end space-x-3">
+                        <button type="button" id="cancel-btn" class="px-4 py-2 bg-white border border-gray-300 text-gray-700 rounded-md hover:bg-gray-50 focus:outline-none">
+                            取消
+                        </button>
+                        <button type="submit" id="submit-match" class="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 focus:outline-none">
+                            儲存變更
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 引入 Flatpickr 日期選擇器 -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/zh-tw.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 獲取賽事ID
+            const urlParams = new URLSearchParams(window.location.search);
+            const matchId = urlParams.get('id');
+            
+            if (!matchId) {
+                alert('無效的賽事ID');
+                window.location.href = 'list.html';
+                return;
+            }
+            
+            // 模擬從API獲取賽事資料
+            // 在實際應用中，這裡會發送API請求獲取賽事詳情
+            // 這裡使用假資料進行演示
+            const matchData = {
+                id: matchId,
+                league: 'EPL',
+                leagueName: '英超聯賽',
+                homeTeam: '曼聯',
+                awayTeam: '曼城',
+                matchTime: '2024-03-20 20:00:00',
+                status: 'upcoming',
+                statusDisplay: '未開始',
+                createTime: '2024-03-15 14:30:00',
+                createMethod: '手動', // 或 '自動'
+                createAccount: 'admin', // 如果是自動創建則為 'Auto'
+                handicapTeam: '曼聯',
+                handicapValue: 1.5,
+                handicapDrawOdds: 25,
+                preHomeOdds: 0.85,
+                preAwayOdds: 0.95,
+                liveHomeOdds: 0.80,
+                liveAwayOdds: 0.90,
+                totalGoals: 2.5,
+                totalDrawOdds: 30,
+                preOverOdds: 0.85,
+                preUnderOdds: 0.95,
+                liveOverOdds: 0.80,
+                liveUnderOdds: 0.90
+            };
+            
+            // 填充表單資料
+            document.getElementById('match-id').value = matchData.id;
+            document.getElementById('league').value = matchData.league;
+            document.getElementById('league-display').value = matchData.leagueName;
+            document.getElementById('home-team').value = matchData.homeTeam;
+            document.getElementById('away-team').value = matchData.awayTeam;
+            document.getElementById('match-time').value = matchData.matchTime;
+            document.getElementById('match-status').value = matchData.status;
+            document.getElementById('match-status-display').value = matchData.statusDisplay;
+            
+            // 填充新增的欄位
+            document.getElementById('create-time').value = matchData.createTime;
+            document.getElementById('create-method').value = matchData.createMethod;
+            document.getElementById('create-account').value = matchData.createMethod === '自動' ? 'Auto' : matchData.createAccount;
+            
+            // 設置讓球隊伍下拉選單
+            const homeTeamOption = document.getElementById('home-team-option');
+            const awayTeamOption = document.getElementById('away-team-option');
+            
+            homeTeamOption.value = matchData.homeTeam;
+            homeTeamOption.textContent = matchData.homeTeam;
+            
+            awayTeamOption.value = matchData.awayTeam;
+            awayTeamOption.textContent = matchData.awayTeam;
+            
+            // 設置默認選中的讓球隊伍
+            const handicapTeamSelect = document.getElementById('handicap-team');
+            if (matchData.handicapTeam === matchData.homeTeam) {
+                handicapTeamSelect.value = matchData.homeTeam;
+            } else if (matchData.handicapTeam === matchData.awayTeam) {
+                handicapTeamSelect.value = matchData.awayTeam;
+            }
+            
+            document.getElementById('handicap-value').value = matchData.handicapValue;
+            document.getElementById('handicap-draw-odds').value = matchData.handicapDrawOdds;
+            document.getElementById('pre-home-odds').value = matchData.preHomeOdds;
+            document.getElementById('pre-away-odds').value = matchData.preAwayOdds;
+            document.getElementById('live-home-odds').value = matchData.liveHomeOdds;
+            document.getElementById('live-away-odds').value = matchData.liveAwayOdds;
+            document.getElementById('total-goals').value = matchData.totalGoals;
+            document.getElementById('total-draw-odds').value = matchData.totalDrawOdds;
+            document.getElementById('pre-over-odds').value = matchData.preOverOdds;
+            document.getElementById('pre-under-odds').value = matchData.preUnderOdds;
+            document.getElementById('live-over-odds').value = matchData.liveOverOdds;
+            document.getElementById('live-under-odds').value = matchData.liveUnderOdds;
+            
+            // 返回按鈕和取消按鈕點擊事件
+            document.getElementById('back-btn').addEventListener('click', function() {
+                window.location.href = 'list.html'; // 返回列表頁
+            });
+            
+            document.getElementById('cancel-btn').addEventListener('click', function() {
+                window.location.href = 'list.html'; // 返回列表頁
+            });
+            
+            // 表單提交事件
+            document.getElementById('edit-match-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // 獲取表單數據
+                const handicapTeam = document.getElementById('handicap-team').value;
+                const handicapValue = document.getElementById('handicap-value').value;
+                const handicapDrawOdds = document.getElementById('handicap-draw-odds').value;
+                const totalGoals = document.getElementById('total-goals').value;
+                const totalDrawOdds = document.getElementById('total-draw-odds').value;
+                
+                // 驗證讓球隊伍
+                if (!handicapTeam) {
+                    alert('請選擇讓球隊伍');
+                    return;
+                }
+                
+                // 驗證盤口讓球賠率
+                if (handicapDrawOdds === '' || isNaN(parseInt(handicapDrawOdds)) || Math.abs(parseInt(handicapDrawOdds)) > 100) {
+                    alert('請輸入有效的盤口讓球賠率（不超過±100）');
+                    return;
+                }
+                
+                // 驗證盤口大小球賠率
+                if (totalDrawOdds === '' || isNaN(parseInt(totalDrawOdds)) || Math.abs(parseInt(totalDrawOdds)) > 100) {
+                    alert('請輸入有效的盤口大小球賠率（不超過±100）');
+                    return;
+                }
+                
+                // 收集所有表單數據
+                const formData = {
+                    id: document.getElementById('match-id').value,
+                    league: document.getElementById('league').value,
+                    handicapTeam: document.getElementById('handicap-team').value,
+                    handicapValue: parseFloat(handicapValue),
+                    handicapDrawOdds: parseInt(handicapDrawOdds),
+                    preHomeOdds: parseFloat(document.getElementById('pre-home-odds').value),
+                    preAwayOdds: parseFloat(document.getElementById('pre-away-odds').value),
+                    liveHomeOdds: parseFloat(document.getElementById('live-home-odds').value),
+                    liveAwayOdds: parseFloat(document.getElementById('live-away-odds').value),
+                    totalGoals: parseFloat(totalGoals),
+                    totalDrawOdds: parseInt(totalDrawOdds),
+                    preOverOdds: parseFloat(document.getElementById('pre-over-odds').value),
+                    preUnderOdds: parseFloat(document.getElementById('pre-under-odds').value),
+                    liveOverOdds: parseFloat(document.getElementById('live-over-odds').value),
+                    liveUnderOdds: parseFloat(document.getElementById('live-under-odds').value)
+                };
+                
+                console.log('要提交的數據:', formData);
+                
+                // 模擬API請求成功
+                setTimeout(function() {
+                    alert('賽事資料更新成功');
+                    window.location.href = 'list.html'; // 返回列表頁
+                }, 500);
+            });
+        });
+    </script>
+</body>
+</html> 

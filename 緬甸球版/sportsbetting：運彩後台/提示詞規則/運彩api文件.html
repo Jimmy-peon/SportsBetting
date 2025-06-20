@@ -1,0 +1,1779 @@
+<!DOCTYPE html> <html><head>
+		<title>運彩API文件</title>
+		<base href="../../../">
+		<meta id="root-path" root-path="../../../">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0">
+		<meta charset="UTF-8">
+		<meta name="description" content="皮克爽專案 - 運彩API文件">
+		<meta property="og:title" content="運彩API文件">
+		<meta property="og:description" content="皮克爽專案 - 運彩API文件">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://jimmy-peon.github.io/SportsBetting/緬甸球版/sportsbetting：運彩後台/提示詞規則/運彩api文件.html">
+		<meta property="og:image" content="undefined">
+		<meta property="og:site_name" content="皮克爽專案">
+		<meta name="author" content="Jimmy"><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://jimmy-peon.github.io/SportsBetting/lib/rss.xml"><script async="" id="webpage-script" src="lib/scripts/webpage.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script type="module" async="" id="graph-view-script" src="lib/scripts/graph-view.js"></script><script async="" id="graph-wasm-script" src="lib/scripts/graph-wasm.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="graph-render-worker-script" src="lib/scripts/graph-render-worker.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="tinycolor-script" src="lib/scripts/tinycolor.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="pixi-script" src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.4.0/pixi.min.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="minisearch-script" src="https://cdn.jsdelivr.net/npm/minisearch@6.3.0/dist/umd/index.min.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><link rel="icon" href="lib/media/favicon.png"><script async="" id="graph-data-script" src="lib/scripts/graph-data.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><style>body{--line-width:40em;--line-width-adaptive:40em;--file-line-width:40em;--sidebar-width:min(20em, 80vw);--collapse-arrow-size:11px;--tree-horizontal-spacing:0.6em;--tree-vertical-spacing:0.6em;--sidebar-margin:12px}.sidebar{height:100%;min-width:calc(var(--sidebar-width) + var(--divider-width-hover));max-width:calc(var(--sidebar-width) + var(--divider-width-hover));font-size:14px;z-index:10;position:relative;overflow:hidden;transition:min-width ease-in-out,max-width ease-in-out;transition-duration:.2s;contain:size}.sidebar-left{left:0}.sidebar-right{right:0}.sidebar.is-collapsed{min-width:0;max-width:0}body.floating-sidebars .sidebar{position:absolute}.sidebar-content{height:100%;min-width:calc(var(--sidebar-width) - var(--divider-width-hover));top:0;padding:var(--sidebar-margin);padding-top:4em;line-height:var(--line-height-tight);background-color:var(--background-secondary);transition:background-color,border-right,border-left,box-shadow;transition-duration:var(--color-fade-speed);transition-timing-function:ease-in-out;position:absolute;display:flex;flex-direction:column}.sidebar:not(.is-collapsed) .sidebar-content{min-width:calc(max(100%,var(--sidebar-width)) - 3px);max-width:calc(max(100%,var(--sidebar-width)) - 3px)}.sidebar-left .sidebar-content{left:0;border-top-right-radius:var(--radius-l);border-bottom-right-radius:var(--radius-l)}.sidebar-right .sidebar-content{right:0;border-top-left-radius:var(--radius-l);border-bottom-left-radius:var(--radius-l)}.sidebar:has(.sidebar-content:empty):has(.topbar-content:empty){display:none}.sidebar-topbar{height:2em;width:var(--sidebar-width);top:var(--sidebar-margin);padding-inline:var(--sidebar-margin);z-index:1;position:fixed;display:flex;align-items:center;transition:width ease-in-out;transition-duration:inherit}.sidebar.is-collapsed .sidebar-topbar{width:calc(2.3em + var(--sidebar-margin) * 2)}.sidebar .sidebar-topbar.is-collapsed{width:0}.sidebar-left .sidebar-topbar{left:0}.sidebar-right .sidebar-topbar{right:0}.topbar-content{overflow:hidden;overflow:clip;width:100%;height:100%;display:flex;align-items:center;transition:inherit}.sidebar.is-collapsed .topbar-content{width:0;transition:inherit}.clickable-icon.sidebar-collapse-icon{background-color:transparent;color:var(--icon-color-focused);padding:0!important;margin:0!important;height:100%!important;width:2.3em!important;margin-inline:0.14em!important;position:absolute}.sidebar-left .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);right:var(--sidebar-margin)}.sidebar-right .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);left:var(--sidebar-margin)}.clickable-icon.sidebar-collapse-icon svg.svg-icon{width:100%;height:100%}.sidebar-section-header{margin:0 0 1em 0;text-transform:uppercase;letter-spacing:.06em;font-weight:600}body{transition:background-color var(--color-fade-speed) ease-in-out}.webpage-container{display:flex;flex-direction:row;height:100%;width:100%;align-items:stretch;justify-content:center}.document-container{opacity:1;flex-basis:100%;max-width:100%;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;transition:opacity .2s ease-in-out;contain:inline-size}.hide{opacity:0;transition:opacity .2s ease-in-out}.document-container>.markdown-preview-view{margin:var(--sidebar-margin);margin-bottom:0;width:100%;width:-webkit-fill-available;width:-moz-available;width:fill-available;background-color:var(--background-primary);transition:background-color var(--color-fade-speed) ease-in-out;border-top-right-radius:var(--window-radius,var(--radius-m));border-top-left-radius:var(--window-radius,var(--radius-m));overflow-x:hidden!important;overflow-y:auto!important;display:flex!important;flex-direction:column!important;align-items:center!important;contain:inline-size}.document-container>.markdown-preview-view>.markdown-preview-sizer{padding-bottom:80vh!important;width:100%!important;max-width:var(--line-width)!important;flex-basis:var(--line-width)!important;transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}.markdown-rendered img:not([width]),.view-content img:not([width]){max-width:100%;outline:0}.document-container>.view-content.embed{display:flex;padding:1em;height:100%;width:100%;align-items:center;justify-content:center}.document-container>.view-content.embed>*{max-width:100%;max-height:100%;object-fit:contain}:has(> :is(.math,table)){overflow-x:auto!important}.document-container>.view-content{overflow-x:auto;contain:content;padding:0;margin:0;height:100%}.scroll-highlight{position:absolute;width:100%;height:100%;pointer-events:none;z-index:1000;background-color:hsla(var(--color-accent-hsl),.25);opacity:0;padding:1em;inset:50%;translate:-50% -50%;border-radius:var(--radius-s)}</style><script defer="">async function loadIncludes(){if("file:"!=location.protocol){let e=document.querySelectorAll("include");for(let t=0;t<e.length;t++){let o=e[t],l=o.getAttribute("src");try{const e=await fetch(l);if(!e.ok){console.log("Could not include file: "+l),o?.remove();continue}let t=await e.text(),n=document.createRange().createContextualFragment(t),i=Array.from(n.children);for(let e of i)e.classList.add("hide"),e.style.transition="opacity 0.5s ease-in-out",setTimeout((()=>{e.classList.remove("hide")}),10);o.before(n),o.remove(),console.log("Included file: "+l)}catch(e){o?.remove(),console.log("Could not include file: "+l,e);continue}}}else{if(document.querySelectorAll("include").length>0){var e=document.createElement("div");e.id="error",e.textContent="Web server exports must be hosted on an http / web server to be viewed correctly.",e.style.position="fixed",e.style.top="50%",e.style.left="50%",e.style.transform="translate(-50%, -50%)",e.style.fontSize="1.5em",e.style.fontWeight="bold",e.style.textAlign="center",document.body.appendChild(e),document.querySelector(".document-container")?.classList.remove("hide")}}}document.addEventListener("DOMContentLoaded",(()=>{loadIncludes()}));let isFileProtocol="file:"==location.protocol;function waitLoadScripts(e,t){let o=e.map((e=>document.getElementById(e+"-script"))),l=0;!function e(){let n=o[l];l++,n&&"true"!=n.getAttribute("loaded")||l<o.length&&e(),l<o.length?n.addEventListener("load",e):t()}()}</script><link rel="stylesheet" href="lib/styles/obsidian.css"><link rel="preload" href="lib/styles/global-variable-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/global-variable-styles.css"></noscript><link rel="preload" href="lib/styles/main-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/main-styles.css"></noscript></head><body class="publish css-settings-manager theme-dark show-inline-title show-ribbon"><script defer="">let theme=localStorage.getItem("theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");"dark"==theme?(document.body.classList.add("theme-dark"),document.body.classList.remove("theme-light")):(document.body.classList.add("theme-light"),document.body.classList.remove("theme-dark")),window.innerWidth<480?document.body.classList.add("is-phone"):window.innerWidth<768?document.body.classList.add("is-tablet"):window.innerWidth<1024?document.body.classList.add("is-small-screen"):document.body.classList.add("is-large-screen")</script><div class="webpage-container workspace"><div class="sidebar-left sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"><label class="theme-toggle-container" for="theme_toggle"><input class="theme-toggle-input" type="checkbox" id="theme_toggle"><div class="toggle-background"></div></label></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content"><div class="search-input-container"><input enterkeyhint="search" type="search" spellcheck="false" placeholder="Search..."><div class="search-input-clear-button" aria-label="Clear search"></div></div><include src="lib/html/file-tree.html"></include></div><script defer="">let ls = document.querySelector(".sidebar-left"); ls.classList.add("is-collapsed"); if (window.innerWidth > 768) ls.classList.remove("is-collapsed"); ls.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-left-width"));</script></div><div class="document-container markdown-reading-view hide"><div class="markdown-preview-view markdown-rendered allow-fold-headings allow-fold-lists is-readable-line-width"><style id="MJX-CHTML-styles"></style><div class="markdown-preview-sizer markdown-preview-section"><h1 class="page-title heading inline-title" id="運彩API文件">運彩API文件</h1><div class="el-h1 heading-wrapper"><div class="heading-children"><div class="el-h2 heading-wrapper"><h2 data-heading="文件產出提示詞" dir="auto" class="heading" id="文件產出提示詞"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>文件產出提示詞</h2><div class="heading-children"><div class="el-p"><p dir="auto">建立一個 .md 檔，名稱為「運彩API文件」<br>
+將 每一 API ，文件格式以下為例</p></div><div class="el-p"><p dir="auto">文件格式</p></div><div class="el-pre"><pre><code data-line="0">說明：
+
+HTTP Action：
+
+# Request
+
+| 參數名稱 | 屬性  | 是否必填 | 說明  | 驗證條件／限制 |
+| ---- | --- | ---- | --- | ------- |
+|      |     |      |     |         |
+
+# Response
+
+| 參數名稱         | 屬性  | 是否必填 | 說明        | 驗證條件／限制 |
+| ------------ | --- | ---- | --------- | ------- |
+| ErrCode      |     |     |       |         |
+
+
+| 狀態碼 | 狀態名稱 | 狀態訊息          |
+| --- | ---- | ------------- |
+|     |      |             |
+
+# Data
+
+| 參數名稱 | 屬性  | 是否必填 | 說明  | 驗證條件／限制 |
+| ---- | --- | ---- | --- | ------- |
+|      |     |      |     |         |
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="文件格式範例" dir="auto" class="heading" id="文件格式範例"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>文件格式範例</h2><div class="heading-children"><div class="el-pre"><pre><code data-line="0">說明：
+
+HTTP Action：
+
+# Request
+
+| 參數名稱 | 屬性  | 是否必填 | 說明  | 驗證條件／限制 |
+| ---- | --- | ---- | --- | ------- |
+|      |     |      |     |         |
+
+# Response
+
+| 參數名稱         | 屬性  | 是否必填 | 說明        | 驗證條件／限制 |
+| ------------ | --- | ---- | --------- | ------- |
+| ErrCode      |     |     |       |         |
+
+
+| 狀態碼 | 狀態名稱 | 狀態訊息          |
+| --- | ---- | ------------- |
+|     |      |             |
+
+# Data
+
+| 參數名稱 | 屬性  | 是否必填 | 說明  | 驗證條件／限制 |
+| ---- | --- | ---- | --- | ------- |
+|      |     |      |     |         |
+
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="格式說明" dir="auto" class="heading" id="格式說明"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>格式說明</h2><div class="heading-children"><div class="el-ul"><ul>
+<li data-line="0" dir="auto">使用 @proto.go、@define.go 文件</li>
+<li data-line="1" dir="auto">說明：、HTTP Action：，後面的你不要自行增加內容；若欄位本身有值，你也不要自行增加內容</li>
+<li data-line="2" dir="auto">當Response內容中，有 Data 時，API規格中需要新增 Data 表格中的內容</li>
+<li data-line="3" dir="auto">「是否必填」欄位，若註解說明中未提及的話，都為「是」</li>
+<li data-line="4" dir="auto">「驗證條件／限制」欄位，都保持空欄位；若欄位本身有值，你不要自行增加內容</li>
+<li data-line="5" dir="auto">狀態碼內容請根據「define.go」檔案</li>
+</ul></div></div></div><div class="el-h2 heading-wrapper"><h2 data-heading="各 API 文件" dir="auto" class="heading" id="各_API_文件"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>各 API 文件</h2><div class="heading-children"><div class="el-h3 heading-wrapper"><h3 data-heading="AuthAuthPreLogin - 驗證前置登入" dir="auto" class="heading" id="AuthAuthPreLogin_-_驗證前置登入"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>AuthAuthPreLogin - 驗證前置登入</h3><div class="heading-children"><div class="el-p"><p dir="auto">說明：[驗證]前置登入</p></div><div class="el-p"><p dir="auto">HTTP Action：/auth/pre-login</p></div></div></div></div></div></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="Request" dir="auto" class="heading" id="Request">Request</h1><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">參數名稱</th>
+<th dir="ltr">屬性</th>
+<th dir="ltr">是否必填</th>
+<th dir="ltr">說明</th>
+<th dir="ltr">驗證條件／限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">ClientID</td>
+<td dir="ltr">string</td>
+<td dir="ltr">否</td>
+<td dir="ltr">客戶端識別碼(留空則由後台自動生成指派,唯一碼UUID)</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="Response" dir="auto" class="heading" id="Response">Response</h1><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">參數名稱</th>
+<th dir="ltr">屬性</th>
+<th dir="ltr">是否必填</th>
+<th dir="ltr">說明</th>
+<th dir="ltr">驗證條件／限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">ErrResp</td>
+<td dir="ltr">ErrResp</td>
+<td dir="ltr">是</td>
+<td dir="ltr">錯誤回應</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">StatusCode</td>
+<td dir="ltr">AuthPreLoginStatus</td>
+<td dir="ltr">是</td>
+<td dir="ltr">前置登入狀態碼</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">ClientID</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">客戶端識別碼(唯一碼UUID)</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">CaptchaID</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">驗證碼編號(唯一碼UUID)</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">CaptchaImage</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">驗證碼PNG圖片的二進制位元資料轉成Base64格式</td>
+<td dir="ltr">像素：120x40，6位數</td>
+</tr>
+<tr>
+<td dir="ltr">ClientIDExpiredTime</td>
+<td dir="ltr">int64</td>
+<td dir="ltr">是</td>
+<td dir="ltr">客戶端識別碼過期時間戳(UTC+0)</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">CaptchaIDExpiredTime</td>
+<td dir="ltr">int64</td>
+<td dir="ltr">是</td>
+<td dir="ltr">驗證碼過期時間戳(UTC+0)</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">狀態碼</th>
+<th dir="ltr">狀態名稱</th>
+<th dir="ltr">狀態訊息</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="auto">0</td>
+<td dir="ltr">AuthAuthPreLoginSuccess</td>
+<td dir="ltr">前置登入成功</td>
+</tr>
+<tr>
+<td dir="auto">1</td>
+<td dir="ltr">AuthAuthPreLoginClientIDNotExist</td>
+<td dir="ltr">客戶端識別碼不存在(已過期)</td>
+</tr>
+</tbody>
+</table></div><div class="el-h3 heading-wrapper"><h3 data-heading="AuthRefreshCaptcha - 驗證刷新驗證碼" dir="auto" class="heading" id="AuthRefreshCaptcha_-_驗證刷新驗證碼"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>AuthRefreshCaptcha - 驗證刷新驗證碼</h3><div class="heading-children"><div class="el-p"><p dir="auto">說明：[驗證]刷新驗證碼</p></div><div class="el-p"><p dir="auto">HTTP Action：/auth/refresh-captcha</p></div></div></div></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="Request" dir="auto" class="heading" id="Request">Request</h1><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">參數名稱</th>
+<th dir="ltr">屬性</th>
+<th dir="ltr">是否必填</th>
+<th dir="ltr">說明</th>
+<th dir="ltr">驗證條件／限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">ClientID</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">客戶端識別碼(唯一碼UUID)</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">CaptchaID</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">驗證碼編號(唯一碼UUID)</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="Response" dir="auto" class="heading" id="Response">Response</h1><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">參數名稱</th>
+<th dir="ltr">屬性</th>
+<th dir="ltr">是否必填</th>
+<th dir="ltr">說明</th>
+<th dir="ltr">驗證條件／限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">ErrResp</td>
+<td dir="ltr">ErrResp</td>
+<td dir="ltr">是</td>
+<td dir="ltr">錯誤回應</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">StatusCode</td>
+<td dir="ltr">AuthRefreshCaptchaStatus</td>
+<td dir="ltr">是</td>
+<td dir="ltr">刷新驗證碼狀態碼</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">CaptchaID</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">驗證碼編號(唯一碼UUID)</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">CaptchaImage</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">驗證碼圖片的二進制位元資料轉成Base64格式</td>
+<td dir="ltr">像素：120x40，6位數</td>
+</tr>
+<tr>
+<td dir="ltr">ClientIDExpiredTime</td>
+<td dir="ltr">int64</td>
+<td dir="ltr">是</td>
+<td dir="ltr">客戶端識別碼過期時間戳(UTC+0)</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">CaptchaIDExpiredTime</td>
+<td dir="ltr">int64</td>
+<td dir="ltr">是</td>
+<td dir="ltr">驗證碼過期時間戳(UTC+0)</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">狀態碼</th>
+<th dir="ltr">狀態名稱</th>
+<th dir="ltr">狀態訊息</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="auto">0</td>
+<td dir="ltr">AuthRefreshCaptchaSuccess</td>
+<td dir="ltr">刷新成功</td>
+</tr>
+<tr>
+<td dir="auto">1</td>
+<td dir="ltr">AuthRefreshCaptchaClientIDNotExist</td>
+<td dir="ltr">客戶端識別碼不存在(已過期)</td>
+</tr>
+<tr>
+<td dir="auto">2</td>
+<td dir="ltr">AuthRefreshCaptchaCaptchaIDNotMatch</td>
+<td dir="ltr">驗證碼編號不符</td>
+</tr>
+</tbody>
+</table></div><div class="el-h3 heading-wrapper"><h3 data-heading="AuthLogin - 驗證登入" dir="auto" class="heading" id="AuthLogin_-_驗證登入"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>AuthLogin - 驗證登入</h3><div class="heading-children"><div class="el-p"><p dir="auto">說明：[驗證]登入</p></div><div class="el-p"><p dir="auto">HTTP Action：/auth/login</p></div></div></div></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="Request" dir="auto" class="heading" id="Request">Request</h1><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">參數名稱</th>
+<th dir="ltr">屬性</th>
+<th dir="ltr">是否必填</th>
+<th dir="ltr">說明</th>
+<th dir="ltr">驗證條件／限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">ClientID</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">客戶端識別碼</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">CaptchaID</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">驗證碼編號(唯一碼UUID)</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">CaptchaAnswer</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">驗證碼答案</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">AgentID</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">登入代理帳號</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">AgentPswd</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">登入代理密碼</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">ClientLoginIP</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">客戶端登入IP</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="Response" dir="auto" class="heading" id="Response">Response</h1><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">參數名稱</th>
+<th dir="ltr">屬性</th>
+<th dir="ltr">是否必填</th>
+<th dir="ltr">說明</th>
+<th dir="ltr">驗證條件／限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">ErrResp</td>
+<td dir="ltr">ErrResp</td>
+<td dir="ltr">是</td>
+<td dir="ltr">錯誤回應</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">StatusCode</td>
+<td dir="ltr">AuthLoginStatus</td>
+<td dir="ltr">是</td>
+<td dir="ltr">登入狀態碼</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">AgentToken</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理令牌</td>
+<td dir="ltr">若使用者重複登入，更新Token，且只有新端點能操作，舊端點無法操作</td>
+</tr>
+<tr>
+<td dir="ltr">AgentTokenExpiredTime</td>
+<td dir="ltr">int64</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理令牌過期時間戳(UTC+0)</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">AgentID</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理帳號</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">AgentName</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理姓名</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">AgentBalane</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理餘額</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">狀態碼</th>
+<th dir="ltr">狀態名稱</th>
+<th dir="ltr">狀態訊息</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="auto">0</td>
+<td dir="ltr">AuthLoginSuccess</td>
+<td dir="ltr">登入成功</td>
+</tr>
+<tr>
+<td dir="auto">1</td>
+<td dir="ltr">AuthLoginClientIDNotExist</td>
+<td dir="ltr">客戶端識別碼不存在(已過期)</td>
+</tr>
+<tr>
+<td dir="auto">2</td>
+<td dir="ltr">AuthLoginCaptchaIDNotMatch</td>
+<td dir="ltr">驗證碼編號不符</td>
+</tr>
+<tr>
+<td dir="auto">3</td>
+<td dir="ltr">AuthLoginCaptchaIDExpired</td>
+<td dir="ltr">驗證碼編號已過期</td>
+</tr>
+<tr>
+<td dir="auto">4</td>
+<td dir="ltr">AuthLoginCaptchaError</td>
+<td dir="ltr">驗證碼錯誤</td>
+</tr>
+<tr>
+<td dir="auto">5</td>
+<td dir="ltr">AuthLoginAgentIDNotExist</td>
+<td dir="ltr">代理帳號不存在</td>
+</tr>
+<tr>
+<td dir="auto">6</td>
+<td dir="ltr">AuthLoginAgentPswdError</td>
+<td dir="ltr">代理密碼錯誤</td>
+</tr>
+<tr>
+<td dir="auto">7</td>
+<td dir="ltr">AuthLoginAgentActiveDisabled</td>
+<td dir="ltr">代理帳戶已被禁用</td>
+</tr>
+</tbody>
+</table></div><div class="el-h3 heading-wrapper"><h3 data-heading="AuthLogout - 驗證登出" dir="auto" class="heading" id="AuthLogout_-_驗證登出"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>AuthLogout - 驗證登出</h3><div class="heading-children"><div class="el-p"><p dir="auto">說明：[驗證]登出</p></div><div class="el-p"><p dir="auto">HTTP Action：/auth/logout</p></div></div></div></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="Request" dir="auto" class="heading" id="Request">Request</h1><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">參數名稱</th>
+<th dir="ltr">屬性</th>
+<th dir="ltr">是否必填</th>
+<th dir="ltr">說明</th>
+<th dir="ltr">驗證條件／限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">AgentToken</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理令牌</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="Response" dir="auto" class="heading" id="Response">Response</h1><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">參數名稱</th>
+<th dir="ltr">屬性</th>
+<th dir="ltr">是否必填</th>
+<th dir="ltr">說明</th>
+<th dir="ltr">驗證條件／限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">ErrResp</td>
+<td dir="ltr">ErrResp</td>
+<td dir="ltr">是</td>
+<td dir="ltr">錯誤回應</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">StatusCode</td>
+<td dir="ltr">AuthLogoutStatus</td>
+<td dir="ltr">是</td>
+<td dir="ltr">登出狀態碼</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">AgentID</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理帳號</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">狀態碼</th>
+<th dir="ltr">狀態名稱</th>
+<th dir="ltr">狀態訊息</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="auto">0</td>
+<td dir="ltr">AuthLogoutSuccess</td>
+<td dir="ltr">登出成功</td>
+</tr>
+<tr>
+<td dir="auto">1</td>
+<td dir="ltr">AuthLogoutAgentTokenInvalid</td>
+<td dir="ltr">代理令牌無效(已過期)</td>
+</tr>
+<tr>
+<td dir="auto">2</td>
+<td dir="ltr">AuthLogoutFailed</td>
+<td dir="ltr">登出失敗</td>
+</tr>
+</tbody>
+</table></div><div class="el-h3 heading-wrapper"><h3 data-heading="AgentCreate - 代理新增代理" dir="auto" class="heading" id="AgentCreate_-_代理新增代理"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>AgentCreate - 代理新增代理</h3><div class="heading-children"><div class="el-p"><p dir="auto">說明：[代理]新增代理</p></div><div class="el-p"><p dir="auto">HTTP Action：/agent/create</p></div></div></div></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="Request" dir="auto" class="heading" id="Request">Request</h1><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">參數名稱</th>
+<th dir="ltr">屬性</th>
+<th dir="ltr">是否必填</th>
+<th dir="ltr">說明</th>
+<th dir="ltr">驗證條件／限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">AgentToken</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理令牌</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">CreateAgentID</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">新增代理帳號</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">CreateAgentName</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">新增代理姓名</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">CreateAgentPswd</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">新增代理密碼</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">CreateAgentEmail</td>
+<td dir="ltr">string</td>
+<td dir="ltr">否</td>
+<td dir="ltr">新增代理郵箱(選填)</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">CreateAgentPhone</td>
+<td dir="ltr">string</td>
+<td dir="ltr">否</td>
+<td dir="ltr">新增代理手機號(選填)</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">CreateAgentProfitRate</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">新增代理佔成比例(%)</td>
+<td dir="ltr">預設為 0；不得超過上層剩餘比例；區間 0.00 ~ 100.00；有效小數點：2 位</td>
+</tr>
+<tr>
+<td dir="ltr">CreateAgentPrevGameCommiRate</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">新增代理賽事前返佣比例(%)</td>
+<td dir="ltr">預設為 0；間隔調整為0.05%；最高上限為2%；可超過上層剩餘返佣比例；有效小數點：2 位</td>
+</tr>
+<tr>
+<td dir="ltr">CreateAgentInGameCommiRate</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">新增代理賽事中返佣比例(%)</td>
+<td dir="ltr">預設為 0；間隔調整為0.05%；最高上限為2%；可超過上層剩餘返佣比例；有效小數點：2 位</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="Response" dir="auto" class="heading" id="Response">Response</h1><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">參數名稱</th>
+<th dir="ltr">屬性</th>
+<th dir="ltr">是否必填</th>
+<th dir="ltr">說明</th>
+<th dir="ltr">驗證條件／限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">ErrResp</td>
+<td dir="ltr">ErrResp</td>
+<td dir="ltr">是</td>
+<td dir="ltr">錯誤回應</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">StatusCode</td>
+<td dir="ltr">AgentCreateStatus</td>
+<td dir="ltr">是</td>
+<td dir="ltr">新增代理狀態碼</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">CreateAgent</td>
+<td dir="ltr">AgentData</td>
+<td dir="ltr">是</td>
+<td dir="ltr">新增代理資料</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">狀態碼</th>
+<th dir="ltr">狀態名稱</th>
+<th dir="ltr">狀態訊息</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="auto">0</td>
+<td dir="ltr">AgentCreateSuccess</td>
+<td dir="ltr">新增代理成功</td>
+</tr>
+<tr>
+<td dir="auto">1</td>
+<td dir="ltr">AgentCreateAgentTokenInvalid</td>
+<td dir="ltr">代理令牌無效(已過期)</td>
+</tr>
+<tr>
+<td dir="auto">2</td>
+<td dir="ltr">AgentCreateAgentNotPermission</td>
+<td dir="ltr">代理無管理權限</td>
+</tr>
+<tr>
+<td dir="auto">3</td>
+<td dir="ltr">AgentCreateAgentIDFormatError</td>
+<td dir="ltr">新增代理帳號格式錯誤</td>
+</tr>
+<tr>
+<td dir="auto">4</td>
+<td dir="ltr">AgentCreateAgentIDIsExist</td>
+<td dir="ltr">新增代理帳號已存在</td>
+</tr>
+<tr>
+<td dir="auto">5</td>
+<td dir="ltr">AgentCreateAgentNameFormatError</td>
+<td dir="ltr">新增代理姓名格式錯誤</td>
+</tr>
+<tr>
+<td dir="auto">6</td>
+<td dir="ltr">AgentCreateAgentNameIsExist</td>
+<td dir="ltr">新增代理姓名已存在</td>
+</tr>
+<tr>
+<td dir="auto">7</td>
+<td dir="ltr">AgentCreateAgentPswdEmpty</td>
+<td dir="ltr">新增代理密碼為空</td>
+</tr>
+<tr>
+<td dir="auto">8</td>
+<td dir="ltr">AgentCreateAgentPswdFormatError</td>
+<td dir="ltr">新增代理密碼格式錯誤</td>
+</tr>
+<tr>
+<td dir="auto">9</td>
+<td dir="ltr">AgentCreateProfitRateInvalid</td>
+<td dir="ltr">新增代理佔成比例無效</td>
+</tr>
+<tr>
+<td dir="auto">10</td>
+<td dir="ltr">AgentCreatePrevGameCommiRateInvalid</td>
+<td dir="ltr">新增代理賽事前返佣比例無效</td>
+</tr>
+<tr>
+<td dir="auto">11</td>
+<td dir="ltr">AgentCreateInGameCommiRateInvalid</td>
+<td dir="ltr">新增代理賽事中返佣比例無效</td>
+</tr>
+<tr>
+<td dir="auto">12</td>
+<td dir="ltr">AgentCreateFailed</td>
+<td dir="ltr">新增代理失敗</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="Data" dir="auto" class="heading" id="Data">Data</h1><div class="heading-children"><div class="el-p"><p dir="auto"><strong>AgentData (CreateAgent)</strong></p></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">參數名稱</th>
+<th dir="ltr">屬性</th>
+<th dir="ltr">是否必填</th>
+<th dir="ltr">說明</th>
+<th dir="ltr">驗證條件／限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Account</td>
+<td dir="ltr">AgentAccount</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理帳戶</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">Fund</td>
+<td dir="ltr">AgentFund</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理資金</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">Tree</td>
+<td dir="ltr">AgentTree</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理樹結構</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">Profit</td>
+<td dir="ltr">AgentProfitRate</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理佔成率</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">Commi</td>
+<td dir="ltr">AgentCommiRate</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理返佣率</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div><div class="el-p"><p dir="auto"><strong>AgentAccount</strong></p></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">參數名稱</th>
+<th dir="ltr">屬性</th>
+<th dir="ltr">是否必填</th>
+<th dir="ltr">說明</th>
+<th dir="ltr">驗證條件／限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">AgentID</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理帳號</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">AgentRank</td>
+<td dir="ltr">uint32</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理階級[0:root, 1:sh, 2:ssma, 3:sma, 4:ma, 5:agent]</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">AgentName</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理姓名</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">ActiveStatus</td>
+<td dir="ltr">uint32</td>
+<td dir="ltr">是</td>
+<td dir="ltr">帳戶啟用狀態[0:停用, 1:啟用]</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">EMail</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">電子郵件</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">Phone</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">手機號碼</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div><div class="el-p"><p dir="auto"><strong>AgentFund</strong></p></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">參數名稱</th>
+<th dir="ltr">屬性</th>
+<th dir="ltr">是否必填</th>
+<th dir="ltr">說明</th>
+<th dir="ltr">驗證條件／限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">AgentID</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理帳號</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">Balance</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">餘額</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div><div class="el-p"><p dir="auto"><strong>AgentTree</strong></p></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">參數名稱</th>
+<th dir="ltr">屬性</th>
+<th dir="ltr">是否必填</th>
+<th dir="ltr">說明</th>
+<th dir="ltr">驗證條件／限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">AgentID</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理帳號</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">AgentRank</td>
+<td dir="ltr">uint32</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理階級[0:root, 1:sh, 2:ssma, 3:sma, 4:ma, 5:agent]</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">UpAgentID</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">上層代理帳號</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">R1AgentID</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">一層代理帳號</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">R2AgentID</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">二層代理帳號</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">R3AgentID</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">三層代理帳號</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">R4AgentID</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">四層代理帳號</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">R5AgentID</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">五層代理帳號</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div><div class="el-p"><p dir="auto"><strong>AgentProfitRate</strong></p></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">參數名稱</th>
+<th dir="ltr">屬性</th>
+<th dir="ltr">是否必填</th>
+<th dir="ltr">說明</th>
+<th dir="ltr">驗證條件／限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">CurrAgentID</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">當前代理帳號</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">UpAgentID</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">上層代理帳號</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">CurrProfitRate</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">當前代理佔成比例(%)</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div><div class="el-p"><p dir="auto"><strong>AgentCommiRate</strong></p></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">參數名稱</th>
+<th dir="ltr">屬性</th>
+<th dir="ltr">是否必填</th>
+<th dir="ltr">說明</th>
+<th dir="ltr">驗證條件／限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">CurrAgentID</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">當前代理帳號</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">UpAgentID</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">上層代理帳號</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">CurrPrevGameCommiRate</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">當前代理賽事前返佣比例(%)</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">CurrInGameCommiRate</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">當前代理賽事中返佣比例(%)</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div><div class="el-h3 heading-wrapper"><h3 data-heading="AgentUpdateAccount - 代理更新代理帳戶" dir="auto" class="heading" id="AgentUpdateAccount_-_代理更新代理帳戶"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>AgentUpdateAccount - 代理更新代理帳戶</h3><div class="heading-children"><div class="el-p"><p dir="auto">說明：[代理]更新代理帳戶</p></div><div class="el-p"><p dir="auto">HTTP Action：/agent/update-account</p></div></div></div></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="Request" dir="auto" class="heading" id="Request">Request</h1><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">參數名稱</th>
+<th dir="ltr">屬性</th>
+<th dir="ltr">是否必填</th>
+<th dir="ltr">說明</th>
+<th dir="ltr">驗證條件／限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">AgentToken</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理令牌</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">UpdAgentID</td>
+<td dir="ltr">string</td>
+<td dir="ltr">否</td>
+<td dir="ltr">更新代理帳號(若此欄為空,則表示更新自己帳戶)</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">FixAgentName</td>
+<td dir="ltr">string</td>
+<td dir="ltr">否</td>
+<td dir="ltr">修改代理姓名(若此欄為空,則表示不修改)</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">FixAgentPswd</td>
+<td dir="ltr">string</td>
+<td dir="ltr">否</td>
+<td dir="ltr">修改代理密碼(UpdAgentID為空時有效,若此欄為空,則表示不修改)</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">IsClearUpdAgentPswd</td>
+<td dir="ltr">bool</td>
+<td dir="ltr">是</td>
+<td dir="ltr">是否清除更新代理帳戶的密碼(UpdAgentID存在時有效)</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">FixAgentEmail</td>
+<td dir="ltr">string</td>
+<td dir="ltr">否</td>
+<td dir="ltr">修改代理郵箱(若此欄為空,則表示不修改)</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">FixAgentPhone</td>
+<td dir="ltr">string</td>
+<td dir="ltr">否</td>
+<td dir="ltr">修改代理手機號(若此欄為空,則表示不修改)</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">FixActiveStatus</td>
+<td dir="ltr">string</td>
+<td dir="ltr">否</td>
+<td dir="ltr">修改帳戶啟用狀態[若此欄為空,則表示不修改; "0":停用, "1":啟用]</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="Response" dir="auto" class="heading" id="Response">Response</h1><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">參數名稱</th>
+<th dir="ltr">屬性</th>
+<th dir="ltr">是否必填</th>
+<th dir="ltr">說明</th>
+<th dir="ltr">驗證條件／限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">ErrResp</td>
+<td dir="ltr">ErrResp</td>
+<td dir="ltr">是</td>
+<td dir="ltr">錯誤回應</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">StatusCode</td>
+<td dir="ltr">AgentUpdateAccountStatus</td>
+<td dir="ltr">是</td>
+<td dir="ltr">更新代理帳戶狀態碼</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">UpdateAgent</td>
+<td dir="ltr">AgentData</td>
+<td dir="ltr">是</td>
+<td dir="ltr">更新代理資料</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">狀態碼</th>
+<th dir="ltr">狀態名稱</th>
+<th dir="ltr">狀態訊息</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="auto">0</td>
+<td dir="ltr">AgentUpdateAccountSuccess</td>
+<td dir="ltr">更新代理帳戶成功</td>
+</tr>
+<tr>
+<td dir="auto">1</td>
+<td dir="ltr">AgentUpdateAccountAgentTokenInvalid</td>
+<td dir="ltr">代理令牌無效(已過期)</td>
+</tr>
+<tr>
+<td dir="auto">2</td>
+<td dir="ltr">AgentUpdateAccountUpdAgentIDNotExist</td>
+<td dir="ltr">更新代理帳號不存在</td>
+</tr>
+<tr>
+<td dir="auto">3</td>
+<td dir="ltr">AgentUpdateAccountUpdAgentNotPermission</td>
+<td dir="ltr">更新下層代理無管理權限</td>
+</tr>
+<tr>
+<td dir="auto">4</td>
+<td dir="ltr">AgentUpdateAccountFixAgentNameFormatError</td>
+<td dir="ltr">修改代理姓名格式錯誤</td>
+</tr>
+<tr>
+<td dir="auto">5</td>
+<td dir="ltr">AgentUpdateAccountFixAgentNameIsExist</td>
+<td dir="ltr">修改代理姓名已存在</td>
+</tr>
+<tr>
+<td dir="auto">6</td>
+<td dir="ltr">AgentUpdateAccountFixAgentPswdFormatError</td>
+<td dir="ltr">修改代理密碼格式錯誤</td>
+</tr>
+<tr>
+<td dir="auto">7</td>
+<td dir="ltr">AgentUpdateAccountFixActiveStatusFormatError</td>
+<td dir="ltr">修改代理啟用狀態格式錯誤</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="Data" dir="auto" class="heading" id="Data">Data</h1><div class="heading-children"><div class="el-p"><p dir="auto"><strong>AgentData (UpdateAgent)</strong></p></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">參數名稱</th>
+<th dir="ltr">屬性</th>
+<th dir="ltr">是否必填</th>
+<th dir="ltr">說明</th>
+<th dir="ltr">驗證條件／限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Account</td>
+<td dir="ltr">AgentAccount</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理帳戶</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">Fund</td>
+<td dir="ltr">AgentFund</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理資金</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">Tree</td>
+<td dir="ltr">AgentTree</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理樹結構</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">Profit</td>
+<td dir="ltr">AgentProfitRate</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理佔成率</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">Commi</td>
+<td dir="ltr">AgentCommiRate</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理返佣率</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div><div class="el-h3 heading-wrapper"><h3 data-heading="AgentUpdateCommiRate - 代理更新代理返佣率" dir="auto" class="heading" id="AgentUpdateCommiRate_-_代理更新代理返佣率"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>AgentUpdateCommiRate - 代理更新代理返佣率</h3><div class="heading-children"><div class="el-p"><p dir="auto">說明：[代理]更新代理返佣率</p></div><div class="el-p"><p dir="auto">HTTP Action：/agent/update-commi-rate</p></div></div></div></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="Request" dir="auto" class="heading" id="Request">Request</h1><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">參數名稱</th>
+<th dir="ltr">屬性</th>
+<th dir="ltr">是否必填</th>
+<th dir="ltr">說明</th>
+<th dir="ltr">驗證條件／限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">AgentToken</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理令牌</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">UpdAgentID</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">更新代理帳號(只允許修改下層代理)</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">FixDownAgentPrevGameCommiRate</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">修改下層代理賽事前返佣比例(%)</td>
+<td dir="ltr">預設為 0；間隔調整為0.05%；最高上限為2%；可超過上層剩餘返佣比例；有效小數點：2 位</td>
+</tr>
+<tr>
+<td dir="ltr">FixDownAgentInGameCommiRate</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">修改下層代理賽事中返佣比例(%)</td>
+<td dir="ltr">預設為 0；間隔調整為0.05%；最高上限為2%；可超過上層剩餘返佣比例；有效小數點：2 位</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="Response" dir="auto" class="heading" id="Response">Response</h1><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">參數名稱</th>
+<th dir="ltr">屬性</th>
+<th dir="ltr">是否必填</th>
+<th dir="ltr">說明</th>
+<th dir="ltr">驗證條件／限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">ErrResp</td>
+<td dir="ltr">ErrResp</td>
+<td dir="ltr">是</td>
+<td dir="ltr">錯誤回應</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">StatusCode</td>
+<td dir="ltr">AgentUpdateCommiRateStatus</td>
+<td dir="ltr">是</td>
+<td dir="ltr">更新代理返佣率狀態碼</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">UpdateAgent</td>
+<td dir="ltr">AgentData</td>
+<td dir="ltr">是</td>
+<td dir="ltr">更新代理資料</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">狀態碼</th>
+<th dir="ltr">狀態名稱</th>
+<th dir="ltr">狀態訊息</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="auto">0</td>
+<td dir="ltr">AgentUpdateCommiRateSuccess</td>
+<td dir="ltr">更新代理返佣率成功</td>
+</tr>
+<tr>
+<td dir="auto">1</td>
+<td dir="ltr">AgentUpdateCommiRateAgentTokenInvalid</td>
+<td dir="ltr">代理令牌無效(已過期)</td>
+</tr>
+<tr>
+<td dir="auto">2</td>
+<td dir="ltr">AgentUpdateCommiRateUpdAgentIDNotExist</td>
+<td dir="ltr">更新代理帳號不存在</td>
+</tr>
+<tr>
+<td dir="auto">3</td>
+<td dir="ltr">AgentUpdateCommiRateOutOfAgentMaintainTime</td>
+<td dir="ltr">更新下層代理超出代理維護時間</td>
+</tr>
+<tr>
+<td dir="auto">4</td>
+<td dir="ltr">AgentUpdateCommiRateUpdAgentNotPermission</td>
+<td dir="ltr">更新下層代理無管理權限</td>
+</tr>
+<tr>
+<td dir="auto">5</td>
+<td dir="ltr">AgentUpdateCommiRateFixDownAgentPrevGameCommiRateInvalid</td>
+<td dir="ltr">更新下層代理賽事前返佣比例無效</td>
+</tr>
+<tr>
+<td dir="auto">6</td>
+<td dir="ltr">AgentUpdateCommiRateFixDownAgentInGameCommiRateInvalid</td>
+<td dir="ltr">更新下層代理賽事中返佣比例無效</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="Data" dir="auto" class="heading" id="Data">Data</h1><div class="heading-children"><div class="el-p"><p dir="auto"><strong>AgentData (UpdateAgent)</strong></p></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">參數名稱</th>
+<th dir="ltr">屬性</th>
+<th dir="ltr">是否必填</th>
+<th dir="ltr">說明</th>
+<th dir="ltr">驗證條件／限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Account</td>
+<td dir="ltr">AgentAccount</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理帳戶</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">Fund</td>
+<td dir="ltr">AgentFund</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理資金</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">Tree</td>
+<td dir="ltr">AgentTree</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理樹結構</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">Profit</td>
+<td dir="ltr">AgentProfitRate</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理佔成率</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">Commi</td>
+<td dir="ltr">AgentCommiRate</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理返佣率</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div><div class="el-h3 heading-wrapper"><h3 data-heading="AgentGetData - 代理取得資料" dir="auto" class="heading" id="AgentGetData_-_代理取得資料"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>AgentGetData - 代理取得資料</h3><div class="heading-children"><div class="el-p"><p dir="auto">說明：[代理]取得資料</p></div><div class="el-p"><p dir="auto">HTTP Action：/agent/get-data</p></div></div></div></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="Request" dir="auto" class="heading" id="Request">Request</h1><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">參數名稱</th>
+<th dir="ltr">屬性</th>
+<th dir="ltr">是否必填</th>
+<th dir="ltr">說明</th>
+<th dir="ltr">驗證條件／限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">AgentToken</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理令牌</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">GetAgentID</td>
+<td dir="ltr">string</td>
+<td dir="ltr">否</td>
+<td dir="ltr">取得代理資料帳號(若此欄為空,則表示查詢自己帳戶,若此欄有值,則查詢所有下層樹的某個指定代理)</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">IsQueryAccount</td>
+<td dir="ltr">bool</td>
+<td dir="ltr">是</td>
+<td dir="ltr">是否查帳戶</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">IsQueryFund</td>
+<td dir="ltr">bool</td>
+<td dir="ltr">是</td>
+<td dir="ltr">是否查資金</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">IsQueryTree</td>
+<td dir="ltr">bool</td>
+<td dir="ltr">是</td>
+<td dir="ltr">是否查樹結構</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">IsQueryProfit</td>
+<td dir="ltr">bool</td>
+<td dir="ltr">是</td>
+<td dir="ltr">是否查佔成率</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">IsQueryCommi</td>
+<td dir="ltr">bool</td>
+<td dir="ltr">是</td>
+<td dir="ltr">是否查返佣率</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="Response" dir="auto" class="heading" id="Response">Response</h1><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">參數名稱</th>
+<th dir="ltr">屬性</th>
+<th dir="ltr">是否必填</th>
+<th dir="ltr">說明</th>
+<th dir="ltr">驗證條件／限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">ErrResp</td>
+<td dir="ltr">ErrResp</td>
+<td dir="ltr">是</td>
+<td dir="ltr">錯誤回應</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">StatusCode</td>
+<td dir="ltr">AgentGetDataStatus</td>
+<td dir="ltr">是</td>
+<td dir="ltr">取得代理資料狀態碼</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">GetAgent</td>
+<td dir="ltr">AgentData</td>
+<td dir="ltr">是</td>
+<td dir="ltr">取得代理資料</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">狀態碼</th>
+<th dir="ltr">狀態名稱</th>
+<th dir="ltr">狀態訊息</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="auto">0</td>
+<td dir="ltr">AgentGetDataSuccess</td>
+<td dir="ltr">取得代理資料成功</td>
+</tr>
+<tr>
+<td dir="auto">1</td>
+<td dir="ltr">AgentGetDataAgentTokenInvalid</td>
+<td dir="ltr">代理令牌無效(已過期)</td>
+</tr>
+<tr>
+<td dir="auto">2</td>
+<td dir="ltr">AgentGetDataGetAgentIDNotExist</td>
+<td dir="ltr">取得代理帳號不存在</td>
+</tr>
+<tr>
+<td dir="auto">3</td>
+<td dir="ltr">AgentGetDataGetAgentNotPermission</td>
+<td dir="ltr">取得下層代理無管理權限</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="Data" dir="auto" class="heading" id="Data">Data</h1><div class="heading-children"><div class="el-p"><p dir="auto"><strong>AgentData (GetAgent)</strong></p></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">參數名稱</th>
+<th dir="ltr">屬性</th>
+<th dir="ltr">是否必填</th>
+<th dir="ltr">說明</th>
+<th dir="ltr">驗證條件／限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Account</td>
+<td dir="ltr">AgentAccount</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理帳戶</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">Fund</td>
+<td dir="ltr">AgentFund</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理資金</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">Tree</td>
+<td dir="ltr">AgentTree</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理樹結構</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">Profit</td>
+<td dir="ltr">AgentProfitRate</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理佔成率</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">Commi</td>
+<td dir="ltr">AgentCommiRate</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理返佣率</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div><div class="el-h3 heading-wrapper"><h3 data-heading="AgentQueryDownAgentList - 代理查詢下層代理列表" dir="auto" class="heading" id="AgentQueryDownAgentList_-_代理查詢下層代理列表"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>AgentQueryDownAgentList - 代理查詢下層代理列表</h3><div class="heading-children"><div class="el-p"><p dir="auto">說明：[代理]查詢下層代理列表</p></div><div class="el-p"><p dir="auto">HTTP Action：</p></div></div></div></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="Request" dir="auto" class="heading" id="Request">Request</h1><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">參數名稱</th>
+<th dir="ltr">屬性</th>
+<th dir="ltr">是否必填</th>
+<th dir="ltr">說明</th>
+<th dir="ltr">驗證條件／限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">AgentToken</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理令牌</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">QueryAgentID</td>
+<td dir="ltr">string</td>
+<td dir="ltr">否</td>
+<td dir="ltr">查詢代理帳號(若此欄為空,則表示查詢自身下層代理列表, 若此欄有值,則查詢所有下層樹的某個指定代理的下層代理列表)</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">ListIndex</td>
+<td dir="ltr">uint32</td>
+<td dir="ltr">是</td>
+<td dir="ltr">查詢下層代理列表索引(指定頁數,從0開始)</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">ListCount</td>
+<td dir="ltr">uint32</td>
+<td dir="ltr">是</td>
+<td dir="ltr">查詢下層代理列表數量(每頁數量上限,0:默認25筆資料)</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">MatchByDownAgentID</td>
+<td dir="ltr">string</td>
+<td dir="ltr">否</td>
+<td dir="ltr">符合指定條件的下層代理帳號(支持萬用字元:%)</td>
+<td dir="ltr">使用 SQL LIKE 語法：模糊查詢</td>
+</tr>
+<tr>
+<td dir="ltr">MatchByDownAgentName</td>
+<td dir="ltr">string</td>
+<td dir="ltr">否</td>
+<td dir="ltr">符合指定條件的下層代理姓名(支持萬用字元:%)</td>
+<td dir="ltr">使用 SQL LIKE 語法：模糊查詢</td>
+</tr>
+<tr>
+<td dir="ltr">MatchByDownAgentField</td>
+<td dir="ltr">map[string]string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">符合指定下層代理欄位條件 map[AgentField, Value](舉例: ["ActiveStatus","1"])</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="Response" dir="auto" class="heading" id="Response">Response</h1><div class="heading-children"><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">參數名稱</th>
+<th dir="ltr">屬性</th>
+<th dir="ltr">是否必填</th>
+<th dir="ltr">說明</th>
+<th dir="ltr">驗證條件／限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">ErrResp</td>
+<td dir="ltr">ErrResp</td>
+<td dir="ltr">是</td>
+<td dir="ltr">錯誤回應</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">StatusCode</td>
+<td dir="ltr">AgentQueryDownAgentListStatus</td>
+<td dir="ltr">是</td>
+<td dir="ltr">查詢下層代理列表狀態碼</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">QueryAgentTree</td>
+<td dir="ltr">AgentTree</td>
+<td dir="ltr">是</td>
+<td dir="ltr">當前代理樹結構</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">DownAgentList</td>
+<td dir="ltr">QueryDownAgentData</td>
+<td dir="ltr">是</td>
+<td dir="ltr">下層代理資料列表</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">狀態碼</th>
+<th dir="ltr">狀態名稱</th>
+<th dir="ltr">狀態訊息</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="auto">0</td>
+<td dir="ltr">AgentQueryDownAgentListSuccess</td>
+<td dir="ltr">查詢下層代理列表成功</td>
+</tr>
+<tr>
+<td dir="auto">1</td>
+<td dir="ltr">AgentQueryDownAgentListAgentTokenInvalid</td>
+<td dir="ltr">代理令牌無效(已過期)</td>
+</tr>
+<tr>
+<td dir="auto">2</td>
+<td dir="ltr">AgentQueryDownAgentListQueryAgentIDNotExist</td>
+<td dir="ltr">查詢下層代理帳號不存在</td>
+</tr>
+<tr>
+<td dir="auto">3</td>
+<td dir="ltr">AgentQueryDownAgentListQueryAgentNotPermission</td>
+<td dir="ltr">查詢下層代理無管理權限</td>
+</tr>
+</tbody>
+</table></div></div></div><div class="el-h1 heading-wrapper"><h1 data-heading="Data" dir="auto" class="heading" id="Data">Data</h1><div class="heading-children"><div class="el-p"><p dir="auto"><strong>AgentTree (QueryAgentTree)</strong></p></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">參數名稱</th>
+<th dir="ltr">屬性</th>
+<th dir="ltr">是否必填</th>
+<th dir="ltr">說明</th>
+<th dir="ltr">驗證條件／限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">AgentID</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理帳號</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">AgentRank</td>
+<td dir="ltr">uint32</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理階級[0:root, 1:sh, 2:ssma, 3:sma, 4:ma, 5:agent]</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">UpAgentID</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">上層代理帳號</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">R1AgentID</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">一層代理帳號</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">R2AgentID</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">二層代理帳號</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">R3AgentID</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">三層代理帳號</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">R4AgentID</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">四層代理帳號</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">R5AgentID</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">五層代理帳號</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div><div class="el-p"><p dir="auto"><strong>QueryDownAgentData (DownAgentList)</strong></p></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">參數名稱</th>
+<th dir="ltr">屬性</th>
+<th dir="ltr">是否必填</th>
+<th dir="ltr">說明</th>
+<th dir="ltr">驗證條件／限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">AgentID</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理帳號</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">AgentName</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理姓名</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">UpAgentID</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">上層代理帳號</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">AgentActiveStatus</td>
+<td dir="ltr">uint32</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理帳戶啟用狀態[0:停用, 1:啟用]</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">Balance</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理餘額</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">ProfitRate</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理佔成比例(%)</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">PrevGameCommiRate</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理賽事前返佣比例(%)</td>
+<td dir="auto"></td>
+</tr>
+<tr>
+<td dir="ltr">InGameCommiRate</td>
+<td dir="ltr">string</td>
+<td dir="ltr">是</td>
+<td dir="ltr">代理賽事中返佣比例(%)</td>
+<td dir="auto"></td>
+</tr>
+</tbody>
+</table></div><div class="mod-footer mod-ui"></div></div></div></div></div></div><div class="sidebar-right sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content"><div class="graph-view-wrapper"><div class="sidebar-section-header">Interactive Graph</div><div class="graph-view-placeholder">
+		<div class="graph-view-container">
+			<div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
+			<canvas id="graph-canvas" class="hide" width="512px" height="512px"></canvas>
+		</div>
+		</div></div><div class="tree-container mod-root nav-folder tree-item outline-tree" data-depth="0"><div class="tree-header"><span class="sidebar-section-header">Table Of Contents</span><button class="clickable-icon collapse-tree-button" aria-label="Collapse All"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg></button></div><div class="tree-scroll-area tree-item-children nav-folder-children"><div class="tree-item mod-tree-folder nav-folder mod-collapsible is-collapsed" style="display: none;"></div><div class="tree-item" data-depth="1"><a class="tree-link" href="緬甸球版/sportsbetting：運彩後台/提示詞規則/運彩api文件.html#運彩API文件"><div class="tree-item-contents heading-link" heading-name="運彩API文件"><span class="tree-item-title">運彩API文件</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="2"><a class="tree-link" href="緬甸球版/sportsbetting：運彩後台/提示詞規則/運彩api文件.html#文件產出提示詞"><div class="tree-item-contents heading-link" heading-name="文件產出提示詞"><span class="tree-item-title">文件產出提示詞</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-link" href="緬甸球版/sportsbetting：運彩後台/提示詞規則/運彩api文件.html#文件格式範例"><div class="tree-item-contents heading-link" heading-name="文件格式範例"><span class="tree-item-title">文件格式範例</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-link" href="緬甸球版/sportsbetting：運彩後台/提示詞規則/運彩api文件.html#格式說明"><div class="tree-item-contents heading-link" heading-name="格式說明"><span class="tree-item-title">格式說明</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-link" href="緬甸球版/sportsbetting：運彩後台/提示詞規則/運彩api文件.html#各_API_文件"><div class="tree-item-contents heading-link" heading-name="各 API 文件"><div class="collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><span class="tree-item-title">各 API 文件</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="3"><a class="tree-link" href="緬甸球版/sportsbetting：運彩後台/提示詞規則/運彩api文件.html#AuthAuthPreLogin_-_驗證前置登入"><div class="tree-item-contents heading-link" heading-name="AuthAuthPreLogin - 驗證前置登入"><span class="tree-item-title">AuthAuthPreLogin - 驗證前置登入</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div></div></div><div class="tree-item" data-depth="1"><a class="tree-link" href="緬甸球版/sportsbetting：運彩後台/提示詞規則/運彩api文件.html#Request"><div class="tree-item-contents heading-link" heading-name="Request"><span class="tree-item-title">Request</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="1"><a class="tree-link" href="緬甸球版/sportsbetting：運彩後台/提示詞規則/運彩api文件.html#Response"><div class="tree-item-contents heading-link" heading-name="Response"><span class="tree-item-title">Response</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="3"><a class="tree-link" href="緬甸球版/sportsbetting：運彩後台/提示詞規則/運彩api文件.html#AuthRefreshCaptcha_-_驗證刷新驗證碼"><div class="tree-item-contents heading-link" heading-name="AuthRefreshCaptcha - 驗證刷新驗證碼"><span class="tree-item-title">AuthRefreshCaptcha - 驗證刷新驗證碼</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item" data-depth="1"><a class="tree-link" href="緬甸球版/sportsbetting：運彩後台/提示詞規則/運彩api文件.html#Request"><div class="tree-item-contents heading-link" heading-name="Request"><span class="tree-item-title">Request</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="1"><a class="tree-link" href="緬甸球版/sportsbetting：運彩後台/提示詞規則/運彩api文件.html#Response"><div class="tree-item-contents heading-link" heading-name="Response"><span class="tree-item-title">Response</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="3"><a class="tree-link" href="緬甸球版/sportsbetting：運彩後台/提示詞規則/運彩api文件.html#AuthLogin_-_驗證登入"><div class="tree-item-contents heading-link" heading-name="AuthLogin - 驗證登入"><span class="tree-item-title">AuthLogin - 驗證登入</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item" data-depth="1"><a class="tree-link" href="緬甸球版/sportsbetting：運彩後台/提示詞規則/運彩api文件.html#Request"><div class="tree-item-contents heading-link" heading-name="Request"><span class="tree-item-title">Request</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="1"><a class="tree-link" href="緬甸球版/sportsbetting：運彩後台/提示詞規則/運彩api文件.html#Response"><div class="tree-item-contents heading-link" heading-name="Response"><span class="tree-item-title">Response</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="3"><a class="tree-link" href="緬甸球版/sportsbetting：運彩後台/提示詞規則/運彩api文件.html#AuthLogout_-_驗證登出"><div class="tree-item-contents heading-link" heading-name="AuthLogout - 驗證登出"><span class="tree-item-title">AuthLogout - 驗證登出</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item" data-depth="1"><a class="tree-link" href="緬甸球版/sportsbetting：運彩後台/提示詞規則/運彩api文件.html#Request"><div class="tree-item-contents heading-link" heading-name="Request"><span class="tree-item-title">Request</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="1"><a class="tree-link" href="緬甸球版/sportsbetting：運彩後台/提示詞規則/運彩api文件.html#Response"><div class="tree-item-contents heading-link" heading-name="Response"><span class="tree-item-title">Response</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="3"><a class="tree-link" href="緬甸球版/sportsbetting：運彩後台/提示詞規則/運彩api文件.html#AgentCreate_-_代理新增代理"><div class="tree-item-contents heading-link" heading-name="AgentCreate - 代理新增代理"><span class="tree-item-title">AgentCreate - 代理新增代理</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item" data-depth="1"><a class="tree-link" href="緬甸球版/sportsbetting：運彩後台/提示詞規則/運彩api文件.html#Request"><div class="tree-item-contents heading-link" heading-name="Request"><span class="tree-item-title">Request</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="1"><a class="tree-link" href="緬甸球版/sportsbetting：運彩後台/提示詞規則/運彩api文件.html#Response"><div class="tree-item-contents heading-link" heading-name="Response"><span class="tree-item-title">Response</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="1"><a class="tree-link" href="緬甸球版/sportsbetting：運彩後台/提示詞規則/運彩api文件.html#Data"><div class="tree-item-contents heading-link" heading-name="Data"><span class="tree-item-title">Data</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="3"><a class="tree-link" href="緬甸球版/sportsbetting：運彩後台/提示詞規則/運彩api文件.html#AgentUpdateAccount_-_代理更新代理帳戶"><div class="tree-item-contents heading-link" heading-name="AgentUpdateAccount - 代理更新代理帳戶"><span class="tree-item-title">AgentUpdateAccount - 代理更新代理帳戶</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item" data-depth="1"><a class="tree-link" href="緬甸球版/sportsbetting：運彩後台/提示詞規則/運彩api文件.html#Request"><div class="tree-item-contents heading-link" heading-name="Request"><span class="tree-item-title">Request</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="1"><a class="tree-link" href="緬甸球版/sportsbetting：運彩後台/提示詞規則/運彩api文件.html#Response"><div class="tree-item-contents heading-link" heading-name="Response"><span class="tree-item-title">Response</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="1"><a class="tree-link" href="緬甸球版/sportsbetting：運彩後台/提示詞規則/運彩api文件.html#Data"><div class="tree-item-contents heading-link" heading-name="Data"><span class="tree-item-title">Data</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="3"><a class="tree-link" href="緬甸球版/sportsbetting：運彩後台/提示詞規則/運彩api文件.html#AgentUpdateCommiRate_-_代理更新代理返佣率"><div class="tree-item-contents heading-link" heading-name="AgentUpdateCommiRate - 代理更新代理返佣率"><span class="tree-item-title">AgentUpdateCommiRate - 代理更新代理返佣率</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item" data-depth="1"><a class="tree-link" href="緬甸球版/sportsbetting：運彩後台/提示詞規則/運彩api文件.html#Request"><div class="tree-item-contents heading-link" heading-name="Request"><span class="tree-item-title">Request</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="1"><a class="tree-link" href="緬甸球版/sportsbetting：運彩後台/提示詞規則/運彩api文件.html#Response"><div class="tree-item-contents heading-link" heading-name="Response"><span class="tree-item-title">Response</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="1"><a class="tree-link" href="緬甸球版/sportsbetting：運彩後台/提示詞規則/運彩api文件.html#Data"><div class="tree-item-contents heading-link" heading-name="Data"><span class="tree-item-title">Data</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="3"><a class="tree-link" href="緬甸球版/sportsbetting：運彩後台/提示詞規則/運彩api文件.html#AgentGetData_-_代理取得資料"><div class="tree-item-contents heading-link" heading-name="AgentGetData - 代理取得資料"><span class="tree-item-title">AgentGetData - 代理取得資料</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item" data-depth="1"><a class="tree-link" href="緬甸球版/sportsbetting：運彩後台/提示詞規則/運彩api文件.html#Request"><div class="tree-item-contents heading-link" heading-name="Request"><span class="tree-item-title">Request</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="1"><a class="tree-link" href="緬甸球版/sportsbetting：運彩後台/提示詞規則/運彩api文件.html#Response"><div class="tree-item-contents heading-link" heading-name="Response"><span class="tree-item-title">Response</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="1"><a class="tree-link" href="緬甸球版/sportsbetting：運彩後台/提示詞規則/運彩api文件.html#Data"><div class="tree-item-contents heading-link" heading-name="Data"><span class="tree-item-title">Data</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="3"><a class="tree-link" href="緬甸球版/sportsbetting：運彩後台/提示詞規則/運彩api文件.html#AgentQueryDownAgentList_-_代理查詢下層代理列表"><div class="tree-item-contents heading-link" heading-name="AgentQueryDownAgentList - 代理查詢下層代理列表"><span class="tree-item-title">AgentQueryDownAgentList - 代理查詢下層代理列表</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div><div class="tree-item" data-depth="1"><a class="tree-link" href="緬甸球版/sportsbetting：運彩後台/提示詞規則/運彩api文件.html#Request"><div class="tree-item-contents heading-link" heading-name="Request"><span class="tree-item-title">Request</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="1"><a class="tree-link" href="緬甸球版/sportsbetting：運彩後台/提示詞規則/運彩api文件.html#Response"><div class="tree-item-contents heading-link" heading-name="Response"><span class="tree-item-title">Response</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="1"><a class="tree-link" href="緬甸球版/sportsbetting：運彩後台/提示詞規則/運彩api文件.html#Data"><div class="tree-item-contents heading-link" heading-name="Data"><span class="tree-item-title">Data</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div></div><script defer="">let rs = document.querySelector(".sidebar-right"); rs.classList.add("is-collapsed"); if (window.innerWidth > 768) rs.classList.remove("is-collapsed"); rs.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-right-width"));</script></div></div></body></html>

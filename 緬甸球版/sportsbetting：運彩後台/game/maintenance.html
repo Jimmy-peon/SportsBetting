@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>系統維護 - 後台管理系統</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- 添加日期時間選擇器樣式 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body class="bg-gray-50">
+    <div class="p-4">
+
+
+        <!-- 維護設定表單 -->
+        <div class="bg-white rounded-lg shadow-sm p-6">
+            <form id="maintenance-form" class="space-y-6">
+                <!-- 維護狀態切換 -->
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-lg font-medium text-gray-900 mb-4">當前狀態</h3>
+                    <div class="mt-3">
+                        <div id="maintenance-status-indicator" class="inline-flex items-center px-3 py-2 rounded-md text-sm font-medium bg-green-100 text-green-800">
+                            <i class="fas fa-circle text-green-500 mr-2"></i>
+                            前台系統運作中
+                        </div>
+                    </div>
+                    
+                    <!-- 下一次維護時間顯示 -->
+                    <div id="next-maintenance-info" class="mt-4 p-3 bg-yellow-50 rounded-md">
+                        <div class="flex items-center">
+                            <i class="fas fa-calendar-alt text-yellow-500 mr-2"></i>
+                            <span class="text-sm text-yellow-700">
+                                <span class="font-medium">下一次維護時間：</span>
+                                <span id="next-maintenance-time">2024-12-20 02:00 ~ 2024-12-20 06:00</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 維護類型選擇 -->
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-lg font-medium text-gray-900 mb-4">維護類型</h3>
+                    <div>
+                        <select id="maintenance-type" class="w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 py-2 px-3 text-sm">
+                            <option value="scheduled">排程維護</option>
+                            <option value="manual">手動維護</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- 排程維護設定 -->
+                <div id="scheduled-maintenance-settings" class="border-b border-gray-200 pb-6">
+                    <h3 class="text-lg font-medium text-gray-900 mb-4">排程維護設定</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- 維護開始時間 -->
+                        <div>
+                            <label for="maintenance-start-time" class="block text-sm font-medium text-gray-700 mb-2">
+                                <i class="fas fa-play text-indigo-500 mr-2"></i>維護開始時間
+                            </label>
+                            <input type="text" id="maintenance-start-time" name="maintenance-start-time" 
+                                    placeholder="請選擇維護開始時間..." 
+                                    class="w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 py-2 px-3 text-sm" 
+                                    readonly>
+                        </div>
+
+                        <!-- 維護結束時間 -->
+                        <div>
+                            <label for="maintenance-end-time" class="block text-sm font-medium text-gray-700 mb-2">
+                                <i class="fas fa-stop text-red-500 mr-2"></i>維護結束時間
+                            </label>
+                            <input type="text" id="maintenance-end-time" name="maintenance-end-time" 
+                                    placeholder="請選擇維護結束時間..." 
+                                    class="w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 py-2 px-3 text-sm" 
+                                    readonly>
+                        </div>
+                    </div>
+
+                    <!-- 維護時間預覽 -->
+                    <div id="maintenance-duration-preview" class="mt-4 p-3 bg-blue-50 rounded-md hidden">
+                        <div class="flex items-center">
+                            <i class="fas fa-clock text-blue-500 mr-2"></i>
+                            <span class="text-sm text-blue-700">
+                                <span class="font-medium">維護時長：</span>
+                                <span id="maintenance-duration-text">-</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 手動維護設定 -->
+                <div id="manual-maintenance-settings" class="border-b border-gray-200 pb-6 hidden">
+                    <h3 class="text-lg font-medium text-gray-900 mb-4">手動維護設定</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- 延遲開始時間 -->
+                        <div>
+                            <label for="maintenance-delay-minutes" class="block text-sm font-medium text-gray-700 mb-2">
+                                <i class="fas fa-clock text-indigo-500 mr-2"></i>當前時間的 x 分鐘後
+                            </label>
+                            <input type="number" id="maintenance-delay-minutes" list="minutes-list" 
+                                   min="1" max="60" step="1"
+                                   placeholder="請輸入分鐘數 (1-60)"
+                                   class="w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 py-2 px-3 text-sm">
+                            <datalist id="minutes-list"></datalist>
+                        </div>
+
+                        <!-- 維護時長 -->
+                        <div>
+                            <label for="maintenance-duration-hours" class="block text-sm font-medium text-gray-700 mb-2">
+                                <i class="fas fa-hourglass-half text-red-500 mr-2"></i>維護時間 y 小時
+                            </label>
+                            <input type="number" id="maintenance-duration-hours" list="hours-list" 
+                                   min="0.5" max="12" step="0.5"
+                                   placeholder="請輸入小時數 (0.5-12)"
+                                   class="w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 py-2 px-3 text-sm">
+                            <datalist id="hours-list"></datalist>
+                        </div>
+                    </div>
+
+                    <!-- 手動維護時間預覽 -->
+                    <div id="manual-maintenance-preview" class="mt-4 p-3 bg-blue-50 rounded-md hidden">
+                        <div class="space-y-2">
+                            <div class="flex items-center">
+                                <i class="fas fa-play text-green-500 mr-2"></i>
+                                <span class="text-sm text-blue-700">
+                                    <span class="font-medium">維護開始時間：</span>
+                                    <span id="manual-start-time">-</span>
+                                </span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-stop text-red-500 mr-2"></i>
+                                <span class="text-sm text-blue-700">
+                                    <span class="font-medium">維護結束時間：</span>
+                                    <span id="manual-end-time">-</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 維護說明 -->
+                <div class="pb-6">
+                    <h3 class="text-lg font-medium text-gray-900 mb-4">維護說明</h3>
+                    <div>
+                        <label for="maintenance-description" class="block text-sm font-medium text-gray-700 mb-2">
+                            <i class="fas fa-info-circle text-gray-500 mr-2"></i>說明內容（最多50字）
+                        </label>
+                        <textarea id="maintenance-description" name="maintenance-description" rows="4" maxlength="50"
+                                  placeholder="請輸入維護說明，例如：系統升級維護，預計1小時完成..."
+                                  class="w-full border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 py-2 px-3 text-sm resize-none"></textarea>
+                                                 <div class="flex justify-end items-center mt-1">
+                             <span id="description-counter" class="text-xs text-gray-500">0/50</span>
+                         </div>
+                    </div>
+                </div>
+
+                <!-- 儲存按鈕 -->
+                <div class="flex justify-end space-x-3 pt-4 border-t border-gray-200">
+                    <button type="submit" id="save-settings-btn" class="px-6 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 flex items-center">
+                        <i class="fas fa-save mr-2"></i>
+                        儲存設定
+                    </button>
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+
+
+
+    <!-- 載入日期時間選擇器和功能腳本 -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/zh-tw.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 初始化變數
+            let startTimePicker, endTimePicker;
+            let maintenanceData = {
+                currentStatus: 'normal', // normal, maintenance
+                nextMaintenance: {
+                    startTime: '2024-12-20 02:00',
+                    endTime: '2024-12-20 06:00'
+                }
+            };
+            
+            // 初始化下拉選單選項
+            initializeSelectOptions();
+            
+            // 初始化日期時間選擇器
+            initializeDateTimePickers();
+            
+            // 初始化表單事件
+            initializeFormEvents();
+            
+            // 初始化UI狀態
+            updateMaintenanceStatusDisplay();
+            
+            // 檢查下一次維護時間顯示
+            checkNextMaintenanceDisplay();
+            
+            function initializeDateTimePickers() {
+                // 維護開始時間選擇器
+                startTimePicker = flatpickr("#maintenance-start-time", {
+                    enableTime: true,
+                    dateFormat: "Y-m-d H:i:S",
+                    time_24hr: true,
+                    locale: "zh-tw",
+                    minuteIncrement: 1,
+                    onChange: function(selectedDates, dateStr) {
+                        if (selectedDates.length > 0) {
+                            // 更新結束時間選擇器的最小時間
+                            endTimePicker.set('minDate', selectedDates[0]);
+                            updateDurationPreview();
+                        }
+                    }
+                });
+                
+                // 維護結束時間選擇器
+                endTimePicker = flatpickr("#maintenance-end-time", {
+                    enableTime: true,
+                    dateFormat: "Y-m-d H:i:S",
+                    time_24hr: true,
+                    locale: "zh-tw",
+                    minuteIncrement: 1,
+                    onChange: function(selectedDates, dateStr) {
+                        updateDurationPreview();
+                    }
+                });
+            }
+            
+            function initializeSelectOptions() {
+                // 初始化分鐘選項 (1-60) - 使用 datalist
+                const minutesList = document.getElementById('minutes-list');
+                for (let i = 1; i <= 60; i++) {
+                    const option = document.createElement('option');
+                    option.value = i;
+                    minutesList.appendChild(option);
+                }
+                
+                // 初始化小時選項 (0.5-12，間隔0.5) - 使用 datalist
+                const hoursList = document.getElementById('hours-list');
+                for (let i = 0.5; i <= 12; i += 0.5) {
+                    const option = document.createElement('option');
+                    option.value = i;
+                    hoursList.appendChild(option);
+                }
+            }
+            
+            function initializeFormEvents() {
+                // 維護類型切換
+                document.getElementById('maintenance-type').addEventListener('change', function() {
+                    toggleMaintenanceSettings(this.value);
+                });
+                
+                // 手動維護設定變更
+                document.getElementById('maintenance-delay-minutes').addEventListener('input', function() {
+                    validateAndUpdateManualMaintenance('minutes', this);
+                });
+                document.getElementById('maintenance-duration-hours').addEventListener('input', function() {
+                    validateAndUpdateManualMaintenance('hours', this);
+                });
+                
+                // 維護說明字數統計
+                const descriptionInput = document.getElementById('maintenance-description');
+                const counter = document.getElementById('description-counter');
+                
+                descriptionInput.addEventListener('input', function() {
+                    const length = this.value.length;
+                    counter.textContent = `${length}/50`;
+                    
+                    if (length >= 45) {
+                        counter.classList.add('text-orange-500');
+                    } else {
+                        counter.classList.remove('text-orange-500');
+                    }
+                    
+                    if (length >= 50) {
+                        counter.classList.add('text-red-500');
+                        counter.classList.remove('text-orange-500');
+                    } else {
+                        counter.classList.remove('text-red-500');
+                    }
+                });
+                
+                // 表單提交
+                document.getElementById('maintenance-form').addEventListener('submit', handleFormSubmit);
+            }
+            
+            function toggleMaintenanceSettings(type) {
+                const scheduledSettings = document.getElementById('scheduled-maintenance-settings');
+                const manualSettings = document.getElementById('manual-maintenance-settings');
+                
+                if (type === 'manual') {
+                    scheduledSettings.classList.add('hidden');
+                    manualSettings.classList.remove('hidden');
+                } else {
+                    scheduledSettings.classList.remove('hidden');
+                    manualSettings.classList.add('hidden');
+                }
+            }
+            
+            function validateAndUpdateManualMaintenance(type, input) {
+                let isValid = true;
+                const value = parseFloat(input.value);
+                
+                // 移除之前的錯誤樣式
+                input.classList.remove('border-red-500');
+                
+                if (type === 'minutes') {
+                    // 驗證分鐘數：1-60，必須是整數
+                    if (isNaN(value) || value < 1 || value > 60 || !Number.isInteger(value)) {
+                        isValid = false;
+                        if (input.value) { // 只有在有輸入值時才顯示錯誤
+                            input.classList.add('border-red-500');
+                        }
+                    }
+                } else if (type === 'hours') {
+                    // 驗證小時數：0.5-12，必須是0.5的倍數
+                    if (isNaN(value) || value < 0.5 || value > 12 || (value * 2) % 1 !== 0) {
+                        isValid = false;
+                        if (input.value) { // 只有在有輸入值時才顯示錯誤
+                            input.classList.add('border-red-500');
+                        }
+                    }
+                }
+                
+                updateManualMaintenancePreview();
+            }
+            
+            function updateManualMaintenancePreview() {
+                const delayMinutes = parseInt(document.getElementById('maintenance-delay-minutes').value);
+                const durationHours = parseFloat(document.getElementById('maintenance-duration-hours').value);
+                const preview = document.getElementById('manual-maintenance-preview');
+                
+                // 檢查值是否有效且符合範圍
+                const minutesValid = !isNaN(delayMinutes) && delayMinutes >= 1 && delayMinutes <= 60;
+                const hoursValid = !isNaN(durationHours) && durationHours >= 0.5 && durationHours <= 12 && (durationHours * 2) % 1 === 0;
+                
+                if (minutesValid && hoursValid) {
+                    const now = new Date();
+                    const startTime = new Date(now.getTime() + (delayMinutes * 60 * 1000));
+                    const endTime = new Date(startTime.getTime() + (durationHours * 60 * 60 * 1000));
+                    
+                    document.getElementById('manual-start-time').textContent = formatDateTime(startTime);
+                    document.getElementById('manual-end-time').textContent = formatDateTime(endTime);
+                    
+                    preview.classList.remove('hidden');
+                } else {
+                    preview.classList.add('hidden');
+                }
+            }
+            
+            function updateMaintenanceStatusDisplay() {
+                const statusIndicator = document.getElementById('maintenance-status-indicator');
+                
+                if (maintenanceData.currentStatus === 'maintenance') {
+                    statusIndicator.className = 'inline-flex items-center px-3 py-2 rounded-md text-sm font-medium bg-orange-100 text-orange-800';
+                    statusIndicator.innerHTML = '<i class="fas fa-circle text-orange-500 mr-2"></i>前台系統維護中';
+                } else {
+                    statusIndicator.className = 'inline-flex items-center px-3 py-2 rounded-md text-sm font-medium bg-green-100 text-green-800';
+                    statusIndicator.innerHTML = '<i class="fas fa-circle text-green-500 mr-2"></i>前台系統運作中';
+                }
+            }
+            
+            function checkNextMaintenanceDisplay() {
+                // 始終顯示範例的下一次維護時間資訊
+                const nextMaintenanceInfo = document.getElementById('next-maintenance-info');
+                nextMaintenanceInfo.classList.remove('hidden');
+            }
+            
+            function formatDateTime(date) {
+                const year = date.getFullYear();
+                const month = String(date.getMonth() + 1).padStart(2, '0');
+                const day = String(date.getDate()).padStart(2, '0');
+                const hours = String(date.getHours()).padStart(2, '0');
+                const minutes = String(date.getMinutes()).padStart(2, '0');
+                return `${year}-${month}-${day} ${hours}:${minutes}`;
+            }
+            
+            function updateDurationPreview() {
+                const startTime = document.getElementById('maintenance-start-time').value;
+                const endTime = document.getElementById('maintenance-end-time').value;
+                const preview = document.getElementById('maintenance-duration-preview');
+                const durationText = document.getElementById('maintenance-duration-text');
+                
+                if (startTime && endTime) {
+                    const start = new Date(startTime);
+                    const end = new Date(endTime);
+                    
+                    if (end > start) {
+                        const diffMs = end - start;
+                        const diffHours = Math.floor(diffMs / (1000 * 60 * 60));
+                        const diffMinutes = Math.floor((diffMs % (1000 * 60 * 60)) / (1000 * 60));
+                        
+                        let durationStr = '';
+                        if (diffHours > 0) {
+                            durationStr += `${diffHours}小時`;
+                        }
+                        if (diffMinutes > 0) {
+                            durationStr += `${diffMinutes}分鐘`;
+                        }
+                        
+                                                 durationText.textContent = durationStr || '少於1分鐘';
+                         preview.classList.remove('hidden');
+                    } else {
+                        preview.classList.add('hidden');
+                    }
+                } else {
+                    preview.classList.add('hidden');
+                }
+            }
+            
+            
+            
+            function handleFormSubmit(e) {
+                e.preventDefault();
+                
+                const maintenanceType = document.getElementById('maintenance-type').value;
+                const description = document.getElementById('maintenance-description').value;
+                
+                let formData = {
+                    type: maintenanceType,
+                    description: description
+                };
+                
+                if (maintenanceType === 'scheduled') {
+                    // 排程維護
+                    const startTime = document.getElementById('maintenance-start-time').value;
+                    const endTime = document.getElementById('maintenance-end-time').value;
+                    
+                    if (!startTime || !endTime) {
+                        alert('排程維護必須設定維護開始和結束時間');
+                        return;
+                    }
+                    
+                    const start = new Date(startTime);
+                    const end = new Date(endTime);
+                    
+                    if (end <= start) {
+                        alert('維護結束時間必須晚於開始時間');
+                        return;
+                    }
+                    
+                    if (start <= new Date()) {
+                        alert('維護開始時間必須晚於當前時間');
+                        return;
+                    }
+                    
+                    formData.startTime = startTime;
+                    formData.endTime = endTime;
+                    
+                    // 設定下一次維護時間
+                    maintenanceData.nextMaintenance = {
+                        startTime: startTime,
+                        endTime: endTime
+                    };
+                    
+                } else {
+                    // 手動維護
+                    const delayMinutes = parseInt(document.getElementById('maintenance-delay-minutes').value);
+                    const durationHours = parseFloat(document.getElementById('maintenance-duration-hours').value);
+                    
+                    // 驗證分鐘數
+                    if (isNaN(delayMinutes) || delayMinutes < 1 || delayMinutes > 60 || !Number.isInteger(delayMinutes)) {
+                        alert('延遲時間必須是 1-60 之間的整數分鐘');
+                        return;
+                    }
+                    
+                    // 驗證小時數
+                    if (isNaN(durationHours) || durationHours < 0.5 || durationHours > 12 || (durationHours * 2) % 1 !== 0) {
+                        alert('維護時長必須是 0.5-12 之間，且為 0.5 小時的倍數');
+                        return;
+                    }
+                    
+                    const now = new Date();
+                    const startTime = new Date(now.getTime() + (delayMinutes * 60 * 1000));
+                    const endTime = new Date(startTime.getTime() + (durationHours * 60 * 60 * 1000));
+                    
+                    formData.delayMinutes = delayMinutes;
+                    formData.durationHours = durationHours;
+                    formData.startTime = formatDateTime(startTime);
+                    formData.endTime = formatDateTime(endTime);
+                    
+                    // 設定下一次維護時間
+                    maintenanceData.nextMaintenance = {
+                        startTime: formatDateTime(startTime),
+                        endTime: formatDateTime(endTime)
+                    };
+                }
+                
+                // 模擬儲存
+                setTimeout(() => {
+                    alert('維護設定已儲存成功！');
+                    updateMaintenanceStatusDisplay();
+                    checkNextMaintenanceDisplay();
+                }, 500);
+                
+                console.log('維護設定:', formData);
+            }
+        });
+    </script>
+</body>
+</html> 
