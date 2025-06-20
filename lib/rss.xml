@@ -1,2 +1,1664 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[緬甸球版]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://jimmy-peon.github.io/SportsBetting/</link><image><url>https://jimmy-peon.github.io/SportsBetting/lib/media/favicon.png</url><title>緬甸球版</title><link>https://jimmy-peon.github.io/SportsBetting/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Fri, 20 Jun 2025 06:07:01 GMT</lastBuildDate><atom:link href="https://jimmy-peon.github.io/SportsBetting/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 20 Jun 2025 06:07:01 GMT</pubDate><ttl>60</ttl><dc:creator/><item><title><![CDATA[index]]></title><description><![CDATA[ 
- ]]></description><link>https://jimmy-peon.github.io/SportsBetting/index.html</link><guid isPermaLink="false">index.md</guid><pubDate>Fri, 20 Jun 2025 06:05:17 GMT</pubDate></item></channel></rss>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[緬甸球版]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://jimmy-peon.github.io/SportsBetting/</link><image><url>https://jimmy-peon.github.io/SportsBetting/lib/media/favicon.png</url><title>緬甸球版</title><link>https://jimmy-peon.github.io/SportsBetting/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Fri, 20 Jun 2025 06:13:16 GMT</lastBuildDate><atom:link href="https://jimmy-peon.github.io/SportsBetting/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Fri, 20 Jun 2025 06:13:04 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[皮克爽：緬甸球版：運彩前後台網站MOC]]></title><description><![CDATA[ 
+ <br><a data-href="工作專案MOC" href="https://jimmy-peon.github.io/SportsBetting/工作專案MOC" class="internal-link" target="_self" rel="noopener nofollow">工作專案MOC</a><br><a rel="noopener nofollow" class="external-link" href="https://www.959green2.com/Green959/Api" target="_blank">https://www.959green2.com/Green959/Api</a><br>
+2kkuuff72ra / Aaa12345<br><a data-tooltip-position="top" aria-label="mailto:xjb1688888@gmail.com" rel="noopener nofollow" class="external-link" href="https://jimmy-peon.github.io/SportsBetting/mailto:xjb1688888@gmail.com" target="_blank">xjb1688888@gmail.com</a> / XJB999@pixong<br>
+0968580083<br><a data-href="運彩：前台球版功能" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：前台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：前台球版功能</a><br>
+<a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br><br>table 
+from "專案/Project：皮克爽：緬甸球版"
+where file.folder = "專案/Project：皮克爽：緬甸球版"
+where file.path != this.file.path
+<br><br>table
+from #參考資料 and #運彩網站
+<br><br><br>爬蟲程式啟動時，會先爬取資料嗎？<br>
+目前爬取一次資料會花多少時間？<br>爬蟲程式這以下這段時間，是否有遇到什麼問題<br>
+開始時間: 2025-04-21 16:04<br>
+結束時間: 2025-04-21 17:15<br>使用現有的檔案<br>
+自行爬取爬蟲程式10分鐘<br>
+10分鐘後自行關閉<br>
+要告訴我開始時間和結束時間<br>使用現有的檔案<br>
+自行爬取爬蟲程式1個小時<br>
+1個小時後自行關閉<br>
+要告訴我開始時間和結束時間]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/皮克爽：緬甸球版：運彩前後台網站moc.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/皮克爽：緬甸球版：運彩前後台網站MOC.md</guid><pubDate>Thu, 15 May 2025 02:51:38 GMT</pubDate></item><item><title><![CDATA[運彩：前台球版功能]]></title><description><![CDATA[ 
+ <br><a data-href="皮克爽：緬甸球版：運彩前後台網站MOC" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/皮克爽：緬甸球版：運彩前後台網站moc.html" class="internal-link" target="_self" rel="noopener nofollow">皮克爽：緬甸球版：運彩前後台網站MOC</a><br><a data-href="運彩：前台球版功能：美術" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：前台球版功能：美術.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：前台球版功能：美術</a><br>
+<a data-href="運彩：前台球版功能：比賽" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：前台球版功能：比賽.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：前台球版功能：比賽</a><br>
+<a data-href="運彩：前台球版功能：投注單" href="https://jimmy-peon.github.io/SportsBetting/運彩：前台球版功能：投注單" class="internal-link" target="_self" rel="noopener nofollow">運彩：前台球版功能：投注單</a><br>
+<br>注單規格會預扣會員下注金額<br>
+<a data-href="運彩：前台球版功能：投注單記錄" href="https://jimmy-peon.github.io/SportsBetting/運彩：前台球版功能：投注單記錄" class="internal-link" target="_self" rel="noopener nofollow">運彩：前台球版功能：投注單記錄</a><br>
+<a data-href="運彩：前台球版功能：結果" href="https://jimmy-peon.github.io/SportsBetting/運彩：前台球版功能：結果" class="internal-link" target="_self" rel="noopener nofollow">運彩：前台球版功能：結果</a>
+<br><br><br>
+<br><a data-href="前台球版需求更正提出250421" href="https://jimmy-peon.github.io/SportsBetting/前台球版需求更正提出250421" class="internal-link" target="_self" rel="noopener nofollow">前台球版需求更正提出250421</a>
+<br><br><br><br>我正在使用AI編碼工具幫我寫程式碼，希望一個 ai 幫我用 iOS應用程式的原型介面<br>
+以附圖為出發點，我該如何給這個 AI  要求<br>
+例如：怎麼告訴他分別使用哪些資源走到這一點呢<br>如果我要進一步去說明，點擊哪個按鈕，會到什麼樣頁面的話，你會如何修改提示詞<br>
+如果我要進一步去說明，頁面要有什麼樣的功能，你會如何修改提示詞<br><br><br>開發一款 iOS 足球運彩應用程式 的 高保真原型介面，並在 類似手機螢幕的網頁 上顯示，確保 HTML 程式碼最少，且每個界面可單獨優化。  <br><br><br><br>確保原型涵蓋 比賽瀏覽、下注、結果查詢、個人中心 等核心功能。  <br><br>設計 10 個主要頁面，例如：  <br>
+<br>首頁（熱門賽事）  
+<br>比賽列表（足球項目篩選）  
+<br>下注頁面（投注選項、金額輸入）  
+<br>投注單（投注詳情確認）  
+<br>比賽結果（比分與中獎資訊）  
+<br>個人中心（餘額、交易記錄）  
+<br>通知與消息中心（賽事提醒）  
+<br><br>
+<br>HTML 拆分：每個界面獨立成 page1.html ~ page10.html  
+<br>index.html 應平鋪顯示所有界面，而不是提供跳轉連結  
+<br>UI 設計：  
+<br>類似 iOS 介面（圓角、流暢動畫、原生按鈕）  
+<br>使用真實圖片與 FontAwesome 圖標，避免佔位符  
+<br>自適應 iPhone 螢幕尺寸（如 430px 寬的 iPhone 14 Pro）  
+<br>減少 HTML 行數，透過 CSS（如 Tailwind CSS）與 JavaScript 優化  
+<br>載入方式：  
+<br>index.html 透過 &lt;iframe&gt; 或 fetch 動態載入 page1.html ~ page10.html
+<br><br><br><br><br>開發一款 iOS 足球運彩應用程式 的 高保真原型介面，並在 類似手機螢幕的網頁 上顯示，確保 HTML 程式碼最少，且每個界面可單獨優化。<br><br><br>確保原型涵蓋 比賽瀏覽、下注、結果查詢、個人中心 等核心功能。<br><br>設計 10 個主要頁面，例如：<br>
+<br>首頁（熱門賽事）<br>
+
+<br>比賽列表（足球項目篩選）<br>
+
+<br>下注頁面（投注選項、金額輸入）<br>
+
+<br>投注單（投注詳情確認）<br>
+
+<br>比賽結果（比分與中獎資訊）<br>
+
+<br>個人中心（餘額、交易記錄）<br>
+
+<br>通知與消息中心（賽事提醒）<br>
+
+<br><br>
+<br>HTML 拆分：每個界面獨立成 **page1.html** ~ **page10.html**<br>
+
+<br>**index.html** 應平鋪顯示所有界面，而不是提供跳轉連結<br>
+
+<br>UI 設計：
+
+<br>類似 iOS 介面（圓角、流暢動畫、原生按鈕）<br>
+
+<br>使用真實圖片與 FontAwesome 圖標，避免佔位符<br>
+
+<br>自適應 iPhone 螢幕尺寸（如 430px 寬的 iPhone 14 Pro）<br>
+
+
+
+<br>減少 HTML 行數，透過 CSS（如 Tailwind CSS）與 JavaScript 優化<br>
+
+<br>載入方式：
+
+<br>index.html 透過 &lt;iframe&gt; 或 fetch 動態載入 page1.html ~ page10.html<br>
+
+
+
+<br><br>「我正在開發一款 iOS 體育運彩應用程式，現在需要輸出所有原型圖，請按照以下方式幫我完成：<br>
+<br>
+功能分析：請先思考這款應用的核心功能，確保原型能完整涵蓋用戶需求，例如比賽瀏覽、下注、查看結果、個人中心等。
+
+<br>
+產品規劃：作為產品經理，請規劃應用的主要界面，包括但不限於：
+
+<br>首頁（比賽推薦、熱門賽事）<br>
+
+<br>比賽列表（可篩選不同體育項目）<br>
+
+<br>下注頁面（選擇投注選項、輸入金額）<br>
+
+<br>投注單（確認投注詳情）<br>
+
+<br>比賽結果（顯示賽事比分與中獎結果）<br>
+
+<br>個人中心（餘額、交易紀錄、個人資訊）<br>
+
+<br>通知與消息中心（賽事提醒、結果通知）
+
+
+<br>
+界面設計：請按照 iOS 設計規範（如圓角、流暢動畫、原生按鈕）設計這些原型界面，使其美觀且接近真實應用。
+
+<br>
+HTML 輸出：請在一個 index.html 頁面中 平鋪展示 所有 10 個原型界面，而不是透過跳轉鏈接，並確保：
+
+<br>每個界面的程式碼應該封裝到獨立的 &lt;template&gt; 或 &lt;script&gt; 片段中，透過 JavaScript 渲染，減少 index.html 的程式碼行數。
+<br>介面顯示在類似 iPhone 螢幕的容器內（例如 430px 寬的 iPhone 14 Pro 畫面）。
+<br>使用 FontAwesome 或其他開源圖標庫，讓 UI 更加精美。
+<br>使用真實圖片（如比賽圖片、球隊 Logo），避免佔位符。
+<br>減少 HTML 程式碼量，可透過 CSS（如 Tailwind CSS）優化設計。
+<br>這些原型界面應該可以直接用於開發，而不只是簡單的佔位圖。
+
+
+<br><br><br>我正在使用AI編碼工具幫我寫程式碼，最近我希望一個ai幫我用html輸出iOS應用程式的原型介面，在一個網頁中承載這個應用程式主要介面信息，可以10個介面左右。<br>
+1.我希望這個原型是高保真的，有真實的圖片和好看的圖片，而不是佔位符<br>2.我希望是顯示在一個類似手機螢幕上的介面，更接近真實<br>3.我希望html的程式碼量越少越好<br>從這個點出發，我該如何給這個 AI  提示詞<br><br><br>
+<br>左側：顯示使用者名稱
+<br>右側：Hamburger 按鈕，點擊後打開側邊選單 (Side Menu)    
+<br><br>
+<br>Bet record&nbsp; → 進入投注紀錄頁面
+<br>Balance：顯示顯示用戶餘額
+<br><br>
+<br>顯示當前比賽或系統維護通知
+<br><br>
+<br>足球 → 進入足球投注頁面
+<br>錢包 → 進入錢包與交易紀錄頁面
+<br>設定 → 進入設定頁面
+<br><br><br><br>
+<br>左側返回按鈕
+<br>中央標題 (足球)
+<br>右上角導航至「比分數據頁面」<br>
+
+<br><br>
+<br>顯示 yesterday results 與 today YYYY-MM-DD
+<br>點擊可展開/收起日期選單
+<br>每個分類下列出賽事清單
+<br><br>
+<br>顯示 Europa League，Europa Conference League 等分類
+<br>每個分類下列出比賽清單<br>
+
+<br><br>
+<br>球隊名稱
+<br>比賽時間
+<br>投注數據 (紅色/黑色數值)
+<br>可點擊投注按鈕<br>
+
+<br><br>
+<br>刪除按鈕 (垃圾桶圖示)
+<br>已選投注顯示區塊
+<br>Next 按鈕 (確認投注)
+<br><br><br><br><br><br>
+<br>顯示使用者名稱 jp249<br>
+
+<br>Hamburger 按鈕，點擊後打開側邊選單 (Side Menu)<br>
+
+<br><br>
+<br>Bet record 按鈕 → 進入投注紀錄頁面
+<br>Balance: 0 MMK (不可點擊)<br>
+
+<br><br>
+<br>顯示當前比賽或系統維護通知<br>
+
+<br>內容應透過 API 獲取與更新<br>
+
+<br><br>
+<br>足球 (藍色) → 進入足球投注頁面<br>
+
+<br>足球 (粉紅色) → 進入足球比分與數據頁面<br>
+
+<br>3D (紅色) → 進入 3D 彩投注頁面<br>
+
+<br>2D (藍色) → 進入 2D 彩投注頁面<br>
+
+<br>錢包 (橙色) → 進入錢包與交易紀錄頁面<br>
+
+<br>設定 (綠色) → 進入設定頁面<br>
+
+<br><br><br><br>
+<br>左側返回按鈕<br>
+
+<br>中央標題 (足球)<br>
+
+<br>右上角導航至「比分數據頁面」<br>
+
+<br><br>
+<br>顯示 yesterday results 與 today YYYY-MM-DD<br>
+
+<br>點擊可展開/收起日期選單<br>
+
+<br><br>
+<br>顯示 Europa League，Europa Conference League 等分類<br>
+
+<br>每個分類下列出比賽清單<br>
+
+<br><br>
+<br>球隊名稱<br>
+
+<br>比賽時間<br>
+
+<br>投注數據 (紅色/黑色數值)<br>
+
+<br>可點擊投注按鈕<br>
+
+<br><br>
+<br>刪除按鈕 (垃圾桶圖示)<br>
+
+<br>已選投注顯示區塊<br>
+
+<br>Next 按鈕 (確認投注)<br>
+
+<br><br><br><br>
+<br>紅色標題欄，顯示 "2D"<br>
+
+<br>左側返回按鈕 (返回主畫面)<br>
+
+<br>右上角 "results" 按鈕 (導航至 2D 開獎結果頁面)<br>
+
+<br><br>
+<br>顯示 00 - 99 的號碼按鈕 (圓形樣式，6x10 Grid 佈局)<br>
+
+<br>點擊按鈕可選擇號碼 (選中號碼變色，支援多選)<br>
+
+<br>API 提供當前熱門號碼 (可加上標記)<br>
+
+<br><br>
+<br>刪除按鈕 (垃圾桶圖示，橙色) → 清空已選號碼<br>
+
+<br>已選號碼顯示區 (黑色) → 顯示當前選中的號碼數量<br>
+
+<br>Next 按鈕 (紅色) → 進入下一步設定投注金額<br>
+
+<br><br><br>
+<br>全部數據應透過 API 獲取<br>
+
+<br>適配 iPhone 各種螢幕尺寸
+<br>足球 (藍色) → 進入足球投注頁面<br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：前台球版功能.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩：前台球版功能.md</guid><pubDate>Tue, 03 Jun 2025 08:26:32 GMT</pubDate></item><item><title><![CDATA[運彩：前台球版功能：比賽]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：前台球版功能" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：前台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：前台球版功能</a><br>功能說明：<br>
+<br>
+<br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：前台球版功能：比賽.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩：前台球版功能：比賽.md</guid><pubDate>Fri, 06 Jun 2025 02:08:41 GMT</pubDate></item><item><title><![CDATA[Icon]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：前台球版功能" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：前台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：前台球版功能</a><br><br><br><br>格式建議：使用 .png，透明背景，sRGB 色彩空間。]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：前台球版功能：美術.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩：前台球版功能：美術.md</guid><pubDate>Tue, 20 May 2025 06:23:35 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能]]></title><description><![CDATA[ 
+ <br><a data-href="皮克爽：緬甸球版：運彩前後台網站MOC" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/皮克爽：緬甸球版：運彩前後台網站moc.html" class="internal-link" target="_self" rel="noopener nofollow">皮克爽：緬甸球版：運彩前後台網站MOC</a><br>
+關鍵：根據 laravel 框架定出來，Laravue 視覺套件，<a rel="noopener nofollow" class="external-link" href="https://blog.csdn.net/weixin_40800480/article/details/137925590" target="_blank">https://blog.csdn.net/weixin_40800480/article/details/137925590</a><br>以下統一規則：<br>
+<br>徒子徒孫全部都先看得到、動作得到，有客需再擋
+<br>同層級的看不到、動作不到
+<br>Admin_SH 看不到 root
+<br>不用註冊過程登入<br>
+<br><a data-href="運彩：後台球版功能：權限階層規則" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：權限階層規則.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：權限階層規則</a>
+<br><a data-href="運彩：後台球版功能：DB" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：db.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：DB</a>
+<br><a data-href="運彩：後台球版功能：注單計算" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：注單計算.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：注單計算</a>
+<br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a>
+<br>功能模組
+
+<br><a data-href="運彩：後台球版功能：登入功能" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：登入功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：登入功能</a>
+<br><a data-href="運彩：後台球版功能：導航區" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：導航區.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：導航區</a>
+<br><a data-href="運彩：後台球版功能：儀表板" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：儀表板.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：儀表板</a>
+<br><a data-href="運彩：後台球版功能：會員系統" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：會員系統.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：會員系統</a>
+
+<br><a data-href="運彩：後台球版功能：會員列表" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：會員列表.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：會員列表</a>
+
+
+<br><a data-href="運彩：後台球版功能：代理系統" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：代理系統.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：代理系統</a>
+
+<br><a data-href="運彩：後台球版功能：代理列表" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：代理列表.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：代理列表</a>
+
+
+<br><a data-href="運彩：後台球版功能：金流系統" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：金流系統.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：金流系統</a>
+
+<br><a data-href="運彩：後台球版功能：會員充提記錄" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：會員充提記錄.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：會員充提記錄</a>
+<br><a data-href="運彩：後台球版功能：代理充提記錄" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：代理充提記錄.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：代理充提記錄</a>
+<br><a data-href="運彩：後台球版功能：金流記錄" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：金流記錄.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：金流記錄</a> 
+
+
+<br><a data-href="運彩：後台球版功能：賽事管理" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：賽事管理.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：賽事管理</a>
+
+<br><a data-href="運彩：後台球版功能：賽事列表" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：賽事列表.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：賽事列表</a>
+<br><a data-href="運彩：後台球版功能：開盤設定" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：開盤設定.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：開盤設定</a>
+<br><a data-href="運彩：後台球版功能：返獎設定" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：返獎設定.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：返獎設定</a>
+<br><a data-href="運彩：後台球版功能：系統維護" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：系統維護.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：系統維護</a>
+<br>自動爬蟲設定
+
+
+<br><a data-href="運彩：後台球版功能：權限管理" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：權限管理.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：權限管理</a>
+
+<br><a data-href="運彩：後台球版功能：運營帳號列表" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：運營帳號列表.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：運營帳號列表</a> （還沒建DB表）
+<br><a data-href="運彩：後台球版功能：修改密碼" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：修改密碼.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：修改密碼</a>
+
+
+<br>日誌系統
+
+<br><a data-href="運彩：後台球版功能：操作日誌" href="https://jimmy-peon.github.io/SportsBetting/運彩：後台球版功能：操作日誌" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：操作日誌</a>（還未實作）
+
+
+<br><a data-href="運彩：後台球版功能：報表管理" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：報表管理.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：報表管理</a>（還未實作）
+
+<br><a data-href="運彩：後台球版功能：注單管理" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：注單管理.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：注單管理</a>（待AK確認）
+<br>匯總報表（待AK確認）
+
+
+
+
+<br><br><br>
+<br>代理管理系統
+
+<br>代理列表（只會顯示自己底下的代理號）
+
+<br>創建代理
+
+
+<br>分數 轉讓
+<br>佔成管理（管理各代理的佔成比例和分成規則）
+
+<br>占城損失 100% 
+
+<br>3 、7 最多不會（先定5層）
+
+<br>假設：客戶贏 100， 代理付 70 ，管理者付 30
+
+
+
+
+<br>反水（洗馬，根據特定條件給予玩家回饋）
+
+<br>回饋金（會受占城影響給的）
+
+
+
+
+
+
+<br>金流
+
+<br>管理者 轉額 會員系統
+
+
+<br>遊戲管理
+
+<br>第一階段：賽事數據，可人工修改（關閉賽事、創建賽事、朽改）
+<br>第二階段：自動彙整
+
+
+<br>權限系統
+
+<br>帳號管理 (剩下管理頁面的功能)
+
+<br>若為管理者，可修「代理帳號」、底下「服物人員」
+<br>若代理，可修「服物人員」
+<br>設定能看到的頁面 (單一頁面限制)
+
+
+<br>修改密碼
+
+<br>修改自己的密碼
+
+
+
+
+<br>日誌系統
+<br>報表系統
+
+<br>上述內容的報表
+
+
+<br>會需要有設定「開盤時間」
+<br><br><br>Cursor 相關關鍵字：根據 laravel 框架，Laravue 視覺套件 定出來<br>請基於 Laravel、Laravue 的視覺套件，輸出一個高保真[後台]原型圖設計。請考慮以下規範：<br>
+<br>產品規劃，會需要以下系統
+
+<br>會員系統
+<br>代理管理系統
+<br>金流系統
+<br>遊戲管理
+<br>權限系統
+<br>日誌系統
+<br>報表系統
+
+
+<br>UI設計：你作為一個非常資深的UI設計師，要確保使用比較現代化的UI元素
+<br>輸出
+
+<br>根據功能拆分程式碼文件，保持結構清晰，每個功能介面都需要一個獨立的HTML文件
+<br>盡最大的可能降低頁面的TOKEN
+<br>確保我們的程式碼頁面，最後能夠很順利的轉為 Figma 文件，進行二次編輯
+
+
+<br><br>Modal 是一種浮動視窗，會顯示在目前頁面上層，讓使用者在不離開目前頁面的情況下完成操作或查看資訊。<br><br><br>測試連DevDB 如果有需要的話<br>
+MySql DB port 就 3306<br>
+註：<br>
+<br>若換用 PostgreSQL 再通知新Port
+<br>之後正式的後端API 可能會類似長這樣(舉例)：http(s)://106.104.110.60:port/xxx/yyy
+<br>如果 RestfulAPI 就會是 http(s)://106.104.110.60:port/xxx/yyy?param1=a1¶m2=a2 ...
+<br>IP：106.104.110.60<br>
+or<br>
+網址：<br>DNS 服務<br>
+問的內容 透過 json <br>目前所有的資料都要能夠跟後端程式溝通<br>
+根據用 CSV 文間定義內容去實作<br>
+傳輸的資料統一使用去 json傳輸<br><br><br>我正在開發一個基於 Golang（後端 API）與 Laravue（前端）的後台網站，目前已有設計完成的會員列表畫面。  <br>目前已知條件如下：  <br>
+<br>後端機器 IP 為：106.104.110.60  
+<br>後端使用 Golang 撰寫 HTTP Server，採用 GET / POST 的 RESTful API，資料皆為 JSON 格式  
+<br>與後端串接時，預設使用 HTTP/2 技術（至少 HTTP/1.1 以上）  
+<br>MySQL port 為 3306，但目前不需要使用資料庫  
+<br>後端 API 假設已實作，不需重複建立，只需在前端程式碼中保留串接點與 axios 實作註解  
+<br>🟡 預期功能：<br>
+我想要建立一個「會員列表」管理頁面，欄位如下：  <br>
+<br>帳號（username）  
+<br>姓名（name）  
+<br>上層代理（agent_name）  
+<br>餘額（balance）  
+<br>🟢 前端技術條件：  <br>
+<br>前端框架為 Vue，UI 套件為 Laravue（Element UI）  
+<br>請以 Laravue 組件風格撰寫前端頁面與元件結構  
+<br>使用 el-table 顯示會員資料  
+<br>新增與刪除按鈕功能可為空，但需保留事件鉤子與註解  
+<br>使用 axios 串接後端假設的 API（路徑為：http://106.104.110.60/api/members），並確保支援 HTTP/2 串接（axios 預設支援，請於註解中說明）  
+<br>🔧 請產出以下內容：  <br>
+<br>完整的 Vue 組件檔案格式，含 template、script、style  
+<br>資料初始化為本地假資料，但在 mounted 中保留 axios 串接後端的註解範例（不需實際呼叫）  
+<br>在按鈕功能中留有註解與可擴充事件處理器（如 handleAdd / handleDelete）  
+<br>程式碼需可直接貼入 Laravue 組件並運作（假資料即可看到畫面）  
+<br>🔎 附加說明：  <br>
+<br>請特別注意，後端請完全視為「已完成」  
+<br>你只需專注在前端代碼架構與資料顯示邏輯即可  
+<br>串接範例中請在註解中說明：axios 預設支援 HTTP/2（無需特殊設定，但可強調兼容性）
+<br><br><br>
+<br>新增會員
+<br>查詢會員帳號
+<br>修改會員資訊
+<br>停權/解除停權
+<br>轉讓分（等金流系統那邊完成後再一同新建此API）
+<br>在 html 檔案中<br>
+權限系統有以下需求<br>
+<br>新增「帳號管理」內容，有以下欄位
+
+<br>查詢功能
+
+<br>查詢欄位
+<br>2個下拉式選單，以下為選單內容
+
+<br>選單1
+
+<br>管理員層級（經營者、代理、服務人員）
+
+
+<br>選單2
+
+<br>狀態（上線、停權）
+
+
+
+
+
+
+<br>按鈕「新增管理帳號」
+
+<br>點擊後點擊後，跳出modal 模擬視窗，格式要統一
+<br>模擬視窗有以下內容
+
+<br>下拉式選單：管理員層級（經營者、代理、服務人員）
+<br>下拉式選單：狀態（上線、停權）
+<br>欄位：管理員帳號（附註說明：至少4碼，創建後不可修改）
+<br>欄位：管理員名稱
+<br>欄位：管理員密碼
+<br>欄位：再次確認密碼
+<br>按鈕：確定、取消返回
+
+<br>點擊「取消返回」，可以回到「帳號管理」的頁面
+
+
+
+
+
+
+<br>列表，有以下欄位
+
+<br>管理員帳號
+<br>管理員名稱
+<br>管理員層級（經營者、代理、服務人員）
+<br>狀態（上線、停權）
+<br>創建時間
+<br>更新時間
+<br>操作
+
+<br>修改、停權/解除停權
+
+
+
+
+
+
+<br>充值管理，有以下需求<br>
+<br>刪除以下欄位
+
+<br>Check box
+<br>「會員資訊」的頭像圖片
+<br>存款方式
+
+
+<br>修改以下欄位
+
+<br>「申請時間」名稱改為「創建時間」
+<br>將「會員資訊」只保留 用戶帳號
+
+
+<br>新增欄位
+
+<br>「更新時間」
+
+
+<br>修改&nbsp;list.html&nbsp;文件來與&nbsp;MemberList.vue&nbsp;保持一致。<br>代理列表<br>
+<br>只能看到代理
+<br>帳號為「經營者」：可以看到 (全部代理)
+<br>帳號為「代理」：分成兩種，同會員列表的概念
+<br><br><br><br>請依照以下規範，撰寫一份「運彩後台」的系統規格書：<br>
+<br>
+文件格式使用 .md (Markdown)，所有內容統一寫在一個檔案中，不要分開。
+
+<br>
+使用標題層級清楚劃分：
+
+<br>功能大項（如：「權限管理」、「會員管理」等）請用 # (h1) 標題。
+<br>該功能底下的子功能（如：「修改密碼」、「管理帳號」等）請用 ## (h2) 標題。
+
+
+<br>
+每一個子功能 (##) 內，要包含兩個區段：
+
+<br>欄位名稱列表<br>
+使用無序列表（-）列出資料庫相關的欄位名稱，每個欄位後面可以加上簡單描述（選填）。
+<br>操作說明表格<br>
+使用 Markdown 的 table 格式，包含以下欄位（由左而右）：
+
+<br>功能操作
+<br>執行時影響的欄位
+
+
+
+- 表格舉例：
+	| 功能操作         | 執行時影響的欄位             |
+	|--------------|-------------------------------|
+	| 新增會員     | 姓名、電話、Email、帳號狀態   |
+	| 變更狀態     | 帳號狀態                       |
+
+
+<br>
+其他注意事項：
+
+<br>所有功能描述需明確且簡潔。
+<br>不要漏掉任何一個子功能。
+<br>如果某些子功能沒有操作，只列欄位即可，不必硬加表格。
+<br>僅依照提供的高保真原型圖推測功能，不要自行增加或刪減功能。
+<br>撰寫過程中禁止出現「本系統」、「此平台」等模糊稱呼，直接使用具體功能名稱描述。
+
+
+]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩：後台球版功能.md</guid><pubDate>Fri, 20 Jun 2025 02:49:51 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：代理充提記錄]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>
+<a data-href="運彩：後台球版功能：金流系統" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：金流系統.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：金流系統</a><br><br>功能說明：提供代理帳戶資金的充值和提現歷史記錄查詢功能。管理員可查看特定代理或所有代理的資金變動情況，包括充值、提現交易類型，並可依據不同條件進行篩選與搜尋。<br><br><br><br><br>
+<br><a data-tooltip-position="top" aria-label="運彩API：金流：查詢代理充提資料" data-href="運彩API：金流：查詢代理充提資料" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：金流：查詢代理充提資料.html" class="internal-link" target="_self" rel="noopener nofollow">金流：查詢代理充提資料</a>
+
+<br>打開「代理充提記錄」頁面
+<br>「代理充提記錄」頁面重新整理
+<br>使用條件查詢資料
+
+
+<br><a data-tooltip-position="top" aria-label="運彩API：金流：代理上下分" data-href="運彩API：金流：代理上下分" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：金流：代理上下分.html" class="internal-link" target="_self" rel="noopener nofollow">金流：代理上下分</a>
+]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：代理充提記錄.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩：後台球版功能：代理充提記錄.md</guid><pubDate>Thu, 19 Jun 2025 09:24:24 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：代理列表]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>
+<a data-href="運彩：後台球版功能：代理系統" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：代理系統.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：代理系統</a><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><a data-tooltip-position="top" aria-label="運彩API：代理：查詢代理資料" data-href="運彩API：代理：查詢代理資料" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：代理：查詢代理資料.html" class="internal-link" target="_self" rel="noopener nofollow">代理：查詢代理</a>
+<br><br>
+<br><a data-href="運彩API：代理：取代理資料" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：代理：取代理資料.html" class="internal-link" target="_self" rel="noopener nofollow">運彩API：代理：取代理資料</a>
+<br><a data-tooltip-position="top" aria-label="運彩API：代理：新增代理" data-href="運彩API：代理：新增代理" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：代理：新增代理.html" class="internal-link" target="_self" rel="noopener nofollow">代理：新增代理</a>
+<br><br>
+<br>
+<a data-href="運彩API：代理：取代理資料" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：代理：取代理資料.html" class="internal-link" target="_self" rel="noopener nofollow">運彩API：代理：取代理資料</a> 
+
+<br>
+<a data-tooltip-position="top" aria-label="運彩API：代理：編輯代理" data-href="運彩API：代理：編輯代理" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：代理：編輯代理.html" class="internal-link" target="_self" rel="noopener nofollow">代理：編輯代理</a>
+
+<br>
+<a data-tooltip-position="top" aria-label="運彩API：代理：更新代理返獎率" data-href="運彩API：代理：更新代理返獎率" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：代理：更新代理返獎率.html" class="internal-link" target="_self" rel="noopener nofollow">代理：更新代理返獎率</a>
+
+<br>
+<a data-tooltip-position="top" aria-label="運彩API：金流：取單一代理帳戶餘額" data-href="運彩API：金流：取單一代理帳戶餘額" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：金流：取單一代理帳戶餘額.html" class="internal-link" target="_self" rel="noopener nofollow">金流：取單一代理帳戶餘額</a>
+
+<br>打開「代理充提」頁面時
+<br>「代理充提」頁面重新整理
+<br>在「代理充提」頁面，點擊「重置」按鈕時
+
+
+<br>
+<a data-tooltip-position="top" aria-label="運彩API：金流：取單一當前帳戶餘額" data-href="運彩API：金流：取單一當前帳戶餘額" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：金流：取單一當前帳戶餘額.html" class="internal-link" target="_self" rel="noopener nofollow">金流：取單一當前帳戶餘額</a>
+
+<br>打開「代理充提」頁面時
+<br>「代理充提」頁面重新整理
+<br>在「代理充提」頁面，點擊「重置」按鈕時
+
+
+<br>
+<a data-tooltip-position="top" aria-label="運彩API：金流：代理上下分" data-href="運彩API：金流：代理上下分" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：金流：代理上下分.html" class="internal-link" target="_self" rel="noopener nofollow">金流：代理上下分</a>
+
+<br>在「代理充提」頁面，點擊「確認交易」按鈕時
+
+
+<br><br><br>佣金<br>
+<br>已經包含在賠率了，如圖的 0.94、0.93 的，就是 6%、7% 為佣金
+<br>假設 玩家 下注 100 了，賠率為 0.93，然後玩家輸掉了<br>
+經營者佔 7 成、代理佔 3 成<br>
+70分 給經營者、30分 給代理，就不管 佣金% 了
+<br>假設 玩家 下注 100 了，賠率為 0.93，然後玩家贏了，經營者加代理輸<br>
+總計要付出 193（下注金100 + 獎金 93），而佔成 7:3<br>
+經營者付出 135.1、代理付57.9，而賠率 0.93 代表佣金7%，也就是這 7 系統會先全拿走，再看各層代理佣金設定的比例下發<br>
+4.9 分 給經營者、2.1 分 給代理
+<br>餘額（分數），是記到小數後4位，第五位「捨去」
+<br>默認值<br>
+<br>填默認值(比如0或者空字串)系統的預設處理行為
+<br>選填欄位不需要有默認值描述
+<br>但是必填欄位 可能會需要(應該說通常會需要 有的話是比較好的文件規範)
+<br>代理列表、會員列表「上下分」功能，不要用模擬視窗，而是點擊後，跳轉至分頁，且導航區找不到該功能<br>
+<br>會比較好分權限
+<br>如果是模擬視窗，有時候會因為BUG，而跑出來
+<br>代理之間會出現負數金額，需要附註在規格中<br>
+<br>因為代理分成的關係，所以只要玩家贏局，就會不斷扣金額，所以會出現負數的狀況，畢竟不可能不服玩家錢
+]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：代理列表.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩：後台球版功能：代理列表.md</guid><pubDate>Thu, 19 Jun 2025 09:47:13 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：代理系統]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>使用對象：所有層級以上使用<br>
+模組用途：提供代理帳號的列表檢視與建立操作，並於帳號創建時設定該代理的「佔成比例」與「返佣比例」。投注盈虧依照各層設定之佔成比例進行一次性分帳，該比例設定後不可中途更改，以維持分潤結構穩定性。<br>
+另提供返佣設定機制，每層代理可動態調整自身可得之「返佣比例」，並決定是否啟用會員返點功能。系統自動依總抽水比例限制返佣總額，並保留歷史設定版本供帳務查核。<br>以下爲子功能<br>
+<br>
+<a data-href="運彩：後台球版功能：代理列表" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：代理列表.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：代理列表</a>
+
+<br>
+<a data-href="運彩：後台球版功能：佔成管理" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：佔成管理.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：佔成管理</a> （一律在列表中顯示，所以不實作）
+
+<br>註：<br>
+<br>在賽事結束後，才會結單，且系統會先算返佣，再算佔成。
+<br>佔成，可以有以下分配
+
+<br>admin : SSMA1 : SMA1 = 6:3:1
+<br>admin : SSMA1 : SMA2 = 6:2:2 
+<br>admin : SSMA2 : SMA3 = 5:3:2
+<br>admin : SSMA2 : SMA4 = 5:1:4 
+
+
+<br>每條支線加起來要是 100%
+
+
+<br>返佣設定
+
+<br>有兩個欄位設定（走地、即將開始）
+<br>只要投注，並根據投注金額，就會根據返佣%，給予金額
+<br>每次間隔為 0.05%，上限值2%
+<br>顯示上層，編輯下層
+<br>讓重新設定的返佣值生效，不然馬上生效會讓帳亂掉
+
+
+<br>佔成設定
+
+<br>顯示上層，編輯下層
+<br>但編輯下層時，不可以超過上層 
+
+
+]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：代理系統.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩：後台球版功能：代理系統.md</guid><pubDate>Mon, 19 May 2025 01:42:19 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：佔成管理]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>
+<a data-href="運彩：後台球版功能：代理系統" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：代理系統.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：代理系統</a><br><br>功能說明：]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：佔成管理.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩：後台球版功能：佔成管理.md</guid><pubDate>Fri, 09 May 2025 01:21:01 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：系統維護]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>
+<a data-tooltip-position="top" aria-label="運彩：後台球版功能：賽事管理" data-href="運彩：後台球版功能：賽事管理" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：賽事管理.html" class="internal-link" target="_self" rel="noopener nofollow">賽事管理</a><br><br>功能說明：<br>
+<br>設定系統維護的時間，玩家在此期間無法進入前台
+<br><br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：系統維護.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩：後台球版功能：系統維護.md</guid><pubDate>Wed, 18 Jun 2025 09:48:08 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：注單計算]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br><a data-tooltip-position="top" aria-label="https://docs.google.com/spreadsheets/d/17Hcs8Y2Vr6McBnlLqD4qVbBVp98NQSBjRtiN-S50HVU/edit?usp=sharing" rel="noopener nofollow" class="external-link" href="https://docs.google.com/spreadsheets/d/17Hcs8Y2Vr6McBnlLqD4qVbBVp98NQSBjRtiN-S50HVU/edit?usp=sharing" target="_blank">參考連結</a><br>
+<br>在投注單頁面，點擊「下注」
+
+<br>下注失敗
+
+<br>帳戶餘額不足
+<br>帳號啟用狀態「停用」
+
+
+<br>下注成功時，跳「下注處理」
+
+
+<br>進行下注處理
+
+<br>檢查賽事狀態，若為以下狀態時，為投注失敗
+
+<br>取消 / 暫停投注 / 結算
+
+
+<br>檢查返獎率，若為以下狀態時，為投注失敗
+
+<br>賽前 變為 走地
+
+
+<br>檢查賠率變動，若為以下狀態時，為投注失敗
+
+<br>任一盤口賠率，下注時盤口賠率 - 當前盤扣賠率，並取絕對值後大於 20 的話
+
+
+<br>預扣成功投注的注單金額
+
+
+<br>下注處理結果頁面
+
+<br>成功筆數（注單成立，注單狀態「待處理」）
+<br>失敗筆數（賽事兩隊伍，賽事開始時間、投注對象、失敗原因）
+
+<br>賽事狀態為以下時，顯示對應的文字內容
+
+<br>賽事狀態「取消」，文字內容為：「賽事已被取消」
+<br>賽事狀態「暫停投注」，文字內容為：「賽事已暫停投注」
+<br>賽事狀態「結算」，文字內容為：文字內容為：「賽事已結算」
+
+
+<br>返獎率 或 盤扣賠率 變更過大時，顯示對應的文字內容
+
+<br>文字內容為：「賽事賠率變化幅度過大」
+
+
+
+
+<br>按鈕「回到比賽列表」
+
+
+<br>等待「取消注單」時限
+
+<br>取消下注
+
+<br>點擊「取消下注」時，跳出提示訊息「是否確定取消注單」
+<br>點擊「確認」時，跳出提示訊息「已取消注單」（變更注單狀態為「取消」）
+
+
+<br>「取消注單」時限已到（確認注單下注，變更注單狀態為「待結算」）
+
+
+<br>「待結算」注單
+
+<br>若賽事取消
+
+<br>取消注單
+
+<br>注單欄位，為以下狀態
+
+<br>有效下注 = 0 
+<br>已派彩金額 = 下注金額
+<br>輸贏金額 = 0
+<br>注單狀態改為「取消」
+
+
+<br>發送訊息文字為以下內容
+
+<br>推送通知（顯示於手機通知欄/鎖屏的標題）
+
+<br>【投注通知】您有一筆注單取消！
+
+
+<br>通知詳情標題（顯示於 App 內通知詳情的標題）
+
+<br>【投注通知】
+
+
+<br>通知詳情內容（顯示於 App 內通知詳情的內容）
+
+<br>您投注的賽事「主隊 vs 客隊」已取消，注單 xxx 會自動退款，請留意帳戶餘額更新。
+
+
+
+
+
+
+
+
+<br>若賽事結算，跳「注單結算處理」
+
+
+<br>注單結算處理，以下處理順序
+
+<br>判定注單輸贏局
+
+<br>賽事類型＝讓球
+
+<br>比較主隊、客隊最終進球數
+<br>當兩隊進球數相同時，視為輸局
+
+
+<br>賽事類型＝大小球
+
+<br>比較 大小球球數 與 最終總進球數
+
+
+
+
+<br>判定是否符合盤口條件
+
+<br>賽事類型＝讓球
+
+<br>兩隊最終進球數，是否符合 讓球數，以下為例
+
+<br>A隊 讓 B隊 1分，比分結果為 0 : 1、1 : 2、2 : 3 ...等依此類推
+
+
+
+
+<br>賽事類型＝大小球
+
+<br>盤口大小球球數 = 最終總進球數
+
+
+<br>若符合盤口條件，使用「盤口賠率」計算金額
+
+
+<br>玩家贏局時，通知中心發送以下內容（輸局不發通知）
+
+<br>推送通知（顯示於手機通知欄/鎖屏的標題）
+
+<br>【投注通知】您有一筆注單中獎！
+
+
+<br>通知詳情標題（顯示於 App 內通知詳情的標題）
+
+<br>【投注通知】
+
+
+<br>通知詳情內容（顯示於 App 內通知詳情的內容）
+
+<br>恭喜您！🎉<br>
+您投注的賽事「{{主隊名稱}} vs {{客隊名稱}}」已結算，注單編號 {{注單ID}} 已中獎，中獎金額 1,200。<br>
+派彩金額將於稍後派發，請留意系統通知。
+
+
+
+
+<br>計算返獎金額（玩家「輸局」、「贏局」時）
+
+<br>玩家贏局且不符合盤口條件：有效下注金額 X (1-對應返獎率)
+<br>玩家輸局且不符合盤口條件：有效下注金額 
+<br>玩家贏局且符合盤口條件：有效下注金額 X (1-對應返獎率) X (盤口賠率/100)
+<br>玩家輸局且符合盤口條件：有效下注金額  X (盤口賠率/100)
+<br>註：
+
+<br>對應返獎率：根據「賽事時間」判斷是使用「賽前」or「賽中」返獎率
+
+
+
+
+<br>計算佔成支出（玩家「贏局」時）
+
+<br>玩家贏局且不符合盤口條件：有效下注金額 X 對應返獎率
+<br>玩家贏局且符合盤口條件：有效下注金額 X 對應返獎率 X (盤口賠率/100)
+
+
+<br>計算返佣金額
+
+<br>有效下注金額 x 下層對應返佣率＝返佣金額
+
+<br>下層對應返佣率：依據 SH階層 設定給 SSMA 的返佣率
+
+
+
+
+<br>將「返佣金額」從「返獎金額」中扣除（返獎金額 - 返佣金額 ＝ 返佣後金額）
+
+<br>若「返獎金額」&lt;「返佣金額」，需要由從 SH 帳戶餘額中扣除
+
+
+<br>將「返佣金額」分配給各階層順序為 SSMA &gt; SMA &gt; MA &gt; Agent
+<br>將「返佣後金額」或「佔成支出」分配給各階層順序為 SH &gt; SSMA &gt; SMA &gt; MA &gt; Agent
+<br>計算派彩金額
+
+<br>玩家贏局且不符合盤口條件：有效下注金額 X 對應返獎率
+<br>玩家輸局且不符合盤口條件：有效下注金額
+<br>玩家贏局且符合盤口條件：有效下注金額  X (盤口賠率/100) X 對應返獎率
+<br>玩家輸局且符合盤口條件：有效下注金額  X (盤口賠率/100) 
+<br>註：
+
+<br>派彩金額必為大於等於0
+<br>注單狀態為「取消」時，派彩金額 = 下注金額
+<br>對應返獎率：根據「賽事時間」判斷是使用「賽前」or「賽中」返獎率
+
+
+
+
+<br>計算「輸贏金額」
+
+<br>派彩金額 - 有效下注金額
+<br>註：
+
+<br>注單狀態為「取消」時，輸贏金額 = 0
+
+
+
+
+<br>系統進行派彩
+
+<br>發送派彩金額至會員帳戶餘額，跳「注單狀態「已結算」」
+<br>發送信息至「通知中心」，以下為發送訊息之內容
+
+<br>玩家贏局時
+
+<br>推送通知（顯示於手機通知欄/鎖屏的標題）
+
+<br>【投注通知】您有一筆注單已派彩！
+
+
+<br>通知詳情標題（顯示於 App 內通知詳情的標題）
+
+<br>【投注通知】
+
+
+<br>通知詳情內容（顯示於 App 內通知詳情的內容）
+
+<br>注單 xxx 已完成派彩 ，派彩金額 1,200 
+
+
+
+
+<br>因賽事取消：
+
+<br>推送通知（顯示於手機通知欄/鎖屏的標題）
+
+<br>【投注通知】您有一筆注單已派彩！
+
+
+<br>通知詳情標題（顯示於 App 內通知詳情的標題）
+
+<br>【投注通知】
+
+
+<br>通知詳情內容（顯示於 App 內通知詳情的內容）<br>
+注單 xxx 投注金額 500 已退回至您的帳戶。
+
+
+
+
+
+
+
+
+<br>注單狀態「已結算」
+]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：注單計算.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩：後台球版功能：注單計算.md</guid><pubDate>Fri, 13 Jun 2025 09:40:05 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：注單管理]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>功能說明：顯示所有玩家注單記錄。<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：注單管理.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩：後台球版功能：注單管理.md</guid><pubDate>Thu, 12 Jun 2025 03:03:53 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：返獎設定]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>
+<a data-href="運彩：後台球版功能：賽事管理" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：賽事管理.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：賽事管理</a><br><br>功能說明：設定「走地賽事」與「即將開始賽事」的返獎率（即：平台抽水比例），系統將於賠率運算時依此設定自動扣除返獎比例。<br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：返獎設定.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩：後台球版功能：返獎設定.md</guid><pubDate>Wed, 21 May 2025 08:45:54 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：金流系統]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>使用對象：所有層級以上使用<br>
+模組用途：提供代理帳號進行「上分（加額度）」與「下分（減額度）」的操作機制，控制每層代理之信用額度分配與資金流動。所有投注均以信用分方式進行，並由上層代理將自身持有額度下放至下層，形成代理之間的控分關係。<br>有以下子功能<br>
+<br><a data-href="運彩：後台球版功能：金流記錄" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：金流記錄.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：金流記錄</a> 
+<br><a data-href="運彩：後台球版功能：會員充提記錄" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：會員充提記錄.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：會員充提記錄</a> 
+<br><a data-href="運彩：後台球版功能：代理充提記錄" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：代理充提記錄.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：代理充提記錄</a> 
+<br><br><br>充提管理拆分成「會員充提」、「代理充提」，把「新增充提」給刪除<br>
+<br>架構上會比較好分權限
+<br>「金流狀態」欄位<br>
+<br>主要是審核金流用的「待處理」、「已審核」、「拒絕」
+<br>會員對代理之間，除非前台有可以進行提款、儲值的功能，才會需要
+<br>代理對代理之間可能需要，但是目前業主不需要
+]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：金流系統.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩：後台球版功能：金流系統.md</guid><pubDate>Tue, 17 Jun 2025 06:38:25 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：金流記錄]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>
+<a data-href="運彩：後台球版功能：金流系統" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：金流系統.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：金流系統</a><br><br><br>功能說明：<br>
+<br>提供各階層帳戶資金的儲值和提款歷史記錄查詢功能。
+<br>Root、SH 階層：可以查看所有金流紀錄
+<br>SSMA～Agent 階層：只能查閱到直屬上層對當前代理和當前代理對直屬下層的金流紀錄
+<br>若是 Root 下分給 SH ，不會顯示 Root 的交易帳號和帳號姓名
+<br><br><br><br><br><br>
+<br><a data-href="運彩API：金流：查詢金流紀錄" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：金流：查詢金流紀錄.html" class="internal-link" target="_self" rel="noopener nofollow">運彩API：金流：查詢金流紀錄</a>
+
+<br>打開「金流記錄」頁面
+<br>「金流記錄」頁面重新整理
+<br>使用條件查詢資料
+
+
+]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：金流記錄.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩：後台球版功能：金流記錄.md</guid><pubDate>Thu, 19 Jun 2025 06:37:17 GMT</pubDate></item><item><title><![CDATA[欄位說明]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>
+<a data-href="運彩：後台球版功能：權限管理" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：權限管理.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：權限管理</a><br>功能說明：提供管理員修改個人密碼之功能。管理員可在此頁面變更自己的登入密碼，確保帳號安全性。修改密碼時需輸入原密碼進行驗證，新密碼需經過二次確認，以避免輸入錯誤。<br><br><br><br><br><br><br><a data-href="運彩API：代理：取代理資料" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：代理：取代理資料.html" class="internal-link" target="_self" rel="noopener nofollow">運彩API：代理：取代理資料</a><br><br><a data-href="運彩API：代理：編輯代理" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：代理：編輯代理.html" class="internal-link" target="_self" rel="noopener nofollow">運彩API：代理：編輯代理</a><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：修改密碼.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩：後台球版功能：修改密碼.md</guid><pubDate>Wed, 11 Jun 2025 02:06:03 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：報表管理]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>使用對象：所有層級以上使用<br>
+模組用途：提供各層代理帳號的投注數據、輸贏結果、佔成分潤、反佣回饋與返點發放等資訊之彙總報表。管理員可依時間區間、層級、帳號等條件查詢並匯出資料，以供帳務核對使用。  <br>有以下子功能<br>
+<br>還未實作
+]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：報表管理.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩：後台球版功能：報表管理.md</guid><pubDate>Thu, 01 May 2025 09:06:52 GMT</pubDate></item><item><title><![CDATA[登入頁面]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br><br><br>功能說明：  提供後台使用者登入與登出的基本功能。登入時需輸入帳號、密碼與隨機驗證碼（圖形驗證碼）以驗證身分。登入成功後依使用者層級導向相應後台頁面。登出則會回到登入頁面。<br><br><br><br><br>註：<br>
+<br>若重複登入（後踢前），為同一帳號於另一裝置或瀏覽器重新登入
+
+<br>系統會自動登出原先登入中的使用者，並保留最新登入者帳號，顯示「帳號已於其他裝置登入」提示
+
+
+<br><br><br><a data-tooltip-position="top" aria-label="運彩API：取得登入資訊" data-href="運彩API：取得登入資訊" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：取得登入資訊.html" class="internal-link" target="_self" rel="noopener nofollow">取得登入資訊</a><br>
+<br>進入「登入」頁面時使用
+<br><a data-tooltip-position="top" aria-label="運彩API：登入" data-href="運彩API：登入" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：登入.html" class="internal-link" target="_self" rel="noopener nofollow">登入</a><br>
+<br>StatusCode＝3，彈窗文字內容為「驗證碼已過期，請重新輸入一次」，並更新畫面中的驗證碼圖片
+<br><a data-tooltip-position="top" aria-label="運彩API：刷新驗證碼" data-href="運彩API：刷新驗證碼" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：刷新驗證碼.html" class="internal-link" target="_self" rel="noopener nofollow">刷新驗證碼</a><br><a data-tooltip-position="top" aria-label="運彩API：登出" data-href="運彩API：登出" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：登出.html" class="internal-link" target="_self" rel="noopener nofollow">登出</a><br>
+<br>StatusCode＝1，將使用者返回至「登入」頁面
+<br>說明<br>
+<br>客戶端識別碼不存在(已過期)時，跳出彈窗內容為「超過閒置逾時時間，請重新登入」，並再次「取得登入資訊」
+<br>上述各 API 未提及狀態碼，彈窗文字內容會為「狀態訊息」內容
+<br><br><br><br><br>
+<br>後端產生驗證碼時，給一組隨機 captcha_id
+<br>將正確答案以 captcha_id 為 key 存入 Redis 或 memory cache
+<br>前端每次提交時，附上 captcha_id 與 user_input
+<br>後端查 Redis 比對答案，驗證後刪除該 key（一次性），就能避免機器人不斷使用相同的 captcha_id 登入後台
+<br>範例：<br>POST /api/get-captcha 
+→ 後端回傳：{ "captcha_id": "abc123", "image": "base64..." }  
+
+POST /api/submit-form
+ {  
+	"captcha_id": "abc123",
+	"captcha_input": "7Xkwr" 
+	"username": "john",
+	"password": "MySecretPwd123"
+ }
+<br>`<br>Redis 中可能儲存：<br>
+captcha:abc123 =&gt; 7Xkwr (EX 5m) <br>captcha_id 本身只是 ID，但在整體驗證碼架構中，它支援以下防機制：<br><br><br>
+<br>
+白名單
+
+<br>說明：設定固定IP才能進入系統
+<br>常用情境：資料庫驗證
+<br>缺點：浮動IP，不適合使用（wi-fi、手機網路）
+
+
+<br>
+登入時的隨機驗證碼
+
+<br>說明：防止機器人不斷登入此系統（DDos）
+
+
+]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：登入功能.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩：後台球版功能：登入功能.md</guid><pubDate>Fri, 20 Jun 2025 02:46:36 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：開盤設定]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>
+<a data-href="運彩：後台球版功能：賽事管理" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：賽事管理.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：賽事管理</a><br><br>功能說明：設定每日開盤時間。開盤時間過後，前台才會顯示當日賽事的賠率。時間採用緬甸時區（UTC+06:30）。收盤時間則依據當日所有賽事結束時間自動決定。設定值於維護時間區間內即時生效。<br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：開盤設定.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩：後台球版功能：開盤設定.md</guid><pubDate>Tue, 13 May 2025 02:18:05 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：會員充提記錄]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>
+<a data-href="運彩：後台球版功能：金流系統" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：金流系統.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：金流系統</a><br><br>功能說明：<br>
+<br>提供會員帳戶資金的充值和提現歷史記錄查詢功能。管理員可查看特定會員或所有會員的資金變動情況，包括充值、提現交易類型，並可依據不同條件進行篩選與搜尋。
+<br><br><br><br><br><br><br>
+<br><a data-tooltip-position="top" aria-label="運彩API：金流：查詢會員充提資料" data-href="運彩API：金流：查詢會員充提資料" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：金流：查詢會員充提資料.html" class="internal-link" target="_self" rel="noopener nofollow">金流：查詢會員充提資料</a>
+
+<br>打開「會員充提記錄」頁面
+<br>「會員充提記錄」頁面重新整理
+<br>使用條件查詢資料
+
+
+<br><a data-tooltip-position="top" aria-label="運彩API：金流：會員上下分" data-href="運彩API：金流：會員上下分" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：金流：會員上下分.html" class="internal-link" target="_self" rel="noopener nofollow">金流：會員上下分</a>
+<br><br><br>「金流系統」模組的「充提管理」子功能，有以下需求<br>
+<br>功能說明
+
+<br>提供代理帳號進行「上分（加額度）」與「下分（減額度）」的操作機制，控制每層代理之信用額度分配與資金流動。所有投注均以信用分方式進行，並由上層代理將自身持有額度下放至下層，形成代理之間的控分關係。
+
+
+<br>該頁面會有以下區域
+
+<br>卡片區域，有以下內容需要顯示
+
+<br>帳戶餘額：顯示目前帳號有的金額
+<br>待充值筆數與待充值總金額：還未處理的總充值筆數和總計金額
+<br>待提款筆數與待提款總金額：還未處理的總提款筆數和總計金額
+
+
+<br>搜尋條件區域，有以下內容，版面配置可參考「會員列表」
+
+<br>條件＋下拉式選單（會員帳號（為預測）、會員姓名、代理帳號、代理姓名）＋可輸入欄位
+<br>時間篩選：點擊後跳出月份日期視窗，並可以篩選日期區間，主要是依據創建時間做篩選
+<br>交易類型：為下拉式選單（全部（為預設選項）、上分、下分）
+<br>金流狀態：為下拉式選單（全部、待處理（為預設選項）、已審核、拒絕）
+<br>「查詢按鈕」按鈕
+<br>「重置」按鈕：將條件都重置為預設
+<br>「新增充提」按鈕
+
+
+<br>列表，有以下內容需要顯示，有以下內容，版面配置可參考「會員列表」
+
+<br>用戶帳號
+<br>用戶姓名
+<br>身份（SH、SSMA、SMA、MA、Agent、Member）
+<br>上層代理帳號
+<br>金額
+<br>交易類型（上分、下分）
+<br>金流狀態（待處理、已審核、拒絕）
+<br>備註
+<br>創建時間
+<br>更新時間
+<br>操作（確認、拒絕）
+
+
+
+
+]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：會員充提記錄.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩：後台球版功能：會員充提記錄.md</guid><pubDate>Tue, 10 Jun 2025 02:36:20 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：會員列表]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>
+<a data-href="運彩：後台球版功能：會員系統" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：會員系統.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：會員系統</a><br><br>功能說明：<br>
+<br>顯示所有前台登入會員的帳號資料，支援條件查詢、狀態檢視與基本資訊管理。僅限 Agent 層級帳號可新增所屬會員。
+<br>SH：顯示所有會員
+<br>SSMA~MA：無法進入此頁面
+<br>Agent：只會看到自己下層的直屬會員
+<br><br><br><br><br><br>
+<br><a data-tooltip-position="top" aria-label="運彩API：會員：查詢會員資料" data-href="運彩API：會員：查詢會員資料" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：會員：查詢會員資料.html" class="internal-link" target="_self" rel="noopener nofollow">會員：查詢會員</a>
+
+<br>點擊導航區「會員列表」時
+<br>返回「會員列表」頁面時
+<br>「會員列表」頁面重新整理時
+<br>使用條件查詢
+
+
+<br><a data-tooltip-position="top" aria-label="運彩API：會員：新增會員" data-href="運彩API：會員：新增會員" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：會員：新增會員.html" class="internal-link" target="_self" rel="noopener nofollow">會員：新增會員</a>
+
+<br>點擊「新增會員」按鈕時
+
+
+<br><a data-tooltip-position="top" aria-label="運彩API：會員：取單一會員資料" data-href="運彩API：會員：取單一會員資料" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：會員：取單一會員資料.html" class="internal-link" target="_self" rel="noopener nofollow">會員：取單一會員資料</a>
+
+<br>打開「編輯會員」頁面時
+<br>「編輯會員」頁面重新整理時
+
+
+<br><a data-tooltip-position="top" aria-label="運彩API：會員：編輯會員" data-href="運彩API：會員：編輯會員" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：會員：編輯會員.html" class="internal-link" target="_self" rel="noopener nofollow">會員：編輯會員</a>
+
+<br>在「編輯會員」頁面時，點擊「確認編輯」按鈕時
+
+
+<br><a data-tooltip-position="top" aria-label="運彩API：會員：重置會員密碼" data-href="運彩API：會員：重置會員密碼" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：會員：重置會員密碼.html" class="internal-link" target="_self" rel="noopener nofollow">會員：重置會員密碼</a>
+
+<br>在「編輯會員」頁面時，點擊「重置會員」按鈕時
+
+
+<br><a data-tooltip-position="top" aria-label="運彩API：會員：變更帳號啟用狀態" data-href="運彩API：會員：變更帳號啟用狀態" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：會員：變更帳號啟用狀態.html" class="internal-link" target="_self" rel="noopener nofollow">會員：變更帳號啟用狀態</a>
+
+<br>在「會員列表」的「操作」欄位中，點擊「帳號啟用狀態」之 icon
+
+
+<br><a data-tooltip-position="top" aria-label="運彩API：金流：取單一會員帳戶餘額" data-href="運彩API：金流：取單一會員帳戶餘額" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：金流：取單一會員帳戶餘額.html" class="internal-link" target="_self" rel="noopener nofollow">金流：取單一會員帳戶餘額</a>
+
+<br>打開「會員充提」頁面時
+<br>「會員充提」頁面重新整理
+<br>在「會員充提」頁面，點擊「重置」按鈕時
+
+
+<br><a data-tooltip-position="top" aria-label="運彩API：金流：取單一當前帳戶餘額" data-href="運彩API：金流：取單一當前帳戶餘額" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：金流：取單一當前帳戶餘額.html" class="internal-link" target="_self" rel="noopener nofollow">金流：取單一當前帳戶餘額</a>
+
+<br>打開「會員充提」頁面時
+<br>「會員充提」頁面重新整理
+<br>在「會員充提」頁面，點擊「重置」按鈕時
+
+
+<br><a data-tooltip-position="top" aria-label="運彩API：金流：會員上下分" data-href="運彩API：金流：會員上下分" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：金流：會員上下分.html" class="internal-link" target="_self" rel="noopener nofollow">金流：會員上下分</a>
+
+<br>在「會員充提」頁面，點擊「確認交易」按鈕時
+
+
+<br><br><br>
+<br>代理列表、會員列表「上下分」功能，不要用模擬視窗，而是點擊後，跳轉至分頁，且導航區找不到該功能
+
+<br>會比較好分權限
+<br>如果是模擬視窗，有時候會因為BUG，而跑出來
+
+
+<br>洗碼比例 (要問客戶端是依據什麼條件才給)
+
+<br>某種條件下，代理給會員的回饋金（反水 or 回饋金）
+<br>洗碼比例：根據某條件給 會員的回饋金
+<br>先假設 輸局才算洗碼，且 洗碼比例為：1%
+<br>會員有效投注1000 並輸掉時，系統會返還 1%，也就是 10<br>
+如果有佔成的話<br>
+假設：經營者 30%，代理 70%，經營者要給 3 ，代理給 7
+<br>目前是根據什麼計算洗碼，是根據有效投注？還是要看有效投注的輸贏？
+
+
+<br><br>資料顯示方式，<a data-tooltip-position="top" aria-label="https://drive.google.com/file/d/12D_CUmTDLjeb0zUVRYFqSLgKZ4CGVbIq/view?usp=sharing" rel="noopener nofollow" class="external-link" href="https://drive.google.com/file/d/12D_CUmTDLjeb0zUVRYFqSLgKZ4CGVbIq/view?usp=sharing" target="_blank">參考圖</a><br>
+<br>帳號「root」：看到所有在系統上建立的會員帳號
+<br>帳號「admin」：所有在系統上建立的會員帳號，但看不到帳號「root」那一層
+<br>帳號「代理A1」：只看得到 A1-1、A1-2，代理 B1、代理B2、admin
+<br>帳號「代理B1」：只看得到 B1-1、B1-2，代理 A1
+
+<br>只能看「直屬會員」，意味著「上級代理」只會是「B」
+
+<br>例：代理A1 只看得到 A1-1、A1-2
+
+
+<br>可以看「直屬會員」，也可以看底下代理的「直屬會員」，意味著「上級代理」會出現 B 底下的代理 或是 B 底下的代理的代理
+
+<br>例：代理A1 只看得到 A1-1、A1-2、B1-1、B1-2
+
+
+<br>註：至所以分成這樣是怕搶客
+
+<br>假設 B 代理 知道 C1、C2、C3 訊息，B 代理 可以把 C1~C3 的人變到自己底下
+
+
+
+
+<br>查詢：目前只能透過用戶帳號查詢<br>
+編輯：可以編輯用戶名稱、<br>
+有重置密碼的功能，將密碼變更為0000]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：會員列表.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩：後台球版功能：會員列表.md</guid><pubDate>Mon, 16 Jun 2025 03:47:09 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：會員系統]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>使用對象：SH、Agent 層級使用（SSMA~MA：前台導航區不會顯示、進入會員管理的相關頁面）<br>
+模組用途：用於管理前台登入會員的帳號資料，提供查詢、狀態調整與基本資訊維護等<br>以下爲子功能<br>
+<br><a data-href="運彩：後台球版功能：會員列表" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：會員列表.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：會員列表</a>
+]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：會員系統.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩：後台球版功能：會員系統.md</guid><pubDate>Mon, 16 Jun 2025 03:49:50 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：運營帳號列表]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>
+<a data-href="運彩：後台球版功能：權限管理" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：權限管理.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：權限管理</a><br>功能說明：顯示代理帳號底下所有後台登入管理員帳號資料，支援條件查詢、狀態檢視與基本資訊管理。<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：運營帳號列表.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩：後台球版功能：運營帳號列表.md</guid><pubDate>Tue, 27 May 2025 04:58:32 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：儀表板]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br><br>功能說明：顯示當前登入帳號總覽資料。<br><br><br><br><a data-tooltip-position="top" aria-label="運彩API：登入" data-href="運彩API：登入" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：登入.html" class="internal-link" target="_self" rel="noopener nofollow">登入</a><br>
+<br>登入成功後
+]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：儀表板.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩：後台球版功能：儀表板.md</guid><pubDate>Tue, 20 May 2025 03:05:04 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：導航區]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>說明：<br>
+<br>不同層級在前端顯示的模組與功能會不相同
+<br>導航區模組和功能，請參考<a data-tooltip-position="top" aria-label="運彩：後台球版功能" data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">後台規格書</a>
+<br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：導航區.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩：後台球版功能：導航區.md</guid><pubDate>Fri, 20 Jun 2025 02:58:16 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：聯賽對照表]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>
+<a data-href="運彩：後台球版功能：賽事管理" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：賽事管理.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：賽事管理</a><br><br>以下為客戶主要使用的賽事，並整理出建議代表，使用在所屬聯賽、賽事編號上<br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：聯賽對照表.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩：後台球版功能：聯賽對照表.md</guid><pubDate>Tue, 13 May 2025 08:00:43 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：賽事列表]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>
+<a data-href="運彩：後台球版功能：賽事管理" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：賽事管理.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：賽事管理</a><br><br>功能說明：管理所有前台可提供投注的足球比賽資料。支援賽事的新增、編輯、查詢與狀態控制。管理員可調整賠率、設定讓球與大小球盤口，並在賽事結束後執行賽果結算與投注派彩作業。亦可控制每場賽事是否開放於前台顯示與投注。<br><br><br><br><br><br><br>
+<br>投注單計算方式
+
+<br>判斷投注單輸贏
+
+<br>當兩對平手時，所有注單視為輸局
+
+
+<br>判斷賽事結果的比分是否等於「讓球數」
+
+<br>是（照「盤口讓球賠率」、「盤口大小球賠率」計算）
+<br>否（照「實際賠率」計算）
+
+
+
+
+]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：賽事列表.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩：後台球版功能：賽事列表.md</guid><pubDate>Thu, 22 May 2025 02:21:54 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：賽事管理]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>使用對象：所有層級以上使用<br>
+模組用途：負責統一管理所有遊戲項目的設定、狀態控制、賠率參數與來源同步。主要透過「爬蟲模組」提供即時賽事資訊，作為遊戲開關與投注邏輯的依據來源。預計使用多爬蟲比對。同時提供手動新增、修改賽事賠率的功能，以避免其他因素導致而爬蟲無法使用。<br>有以下子功能<br>
+<br><a data-href="運彩：後台球版功能：賽事列表" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：賽事列表.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：賽事列表</a> （還未完成實作）
+<br><a data-href="運彩：後台球版功能：開盤設定" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：開盤設定.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：開盤設定</a>
+<br><a data-href="運彩：後台球版功能：返獎設定" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：返獎設定.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：返獎設定</a>
+<br><a data-href="運彩：後台球版功能：系統維護" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：系統維護.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：系統維護</a> 
+<br>自動爬蟲設定（多個爬蟲監控，以及監控信息） 
+<br><br><br><a data-tooltip-position="top" aria-label="運彩：後台球版功能：聯賽對照表" data-href="運彩：後台球版功能：聯賽對照表" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：聯賽對照表.html" class="internal-link" target="_self" rel="noopener nofollow">聯賽對照表</a>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：賽事管理.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩：後台球版功能：賽事管理.md</guid><pubDate>Wed, 18 Jun 2025 01:54:57 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：權限階層規則]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>層級規則：<br>
+<br>使用者層級分為：Root、SH、SSMA、SMA、MA、Agent
+<br>各層級代理帳號僅可檢視、修改、停權其下層級的帳號，無法查看同層級或上層級帳號
+<br>各層級帳號僅可建立下一層級的帳號，不得越級建立帳號
+<br>各層級可使用的功能權限可能不同，實際功能權限配置仍在規劃中
+<br>Root 為系統最高權限帳號，專供開發／管理團隊內部使用，不對外開放
+<br>SH 層級使用者無法察覺 Root 層級帳號的存在，即無任何途徑查詢或顯示 Root 帳號相關資訊
+<br>op 為營運帳號，作為各層級代理帳號的「分身」，其建立與權限配置皆由所屬代理層級帳號控制
+<br>Member 為前台使用者帳號，屬於一般會員類型，僅由 Agent 層級帳號建立與管理
+<br>以下舉例，可參考附件：權限階層圖<br>
+<br>各層級代理僅能檢視與管理其下層級帳號，無法查看同層級或其他上層帳號
+
+<br>例：
+
+<br>SMA 1 檢視和管理 MA 1、MA 2、agent 1、 agent 2、會員1、會員2、Agent_op
+<br>SMA 2 只看得到 MA3，看不到和無法操作 SMA 1 底下階層的資料
+
+
+
+
+<br>各層級帳號僅可建立下一層級的帳號，不得越級建立帳號
+
+<br>例：
+
+<br>Admin_SH 只能建 SSMA 1 、SSMA 2，如果要建立 SMA ，則需要在後台登入 SSAM 的帳號
+<br>Admin_SH 只能建 SH_op，不能幫 SSMA 1 建立 SSMA_op
+
+
+
+
+<br>“Pasted image 20250429133524.png” could not be found.<br><br><br>root<br>
+admin_SH<br>
+SSMA<br>
+SMA<br>
+MA<br>
+agent<br>root、agent 可建立「會員帳號」<br>
+admin_SH ~ MA 不可建立「會員帳號」<br>root ~ MA 可建立「代理帳號」<br>
+只能建立下一層的帳號，例：SSMA 只能建 SMA，不能幫 SMA2 建 MA 3<br>root ~ agent 可建立「營運帳號」<br>
+只能建立下一層的帳號，例：Admin_SH 只能建 SH_op，不能幫 SSMA 建<br>Root、admin 可以看全部「代理帳號」、「營運帳號」、「會員帳號」<br>
+SSMA 2 ~ agent 只能底下層級的帳號，以下為例<br>
+<br>SMA 1 看得到 MA 1、MA 2、agent 1、 agent 2、會員1、會員2、Agent_op
+<br>SSMA 2 看不到其他帳號
+<br>SMA 2 只看得到 MA3
+<br>
+<br>admin_SH 可以對「營運帳號」「會員帳號」「代理帳號」進行修改的操作嗎？
+
+<br>例如：
+
+<br>對 SSMA_op：變更權限
+<br>對 會員1：停權、轉讓分
+
+
+
+
+]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：權限階層規則.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩：後台球版功能：權限階層規則.md</guid><pubDate>Thu, 01 May 2025 03:45:02 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：權限管理]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>使用對象：所有層級以上使用<br>
+模組用途：用以建立與管理其所屬之 OP 帳號（運營帳號）。OP 帳號為代理帳號的分身，用於執行日常營運操作，但其權限與功能範圍由所屬代理帳號自訂並控管。透過本模組，使用者可設定 OP 帳號的登入資訊、啟用狀態與功能權限，並可隨時進行修改或停用。<br>有以下子功能<br>
+<br><a data-href="運彩：後台球版功能：運營帳號列表" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：運營帳號列表.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：運營帳號列表</a>
+<br><a data-href="運彩：後台球版功能：修改密碼" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：修改密碼.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：修改密碼</a>
+<br><a data-href="運彩：後台球版功能：操作日誌" href="https://jimmy-peon.github.io/SportsBetting/運彩：後台球版功能：操作日誌" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：操作日誌</a>（還未實作）
+<br><br><br><a data-tooltip-position="top" aria-label="https://drive.google.com/file/d/12D_CUmTDLjeb0zUVRYFqSLgKZ4CGVbIq/view?usp=sharing" rel="noopener nofollow" class="external-link" href="https://drive.google.com/file/d/12D_CUmTDLjeb0zUVRYFqSLgKZ4CGVbIq/view?usp=sharing" target="_blank">參考圖</a><br>
+帳號管理<br>
+<br>後台系統最高權限者 root
+<br>建立系統時，會直接建立 root 、admine 的帳號（客戶用）
+<br>root（我們用，但 admin 不知道也看不到此帳號）
+
+<br>admine（客戶用）
+
+<br>代理
+
+<br>代理員工（與代理是同一個階層，但能看到的內容是依據權限而調整）
+
+
+
+
+
+
+<br>admine：基本上與root 有的功能相同，可以看到底下全部的用戶
+<br>代理：代理只看得到自己建立的帳號
+<br>代理員工：可能只剩看帳的頁面
+<br>我是 A代理<br>
+我只看得到<br>
+A代理的員工 、 B 代理 的帳號權限<br>然後<br>
+B代理 的 員工 權限<br>
+跟 C 代理 權限<br>
+A 代理都不可以改<br>如果 admine 的話，<br>
+只能看到 admine 員工和A代理（暫定，除非客戶要求全部都可以看再改）]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：權限管理.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩：後台球版功能：權限管理.md</guid><pubDate>Mon, 19 May 2025 06:03:50 GMT</pubDate></item><item><title><![CDATA[登入與登出]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>
+<a data-tooltip-position="top" aria-label="https://docs.google.com/spreadsheets/d/1wm7f3l6Epu7GEzEGD2ES4eGL9f-GVOJi2Q38OARDhDI/edit?usp=sharing" rel="noopener nofollow" class="external-link" href="https://docs.google.com/spreadsheets/d/1wm7f3l6Epu7GEzEGD2ES4eGL9f-GVOJi2Q38OARDhDI/edit?usp=sharing" target="_blank">狀態碼</a><br><br><br><a data-tooltip-position="top" aria-label="運彩API：取得登入資訊" data-href="運彩API：取得登入資訊" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：取得登入資訊.html" class="internal-link" target="_self" rel="noopener nofollow">取得登入資訊</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：登入" data-href="運彩API：登入" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：登入.html" class="internal-link" target="_self" rel="noopener nofollow">登入</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：刷新驗證碼" data-href="運彩API：刷新驗證碼" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：刷新驗證碼.html" class="internal-link" target="_self" rel="noopener nofollow">刷新驗證碼</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：登出" data-href="運彩API：登出" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：登出.html" class="internal-link" target="_self" rel="noopener nofollow">登出</a><br><br><br><a data-tooltip-position="top" aria-label="運彩API：會員：查詢會員資料" data-href="運彩API：會員：查詢會員資料" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：會員：查詢會員資料.html" class="internal-link" target="_self" rel="noopener nofollow">會員：查詢會員資料</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：會員：取當前代理返佣" data-href="運彩API：會員：取當前代理返佣" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：會員：取當前代理返佣.html" class="internal-link" target="_self" rel="noopener nofollow">會員：取當前代理返佣</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：會員：新增會員" data-href="運彩API：會員：新增會員" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：會員：新增會員.html" class="internal-link" target="_self" rel="noopener nofollow">會員：新增會員</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：會員：取單一會員資料" data-href="運彩API：會員：取單一會員資料" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：會員：取單一會員資料.html" class="internal-link" target="_self" rel="noopener nofollow">會員：取單一會員資料</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：會員：編輯會員" data-href="運彩API：會員：編輯會員" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：會員：編輯會員.html" class="internal-link" target="_self" rel="noopener nofollow">會員：編輯會員</a> （未確定哪些權限可以用）<br>
+<a data-tooltip-position="top" aria-label="運彩API：會員：重置會員密碼" data-href="運彩API：會員：重置會員密碼" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：會員：重置會員密碼.html" class="internal-link" target="_self" rel="noopener nofollow">會員：重置會員密碼</a>（未確定哪些權限可以用）<br>
+<a data-tooltip-position="top" aria-label="運彩API：會員：變更帳號啟用狀態" data-href="運彩API：會員：變更帳號啟用狀態" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：會員：變更帳號啟用狀態.html" class="internal-link" target="_self" rel="noopener nofollow">會員：變更帳號啟用狀態</a>（未確定哪些權限可以用）<br><br><br><a data-tooltip-position="top" aria-label="運彩API：代理：查詢代理資料" data-href="運彩API：代理：查詢代理資料" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：代理：查詢代理資料.html" class="internal-link" target="_self" rel="noopener nofollow">代理：查詢代理資料</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：代理：取代理資料" data-href="運彩API：代理：取代理資料" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：代理：取代理資料.html" class="internal-link" target="_self" rel="noopener nofollow">代理：取代理資料</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：代理：新增代理" data-href="運彩API：代理：新增代理" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：代理：新增代理.html" class="internal-link" target="_self" rel="noopener nofollow">代理：新增代理</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：代理：編輯代理" data-href="運彩API：代理：編輯代理" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：代理：編輯代理.html" class="internal-link" target="_self" rel="noopener nofollow">代理：編輯代理</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：代理：更新代理返獎率" data-href="運彩API：代理：更新代理返獎率" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：代理：更新代理返獎率.html" class="internal-link" target="_self" rel="noopener nofollow">代理：更新代理返獎率</a><br>註：當代理層級為 Agent 時，只使用 <a data-tooltip-position="top" aria-label="運彩API：代理：取代理資料" data-href="運彩API：代理：取代理資料" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：代理：取代理資料.html" class="internal-link" target="_self" rel="noopener nofollow">代理：取代理資料</a> 取自己的資料做編輯<br><br><br><a data-tooltip-position="top" aria-label="運彩API：金流：查詢金流紀錄" data-href="運彩API：金流：查詢金流紀錄" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：金流：查詢金流紀錄.html" class="internal-link" target="_self" rel="noopener nofollow">金流：查詢金流紀錄</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：金流：金流交易" data-href="運彩API：金流：金流交易" href="https://jimmy-peon.github.io/SportsBetting/運彩API：金流：金流交易" class="internal-link" target="_self" rel="noopener nofollow">金流：金流交易</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：金流：取單一會員帳戶餘額" data-href="運彩API：金流：取單一會員帳戶餘額" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：金流：取單一會員帳戶餘額.html" class="internal-link" target="_self" rel="noopener nofollow">金流：取單一會員帳戶餘額</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：金流：取單一當前帳戶餘額" data-href="運彩API：金流：取單一當前帳戶餘額" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：金流：取單一當前帳戶餘額.html" class="internal-link" target="_self" rel="noopener nofollow">金流：取單一當前帳戶餘額</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：金流：取單一代理帳戶餘額" data-href="運彩API：金流：取單一代理帳戶餘額" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：金流：取單一代理帳戶餘額.html" class="internal-link" target="_self" rel="noopener nofollow">金流：取單一代理帳戶餘額</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：金流：會員上下分" data-href="運彩API：金流：會員上下分" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：金流：會員上下分.html" class="internal-link" target="_self" rel="noopener nofollow">金流：會員上下分</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：金流：代理上下分" data-href="運彩API：金流：代理上下分" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：金流：代理上下分.html" class="internal-link" target="_self" rel="noopener nofollow">金流：代理上下分</a><br><br><br><a data-tooltip-position="top" aria-label="運彩API：賽事：查詢賽事資料" data-href="運彩API：賽事：查詢賽事資料" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：賽事：查詢賽事資料.html" class="internal-link" target="_self" rel="noopener nofollow">賽事：查詢賽事資料</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：賽事：新增賽事" data-href="運彩API：賽事：新增賽事" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：賽事：新增賽事.html" class="internal-link" target="_self" rel="noopener nofollow">賽事：新增賽事</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：賽事：取得單一賽事" data-href="運彩API：賽事：取得單一賽事" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：賽事：取得單一賽事.html" class="internal-link" target="_self" rel="noopener nofollow">賽事：取得單一賽事</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：賽事：編輯賽事" data-href="運彩API：賽事：編輯賽事" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：賽事：編輯賽事.html" class="internal-link" target="_self" rel="noopener nofollow">賽事：編輯賽事</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：賽事：變更賽事投注狀態" data-href="運彩API：賽事：變更賽事投注狀態" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：賽事：變更賽事投注狀態.html" class="internal-link" target="_self" rel="noopener nofollow">賽事：變更賽事投注狀態</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：賽事：結算賽事" data-href="運彩API：賽事：結算賽事" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：賽事：結算賽事.html" class="internal-link" target="_self" rel="noopener nofollow">賽事：結算賽事</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：賽事：取消賽事" data-href="運彩API：賽事：取消賽事" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：賽事：取消賽事.html" class="internal-link" target="_self" rel="noopener nofollow">賽事：取消賽事</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：賽事：取得開盤時間" data-href="運彩API：賽事：取得開盤時間" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：賽事：取得開盤時間.html" class="internal-link" target="_self" rel="noopener nofollow">賽事：取得開盤時間</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：賽事：修改開盤時間" data-href="運彩API：賽事：修改開盤時間" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：賽事：修改開盤時間.html" class="internal-link" target="_self" rel="noopener nofollow">賽事：修改開盤時間</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：賽事：取得返獎設定" data-href="運彩API：賽事：取得返獎設定" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：賽事：取得返獎設定.html" class="internal-link" target="_self" rel="noopener nofollow">賽事：取得返獎設定</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：賽事：修改返獎設定" data-href="運彩API：賽事：修改返獎設定" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：賽事：修改返獎設定.html" class="internal-link" target="_self" rel="noopener nofollow">賽事：修改返獎設定</a><br><br><br><a data-tooltip-position="top" aria-label="運彩API：權限：取當前管理員資料" data-href="運彩API：權限：取當前管理員資料" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：權限：取當前管理員資料.html" class="internal-link" target="_self" rel="noopener nofollow">權限：取當前管理員資料</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：權限：修改密碼" data-href="運彩API：權限：修改密碼" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：權限：修改密碼.html" class="internal-link" target="_self" rel="noopener nofollow">權限：修改密碼</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：權限：查詢管理員資料" data-href="運彩API：權限：查詢管理員資料" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：權限：查詢管理員資料.html" class="internal-link" target="_self" rel="noopener nofollow">權限：查詢管理員資料</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：權限：變更帳號啟用狀態" data-href="運彩API：權限：變更帳號啟用狀態" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：權限：變更帳號啟用狀態.html" class="internal-link" target="_self" rel="noopener nofollow">權限：變更帳號啟用狀態</a> <br><br><br><a data-tooltip-position="top" aria-label="運彩API：報表：查詢注單資料" data-href="運彩API：報表：查詢注單資料" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：報表：查詢注單資料.html" class="internal-link" target="_self" rel="noopener nofollow">報表：查詢注單資料</a><br>
+<a data-tooltip-position="top" aria-label="運彩API：報表：查詢詳細注單" data-href="運彩API：報表：查詢詳細注單" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：報表：查詢詳細注單.html" class="internal-link" target="_self" rel="noopener nofollow">報表：查詢詳細注單</a><br><br><br>
+<br>captcha_input：隨機驗證碼
+<br>captcha_id：請求驗證碼時取得的識別碼
+<br><br><br>我需要制定與後端的API文件<br>
+範本格式為：9KG_API文檔<br>
+而現在有以下規劃好的文件內容，請根據個文件內的功能操作說明制定API<br>
+<br>運彩：後台球版功能：登入功能
+<br>運彩：後台球版功能：會員列表
+<br>運彩：後台球版功能：代理列表
+<br>有以下限制<br>
+<br>一個模組一個分隔線
+<br>每一個 API 格式，如下
+
+<br>[模組名稱],[功能名稱]：?request={"欄位名稱"(必填 or 選填), ... }
+
+
+]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩：後台球版功能：API.md</guid><pubDate>Tue, 17 Jun 2025 09:28:04 GMT</pubDate></item><item><title><![CDATA[運彩：後台球版功能：DB]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能</a><br>管理員表 DB.[專案名].[admin_account]<br>
+<br>
+<br>會員表 DB.[專案名].[member_account]]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：db.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩：後台球版功能：DB.md</guid><pubDate>Fri, 25 Apr 2025 02:24:25 GMT</pubDate></item><item><title><![CDATA[運彩API：代理：更新代理返獎率]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：[代理]更新代理返佣率<br>HTTP Action：/agent/update-commi-rate<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：代理：更新代理返獎率.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩API：代理：更新代理返獎率.md</guid><pubDate>Wed, 11 Jun 2025 01:43:34 GMT</pubDate></item><item><title><![CDATA[運彩API：代理：取代理資料]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：取得當前的代理所獲得之佔成、返佣比例。用來新增、編輯代理使用。<br>HTTP Action：/agent/get-data<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：代理：取代理資料.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩API：代理：取代理資料.md</guid><pubDate>Wed, 11 Jun 2025 01:40:38 GMT</pubDate></item><item><title><![CDATA[運彩API：代理：查詢代理資料]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：<br>
+<br>依創建時間排列最新的前 25 筆當前帳號底下的直屬代理資料。支援模糊篩選、多條件過濾、分頁。
+<br>當層代理無法查閱上層代理資料，以下為例
+
+<br>層級 SMA ，看不到所有 SSAM 代理資料
+
+
+<br>無法查閱不同支線下的資料，以下為例
+
+<br>SSMA 1（SMA 1, SMA 2）無法看到 SSMA 2（SMA 3, SMA 4）底下的資料
+
+
+<br>HTTP Action：/agent/query-down-agent-list<br><br><br><br><br><br><br>AgentTree (QueryAgentTree)<br><br>QueryDownAgentData (DownAgentList)<br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：代理：查詢代理資料.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩API：代理：查詢代理資料.md</guid><pubDate>Wed, 11 Jun 2025 02:36:04 GMT</pubDate></item><item><title><![CDATA[運彩API：代理：新增代理]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：<br>
+<br>建立下一層級代理帳號，綁定上層代理帳號與層級，並設定佔成與返佣比例，驗證建立者可用配額與比例範圍。
+<br>無法跨級新增代理，以下為例
+
+<br>SSMA 無法跨過 SMA 新增 MA 階層的代理
+
+
+<br>HTTP Action：/agent/create<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：代理：新增代理.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩API：代理：新增代理.md</guid><pubDate>Wed, 11 Jun 2025 01:47:07 GMT</pubDate></item><item><title><![CDATA[運彩API：代理：編輯代理]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：<br>
+<br>更新指定代理的個人資料，不可修改帳號。
+<br>無法編輯上層帳號
+<br>HTTP Action：/agent/update-account<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：代理：編輯代理.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩API：代理：編輯代理.md</guid><pubDate>Wed, 11 Jun 2025 01:53:23 GMT</pubDate></item><item><title><![CDATA[運彩API：刷新驗證碼]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：重新產生一組新的圖形驗證碼，防止自動化攻擊並提高登入安全性，建議每次點擊即時更新圖片。<br>HTTP Action：<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：刷新驗證碼.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩API：刷新驗證碼.md</guid><pubDate>Tue, 20 May 2025 07:05:19 GMT</pubDate></item><item><title><![CDATA[運彩API：取得登入資訊]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：進入網頁時，索取登入時所需之內容<br>HTTP Action：<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：取得登入資訊.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩API：取得登入資訊.md</guid><pubDate>Tue, 20 May 2025 06:30:57 GMT</pubDate></item><item><title><![CDATA[運彩API：金流：代理上下分]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：<br>
+<br>將指定金額從來源帳號轉移至目標帳號，用於代理與代理之間進行資金分配。
+<br>只能與下層進行代理充提
+<br>無法跨層進行代理充提，以下為例
+
+<br>SSMA 無法跨過 SMA 對 MA  進行充提 
+
+
+<br>無法充提不同支線下的代理，以下為例
+
+<br>SMA 1（MA 1, MA 2）無法充提 SMA 2（MA 3, MA 4）底下的代理
+
+
+<br>HTTP Action：<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：金流：代理上下分.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩API：金流：代理上下分.md</guid><pubDate>Thu, 22 May 2025 05:46:39 GMT</pubDate></item><item><title><![CDATA[運彩API：金流：取單一代理帳戶餘額]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：查詢指定代理帳號的餘額資訊。<br>HTTP Action：<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：金流：取單一代理帳戶餘額.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩API：金流：取單一代理帳戶餘額.md</guid><pubDate>Tue, 27 May 2025 06:57:04 GMT</pubDate></item><item><title><![CDATA[運彩API：金流：取單一會員帳戶餘額]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：查詢指定會員帳號的餘額資訊。<br>HTTP Action：<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：金流：取單一會員帳戶餘額.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩API：金流：取單一會員帳戶餘額.md</guid><pubDate>Tue, 27 May 2025 06:55:45 GMT</pubDate></item><item><title><![CDATA[運彩API：金流：取單一當前帳戶餘額]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：查詢指定當前帳號的餘額資訊。<br>HTTP Action：<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：金流：取單一當前帳戶餘額.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩API：金流：取單一當前帳戶餘額.md</guid><pubDate>Tue, 27 May 2025 06:55:50 GMT</pubDate></item><item><title><![CDATA[運彩API：金流：查詢代理充提資料]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：<br>
+<br>預設顯示創建時間最新的前 25 筆代理上下分資料。支援模糊篩選、多條件過濾、分頁。
+<br>只能查閱自己與下一層的交易紀錄
+
+<br>例如：SSMA 1 只能看到自己與底下 SMA 1-1~1-10 上下分紀錄，但不能看到 SMA 1 與 MA 1-1~1-10   的上下分紀錄
+
+
+<br>無法查閱不同支線下的資料，以下為例
+
+<br>SMA 1（MA 1, MA 2）無法看到 SMA 2（MA 3, MA 4）底下的資料
+
+
+<br>HTTP Action：<br><br><br><br><br><br><br><br>{
+    "status": {
+        "code": "0",
+        "message": "success"
+    },
+    "data": {
+	"": [
+            {
+                "": "會員帳號",
+                "": "會員姓名",
+                "": "管理員帳號",
+                "": "交易類型",
+                "": "交易金額",
+                "": "備註",
+                "": "創建時間"
+            },
+            ...
+        ]
+    }
+}
+]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：金流：查詢代理充提資料.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩API：金流：查詢代理充提資料.md</guid><pubDate>Tue, 27 May 2025 06:57:26 GMT</pubDate></item><item><title><![CDATA[運彩API：金流：查詢金流紀錄]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：<br>
+<br>預設顯示創建時間最新的前 25 筆金流資料。支援模糊篩選、多條件過濾、分頁。
+<br>SH 階層：可以查看到所有金流紀錄
+<br>SSMA～Agent 階層：只能查閱到上層對當層和當層對下層的金流紀錄
+<br>HTTP Action：<br><br><br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：金流：查詢金流紀錄.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩API：金流：查詢金流紀錄.md</guid><pubDate>Thu, 19 Jun 2025 06:24:33 GMT</pubDate></item><item><title><![CDATA[運彩API：金流：查詢會員充提資料]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：<br>
+<br>預設顯示創建時間最新的前 25 筆會員上下分資料。支援模糊篩選、多條件過濾、分頁。
+<br>只能查閱自己與底下會員交易紀錄資料，以下為例
+
+<br>例如：Agent 1 只能看到自己與底下 Member 1-1~1-10 上下分紀錄，但不能看到 Agent 2 與 Member 2-1~2-10 的上下分紀錄
+
+
+<br>HTTP Action：<br><br><br><br><br><br><br><br>{
+    "status": {
+        "code": "0",
+        "message": "success"
+    },
+    "data": {
+        "": [
+            {
+                "": "代理帳號",
+                "": "代理姓名",
+                "": "管理員帳號",
+                "": "交易類型",
+                "": "交易金額",
+                "": "備註",
+                "": "創建時間"
+            },
+            ...
+        ]
+    }
+}
+]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：金流：查詢會員充提資料.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩API：金流：查詢會員充提資料.md</guid><pubDate>Tue, 27 May 2025 06:57:09 GMT</pubDate></item><item><title><![CDATA[運彩API：金流：會員上下分]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：<br>
+<br>將指定金額從來源帳號轉移至目標帳號，用於代理與會員之間進行資金分配。
+<br>只有 Agent 層可以進行會員充提
+<br>無法充提不同支線下的會員，以下為例
+
+<br>Agent 1（Member 1, Member 2）無法充提 Agent 2（Member 3, Member 4）底下的會員
+
+
+<br>HTTP Action：<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：金流：會員上下分.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩API：金流：會員上下分.md</guid><pubDate>Tue, 17 Jun 2025 09:07:29 GMT</pubDate></item><item><title><![CDATA[運彩API：報表：查詢注單資料]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：<br>
+<br>依投注時間排列最新的前 25 筆注單資料。支援模糊篩選、多條件過濾、分頁。
+<br>無法查閱不同支線下的資料，以下為例
+
+<br>Agent 1（Member 1, Member 2）無法看到 Agent 2（Member 3, Member 4）底下的資料
+
+
+<br>HTTP Action：<br><br><br><br><br><br><br><br>{
+    "status": {
+        "code": "0",
+        "message": "success"
+    },
+    "data": {
+        "order_list": [
+            {
+                "": "注單單號",
+                "": "會員帳號",
+                "": "會員姓名",
+                "": "投注金額",
+                "": "派彩金額",
+                "": "輸贏",
+                "": "投注時間",
+                "": "派彩時間",
+                "": "注單狀態"
+            },
+            ...
+        ]
+    }
+}
+<br>{
+    "status": {
+        "code": "0",
+        "message": "success"
+    },
+    "會員帳號A"(使用「查詢欄位」時，才使用此欄位),
+    "data": {
+        "order_list": [
+            {
+                "": "注單單號",
+                "": "會員帳號A",
+                "": "會員姓名",
+                "": "投注金額",
+                "": "派彩金額",
+                "": "輸贏",
+                "": "投注時間",
+                "": "派彩時間",
+                "": "注單狀態"
+            },
+            ...
+        ]
+    }
+}
+]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：報表：查詢注單資料.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩API：報表：查詢注單資料.md</guid><pubDate>Tue, 03 Jun 2025 03:02:26 GMT</pubDate></item><item><title><![CDATA[運彩API：報表：查詢詳細注單]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：<br>
+<br>查詢看注單詳細資訊
+<br>HTTP Action：<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：報表：查詢詳細注單.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩API：報表：查詢詳細注單.md</guid><pubDate>Tue, 03 Jun 2025 02:58:37 GMT</pubDate></item><item><title><![CDATA[運彩API：登入]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：後台使用者輸入帳號、密碼與圖形驗證碼，通過驗證後登入後台，並依帳號層級導向對應後台首頁。<br>HTTP Action：<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：登入.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩API：登入.md</guid><pubDate>Wed, 21 May 2025 02:04:16 GMT</pubDate></item><item><title><![CDATA[運彩API：登出]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：登出後台系統，清除登入狀態並導回登入頁面。<br>HTTP Action：<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：登出.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩API：登出.md</guid><pubDate>Tue, 20 May 2025 07:09:30 GMT</pubDate></item><item><title><![CDATA[運彩API：會員：取單一會員資料]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：取得指定會員的個人資料。用來編輯會員使用。<br>HTTP Action：<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：會員：取單一會員資料.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩API：會員：取單一會員資料.md</guid><pubDate>Tue, 27 May 2025 06:54:46 GMT</pubDate></item><item><title><![CDATA[運彩API：會員：取當前代理返佣]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：取得當前的代理所獲得返佣比例。用來新增、編輯會員使用。<br>HTTP Action：<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：會員：取當前代理返佣.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩API：會員：取當前代理返佣.md</guid><pubDate>Tue, 27 May 2025 06:54:34 GMT</pubDate></item><item><title><![CDATA[運彩API：會員：查詢會員資料]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：<br>
+<br>依創建時間排列最新的前 25 筆會員資料。支援模糊篩選、多條件過濾、分頁。
+<br>無法查閱不同支線下的資料，以下為例
+
+<br>Agent 1（Member 1, Member 2）無法看到 Agent 2（Member 3, Member 4）底下的資料
+
+
+<br>HTTP Action：<br><br><br><br><br><br><br><br>{
+    "status": {
+        "code": "0",
+        "message": "success"
+    },
+    "代理帳號"(查詢欄位使用「代理帳號」時),
+    "data": {
+        "member_list": [
+            {
+                "": "會員帳號",
+                "": "會員姓名",
+                "": "上層代理帳號",
+                "": "帳號啟用狀態",
+                "": "會員賽事前返佣比例",
+                "": "會員賽事中返佣比例",
+                "": "會員帳戶餘額"
+            },
+            ...
+        ]
+    }
+}
+]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：會員：查詢會員資料.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩API：會員：查詢會員資料.md</guid><pubDate>Tue, 27 May 2025 06:54:01 GMT</pubDate></item><item><title><![CDATA[運彩API：會員：重置會員密碼]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：將指定會員密碼重設為系統預設值 0000。<br>HTTP Action：<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：會員：重置會員密碼.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩API：會員：重置會員密碼.md</guid><pubDate>Tue, 27 May 2025 06:54:57 GMT</pubDate></item><item><title><![CDATA[運彩API：會員：新增會員]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：僅限 Agent 層級帳號可新增會員。建立時自動綁定所屬代理，並檢查帳號唯一性。<br>HTTP Action：<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：會員：新增會員.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩API：會員：新增會員.md</guid><pubDate>Tue, 27 May 2025 06:54:41 GMT</pubDate></item><item><title><![CDATA[運彩API：會員：編輯會員]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：更新指定會員的個人資料，不可修改帳號。<br>HTTP Action：<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：會員：編輯會員.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩API：會員：編輯會員.md</guid><pubDate>Tue, 27 May 2025 06:54:52 GMT</pubDate></item><item><title><![CDATA[運彩API：會員：變更帳號啟用狀態]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：變更會員帳號啟用狀態，讓帳號是否可以登入前台。若從「正常」轉為「停權」，會回收該帳號之帳戶餘額。<br>HTTP Action：<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：會員：變更帳號啟用狀態.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩API：會員：變更帳號啟用狀態.md</guid><pubDate>Tue, 27 May 2025 06:55:02 GMT</pubDate></item><item><title><![CDATA[運彩API：賽事：取消賽事]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：將賽事狀態變更為「取消」，使前台無法投注，無法再變更成其他狀態<br>HTTP Action：<br><br><br><br><br><br><br><a data-href="運彩：後台球版功能：賽事列表" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：賽事列表.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：賽事列表</a>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：賽事：取消賽事.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩API：賽事：取消賽事.md</guid><pubDate>Tue, 27 May 2025 05:52:40 GMT</pubDate></item><item><title><![CDATA[運彩API：賽事：取得返獎設定]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：點擊返獎設定後，顯示當前賽事預設的返獎率。<br>HTTP Action：<br><br><br><br><br><br><br><a data-href="運彩：後台球版功能：返獎設定" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：返獎設定.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：返獎設定</a>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：賽事：取得返獎設定.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩API：賽事：取得返獎設定.md</guid><pubDate>Tue, 27 May 2025 06:58:30 GMT</pubDate></item><item><title><![CDATA[運彩API：賽事：取得單一賽事]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：取得賽事資料用於修改賽事賠率<br>HTTP Action：<br><br><br><br><br><br><br><a data-href="運彩：後台球版功能：賽事列表" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：賽事列表.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：賽事列表</a>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：賽事：取得單一賽事.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩API：賽事：取得單一賽事.md</guid><pubDate>Tue, 27 May 2025 06:57:49 GMT</pubDate></item><item><title><![CDATA[運彩API：賽事：取得開盤時間]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：點擊開盤設定後，顯示當前前台開盤時間。<br>HTTP Action：<br><br><br><br><br><br><br><a data-href="運彩：後台球版功能：開盤設定" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：開盤設定.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：開盤設定</a>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：賽事：取得開盤時間.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩API：賽事：取得開盤時間.md</guid><pubDate>Tue, 27 May 2025 06:58:18 GMT</pubDate></item><item><title><![CDATA[運彩API：賽事：查詢賽事資料]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：依賽事編號排列前 25 筆賽事資料。支援模糊篩選、多條件過濾、分頁。<br>HTTP Action：<br><br><br><br><br><br><br><br>{
+    "status": {
+        "code": "0",
+        "message": "success"
+    },
+    "data": {
+        "game_list": [
+            {
+                "": "賽事編號",
+                "": "所屬聯賽",
+                "": "主隊名稱",
+                "": "客隊名稱",
+                "": "賽事開始時間",
+                "": "讓球隊伍",
+                "": "讓球數",
+                "": "盤口讓球賠率",
+                "": "讓球賽事前主隊賠率",
+                "": "讓球賽事前客隊賠率",
+                "": "讓球賽事中主隊賠率",
+                "": "讓球賽事中客隊賠率",
+                "": "大小球球數（總進球數）",
+                "": "盤口大小球賠率",
+                "": "賽事前大球賠率",
+                "": "賽事前小球賠率",
+                "": "賽事中大球賠率",
+                "": "賽事中小球賠率",
+                "": "賽事狀態",
+                "": "總投注筆數",
+                "": "總投注金額",
+                "": "創建時間"
+            }
+        ]
+    }
+}
+
+<br><br><a data-href="運彩：後台球版功能：賽事列表" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：賽事列表.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：賽事列表</a>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：賽事：查詢賽事資料.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩API：賽事：查詢賽事資料.md</guid><pubDate>Tue, 27 May 2025 06:57:37 GMT</pubDate></item><item><title><![CDATA[運彩API：賽事：修改返獎設定]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：修改賽事預設的返獎率。<br>HTTP Action：<br><br><br><br><br><br><br><a data-href="運彩：後台球版功能：返獎設定" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：返獎設定.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：返獎設定</a>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：賽事：修改返獎設定.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩API：賽事：修改返獎設定.md</guid><pubDate>Tue, 27 May 2025 06:58:35 GMT</pubDate></item><item><title><![CDATA[運彩API：賽事：修改開盤時間]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：修改前台開盤時間。設定值於維護時間區間內即時生效。<br>HTTP Action：<br><br><br><br><br><br><br><a data-href="運彩：後台球版功能：開盤設定" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：開盤設定.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：開盤設定</a>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：賽事：修改開盤時間.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩API：賽事：修改開盤時間.md</guid><pubDate>Tue, 27 May 2025 06:58:26 GMT</pubDate></item><item><title><![CDATA[運彩API：賽事：結算賽事]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：將賽事狀態變更為「已結算」，使前台無法投注，且無法再變更成其他狀態<br>HTTP Action：<br><br><br><br><br><br><br><a data-href="運彩：後台球版功能：賽事列表" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：賽事列表.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：賽事列表</a>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：賽事：結算賽事.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩API：賽事：結算賽事.md</guid><pubDate>Tue, 27 May 2025 06:58:08 GMT</pubDate></item><item><title><![CDATA[運彩API：賽事：新增賽事]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：新增賽事<br>HTTP Action：<br><br><br><br><br><br><br><a data-href="運彩：後台球版功能：賽事列表" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：賽事列表.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：賽事列表</a>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：賽事：新增賽事.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩API：賽事：新增賽事.md</guid><pubDate>Tue, 27 May 2025 06:57:41 GMT</pubDate></item><item><title><![CDATA[運彩API：賽事：編輯賽事]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：更新賽事賠率<br>HTTP Action：<br><br><br><br><br><br><br><a data-href="運彩：後台球版功能：賽事列表" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：賽事列表.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：賽事列表</a>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：賽事：編輯賽事.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩API：賽事：編輯賽事.md</guid><pubDate>Tue, 27 May 2025 06:57:57 GMT</pubDate></item><item><title><![CDATA[運彩API：賽事：變更賽事投注狀態]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：讓賽事在前台是否可以被投注。<br>HTTP Action：<br><br><br><br><br><br><br><a data-href="運彩：後台球版功能：賽事列表" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：賽事列表.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：賽事列表</a>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：賽事：變更賽事投注狀態.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩API：賽事：變更賽事投注狀態.md</guid><pubDate>Tue, 27 May 2025 06:58:03 GMT</pubDate></item><item><title><![CDATA[運彩API：權限：取當前管理員資料]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：點擊修改密碼後，查詢當前登入管理員資料，自動帶入帳號與原管理員名稱，供後續修改密碼與名稱使用。<br>HTTP Action：<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：權限：取當前管理員資料.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩API：權限：取當前管理員資料.md</guid><pubDate>Tue, 27 May 2025 06:58:44 GMT</pubDate></item><item><title><![CDATA[運彩API：權限：查詢管理員資料]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：<br>
+<br>依創建時間排列最新的前 25 筆管理員資料。支援模糊篩選、多條件過濾、分頁。
+<br>只能查閱當前帳號下的管理員
+
+<br>例如：SSMA 1 只能看到自己與底下 SMA 1-1~1-10 管理員帳號，但不能看到 SMA 1 與 MA 1-1~1-10 管理員帳號
+
+
+<br>無法查閱不同支線下的資料，以下為例
+
+<br>SSMA 1（SMA 1, SMA 2）無法看到 SSMA 2（SMA 3, SMA 4）底下的資料
+
+
+<br>HTTP Action：<br><br><br><br><br><br><br><br>{
+    "status": {
+        "code": "0",
+        "message": "success"
+    },
+    "data": {
+	"": [
+            {
+                "": "管理員帳號",
+                "": "管理員姓名",
+                "": "帳號啟用狀態",
+                "": "創建時間"
+            },
+            ...
+        ]
+    }
+}
+]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：權限：查詢管理員資料.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩API：權限：查詢管理員資料.md</guid><pubDate>Tue, 27 May 2025 06:58:56 GMT</pubDate></item><item><title><![CDATA[運彩API：權限：修改密碼]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：進行密碼修改，需驗證原密碼是否正確，並確認新密碼與再次確認欄位一致後，完成變更<br>HTTP Action：<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：權限：修改密碼.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩API：權限：修改密碼.md</guid><pubDate>Tue, 27 May 2025 06:58:49 GMT</pubDate></item><item><title><![CDATA[運彩API：權限：變更帳號啟用狀態]]></title><description><![CDATA[ 
+ <br><a data-href="運彩：後台球版功能：API" href="https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩：後台球版功能：api.html" class="internal-link" target="_self" rel="noopener nofollow">運彩：後台球版功能：API</a><br>說明：變更管理員帳號啟用狀態，讓帳號是否可以登入後台<br>HTTP Action：<br><br><br><br><br>]]></description><link>https://jimmy-peon.github.io/SportsBetting/project：皮克爽：緬甸球版/運彩api：權限：變更帳號啟用狀態.html</link><guid isPermaLink="false">Project：皮克爽：緬甸球版/運彩API：權限：變更帳號啟用狀態.md</guid><pubDate>Tue, 27 May 2025 06:59:24 GMT</pubDate></item></channel></rss>
